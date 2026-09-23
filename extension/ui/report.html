@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Monitor · Relatório</title><link rel="stylesheet" href="report.css"></head>
+<body>
+  <header><div><span class="eyebrow">LABORATÓRIO DE CIBERSEGURANÇA</span><h1>Privacy Monitor<span class="dot">●</span></h1></div><button id="expand">Abrir painel</button></header>
+  <main>
+    <section class="intro"><p class="eyebrow">PÁGINA OBSERVADA</p><h2 id="page-title">Aguardando navegação</h2><p id="capture">Carregue uma página após ativar a extensão.</p><div class="actions"><button id="refresh">Atualizar</button><button id="export">Exportar JSON</button><button id="print">Imprimir / PDF</button></div></section>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section class="overview"><div class="score-card"><span class="eyebrow">PRIVACIDADE OBSERVADA</span><strong id="score">—</strong><span>de 100 · maior é melhor</span></div><div class="metrics"><div><strong id="domains">0</strong><span>domínios terceiros</span></div><div><strong id="blocked">0</strong><span>pedidos bloqueados pelo monitor</span></div><div><strong id="cookies">0</strong><span>cookies presentes</span></div><div><strong id="attempts">0</strong><span>tentativas de escrita de cookies</span></div></div></section>
+    <p class="note">Este score mede exposição observada. Conexões externas e alterações de APIs podem ser legítimas. Ausência de sinais não certifica segurança.</p>
+    <nav aria-label="Seções"><a href="#network">Conexões</a><a href="#cookie-section">Cookies</a><a href="#storage">APIs e storage</a><a href="#signals">Indícios</a><a href="#blocklist">Bloqueio</a></nav>
+    <section id="network"><h2>Conexões e rastreadores</h2><p>Terceira parte por domínio registrável (Public Suffix List, incluindo sufixos privados). Catálogo de rastreadores demonstrativo.</p><div class="table-wrap"><table><thead><tr><th>Domínio</th><th>Parte / identificação</th><th>Pedidos / bloqueados</th><th>Ação</th></tr></thead><tbody id="network-rows"></tbody></table></div><details><summary>Requisições e referências para o HAR</summary><div id="requests-list"></div></details></section>
+    <section id="cookie-section"><h2>Cookies</h2><p id="cookie-summary"></p><p class="note">Set-Cookie e document.cookie indicam tentativas. O navegador pode rejeitá-las. Cookies presentes podem ser anteriores à navegação; o baseline é assíncrono. Valores nunca são exportados.</p><div class="table-wrap"><table><thead><tr><th>Nome / domínio</th><th>Parte</th><th>Duração</th><th>Partição / baseline</th></tr></thead><tbody id="cookie-rows"></tbody></table></div><details><summary>Tentativas HTTP e JavaScript</summary><div id="cookie-attempts"></div></details></section>
+    <section id="storage"><h2>Armazenamento e APIs observadas</h2><p>Operações em frames são identificadas pela origem. “Success” indica retorno da chamada; IndexedDB pode falhar depois, de forma assíncrona. Snapshots não comprovam escritas.</p><div id="storage-list"></div></section>
+    <section id="signals"><h2>Indícios que merecem análise</h2><p>Canvas, parâmetros, redirecionamentos, correlações e alteração de referências globais.</p><div id="signals-list"></div></section>
+    <section><h2>Como o score foi calculado</h2><div id="score-list"></div><p id="coverage" class="note"></p></section>
+    <section id="blocklist"><h2>Sua lista de bloqueio</h2><p>Um domínio por linha. Inclui subdomínios e navegações principais. Salve e recarregue a página para repetir a coleta.</p><label for="rules">Domínios bloqueados</label><textarea id="rules" rows="5" spellcheck="false" placeholder="bad.third-party.site"></textarea><button id="save-rules">Salvar lista</button></section>
+    <footer>Processamento local · sem telemetria · relatórios em memória até fechar a aba ou reiniciar o Firefox.<br>URLs exportadas ocultam valores da query, fragmentos e credenciais; caminhos e nomes ainda podem conter dados sensíveis.</footer>
+  </main><script src="../dist/report.js"></script>
+</body></html>

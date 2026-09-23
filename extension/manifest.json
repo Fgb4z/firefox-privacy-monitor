@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Privacy Monitor — Laboratório",
+  "version": "1.0.0",
+  "description": "Relatório local de conexões, cookies, armazenamento e indícios de rastreamento por página.",
+  "browser_specific_settings": { "gecko": { "id": "privacy-monitor@academic.local", "strict_min_version": "142.0", "data_collection_permissions": { "required": ["none"] } } },
+  "permissions": ["<all_urls>", "webRequest", "webRequestBlocking", "cookies", "tabs", "storage"],
+  "background": { "scripts": ["dist/background.js"] },
+  "content_scripts": [{ "matches": ["http://*/*", "https://*/*"], "js": ["dist/content.js"], "run_at": "document_start", "all_frames": true, "match_about_blank": true }],
+  "browser_action": { "default_title": "Privacy Monitor", "default_popup": "ui/report.html" },
+  "options_ui": { "page": "ui/report.html", "open_in_tab": true },
+  "content_security_policy": "script-src 'self'; object-src 'none'"
+}
