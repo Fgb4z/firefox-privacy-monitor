@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-23T21:10:16.957Z",
+  "browser": "firefox",
+  "version": "156.0.1",
+  "mode": "headless, perfil isolado Selenium, fixture sintética",
+  "checks": 16,
+  "result": "PASS",
+  "doesNotReplace": "Testes DDG, HARs DevTools e análise dos três sites sorteados."
+}

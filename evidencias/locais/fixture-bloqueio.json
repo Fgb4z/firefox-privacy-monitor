@@ -1,0 +1,383 @@
+{
+  "baselineReady": true,
+  "capturedAt": "2026-09-23T21:10:16.059Z",
+  "cookieAttempts": [
+    {
+      "accepted": "não determinado",
+      "deletion": false,
+      "domain": "localhost",
+      "httpOnly": false,
+      "name": "http_session",
+      "partitioned": false,
+      "path": "/",
+      "requestId": "78",
+      "secure": false,
+      "session": true,
+      "source": "Set-Cookie",
+      "thirdParty": false,
+      "time": 1790197811570,
+      "url": "http://localhost:8787/"
+    },
+    {
+      "accepted": "não determinado",
+      "deletion": false,
+      "domain": "localhost",
+      "httpOnly": false,
+      "name": "http_persistent",
+      "partitioned": false,
+      "path": "/",
+      "requestId": "78",
+      "secure": false,
+      "session": false,
+      "source": "Set-Cookie",
+      "thirdParty": false,
+      "time": 1790197811570,
+      "url": "http://localhost:8787/"
+    }
+  ],
+  "cookieBaselineNote": "Snapshot assíncrono no início da navegação; cookies muito precoces podem entrar no baseline. Presença não prova injeção nesta página.",
+  "cookieChanges": [
+    {
+      "attribution": "domínio e partição; API não informa aba de origem",
+      "cause": "overwrite",
+      "domain": "localhost",
+      "name": "http_persistent",
+      "removed": true,
+      "time": 1790197811575
+    },
+    {
+      "attribution": "domínio e partição; API não informa aba de origem",
+      "cause": "explicit",
+      "domain": "localhost",
+      "name": "http_persistent",
+      "removed": false,
+      "time": 1790197811575
+    }
+  ],
+  "cookies": [
+    {
+      "domain": "localhost",
+      "firstPartyDomain": "",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "http_session",
+      "newSinceBaseline": false,
+      "partitionKey": null,
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": true,
+      "storeId": "firefox-default",
+      "thirdParty": false
+    },
+    {
+      "domain": "localhost",
+      "expirationDate": 1790284211.566,
+      "firstPartyDomain": "",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "http_persistent",
+      "newSinceBaseline": false,
+      "partitionKey": null,
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": false,
+      "storeId": "firefox-default",
+      "thirdParty": false
+    },
+    {
+      "domain": "localhost",
+      "firstPartyDomain": "",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "js_session",
+      "newSinceBaseline": false,
+      "partitionKey": null,
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": true,
+      "storeId": "firefox-default",
+      "thirdParty": false
+    }
+  ],
+  "events": [
+    {
+      "api": "instrumentation",
+      "detail": "25 métodos/propriedades monitorados. Wrappers do próprio monitor excluídos da baseline.",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "coverage",
+      "outcome": "ready",
+      "thirdParty": false,
+      "time": 1790197811605
+    },
+    {
+      "api": "document.cookie",
+      "detail": "js_session",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "cookie-write",
+      "outcome": "attempt",
+      "thirdParty": false,
+      "time": 1790197811698
+    },
+    {
+      "api": "localStorage.setItem",
+      "detail": "Chamada retornou; operações assíncronas podem falhar posteriormente.",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "storage",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197811698
+    },
+    {
+      "api": "sessionStorage.setItem",
+      "detail": "Chamada retornou; operações assíncronas podem falhar posteriormente.",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "storage",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197811699
+    },
+    {
+      "api": "IndexedDB.open",
+      "detail": "Chamada retornou; operações assíncronas podem falhar posteriormente.",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "storage",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197811699
+    },
+    {
+      "api": "HTMLCanvasElement.toDataURL",
+      "detail": "Leitura de pixels/serialização; não comprova fingerprinting.",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "canvas",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197811701
+    },
+    {
+      "api": "CanvasRenderingContext2D.getImageData",
+      "detail": "Leitura de pixels/serialização; não comprova fingerprinting.",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "canvas",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197811702
+    },
+    {
+      "api": "window.fetch",
+      "detail": "Referência alterada após document_start. Frameworks e extensões também podem causar isso.",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "hook",
+      "outcome": "changed",
+      "thirdParty": false,
+      "time": 1790197811705
+    },
+    {
+      "api": "localStorage",
+      "detail": "1 chaves presentes (não atribui escritas à página).",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "storage-snapshot",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197815622
+    },
+    {
+      "api": "sessionStorage",
+      "detail": "1 chaves presentes (não atribui escritas à página).",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "storage-snapshot",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197815622
+    }
+  ],
+  "id": "1-1790197811555",
+  "requests": [
+    {
+      "blocked": false,
+      "completedAt": 1790197811578,
+      "domain": "localhost",
+      "error": null,
+      "frameId": 0,
+      "id": "78",
+      "origin": "",
+      "rule": null,
+      "status": 200,
+      "thirdParty": false,
+      "time": 1790197811553,
+      "tracker": null,
+      "type": "main_frame",
+      "url": "http://localhost:8787/"
+    },
+    {
+      "blocked": false,
+      "completedAt": 1790197811695,
+      "domain": "localhost",
+      "error": null,
+      "frameId": 0,
+      "id": "79",
+      "origin": "http://localhost:8787/",
+      "rule": null,
+      "status": 200,
+      "thirdParty": false,
+      "time": 1790197811638,
+      "tracker": null,
+      "type": "script",
+      "url": "http://localhost:8787/fixture.js"
+    },
+    {
+      "blocked": true,
+      "completedAt": 1790197811732,
+      "domain": "127.0.0.1",
+      "error": "NS_ERROR_ABORT",
+      "frameId": 12884901890,
+      "id": "80",
+      "origin": "http://localhost:8787/",
+      "rule": "127.0.0.1",
+      "status": null,
+      "thirdParty": true,
+      "time": 1790197811687,
+      "tracker": null,
+      "type": "sub_frame",
+      "url": "http://127.0.0.1:8787/frame"
+    },
+    {
+      "blocked": false,
+      "completedAt": 1790197811761,
+      "domain": "localhost",
+      "error": null,
+      "frameId": 0,
+      "id": "81",
+      "origin": "http://localhost:8787/",
+      "rule": null,
+      "status": 204,
+      "thirdParty": false,
+      "time": 1790197811713,
+      "tracker": null,
+      "type": "image",
+      "url": "http://localhost:8787/favicon.ico"
+    },
+    {
+      "blocked": true,
+      "completedAt": 1790197813712,
+      "domain": "127.0.0.1",
+      "error": "NS_ERROR_ABORT",
+      "frameId": 0,
+      "id": "82",
+      "origin": "http://localhost:8787/",
+      "rule": "127.0.0.1",
+      "status": null,
+      "thirdParty": true,
+      "time": 1790197813707,
+      "tracker": null,
+      "type": "xmlhttprequest",
+      "url": "http://127.0.0.1:8787/pixel?uid=%5Bredigido%5D"
+    },
+    {
+      "blocked": true,
+      "completedAt": 1790197815711,
+      "domain": "127.0.0.1",
+      "error": "NS_ERROR_ABORT",
+      "frameId": 0,
+      "id": "83",
+      "origin": "http://localhost:8787/",
+      "rule": "127.0.0.1",
+      "status": null,
+      "thirdParty": true,
+      "time": 1790197815706,
+      "tracker": null,
+      "type": "xmlhttprequest",
+      "url": "http://127.0.0.1:8787/pixel?uid=%5Bredigido%5D"
+    }
+  ],
+  "rules": [
+    "127.0.0.1"
+  ],
+  "schemaVersion": 1,
+  "score": {
+    "meaning": "100 = menor exposição observada; não certifica segurança ou ausência de rastreamento.",
+    "rows": [
+      {
+        "id": "thirdParty",
+        "label": "Conexões externas respondidas",
+        "penalty": 0,
+        "rule": "3 por domínio; teto 15"
+      },
+      {
+        "id": "trackers",
+        "label": "Domínios do catálogo demonstrativo respondidos",
+        "penalty": 0,
+        "rule": "5 por domínio; teto 20"
+      },
+      {
+        "id": "cookies",
+        "label": "Cookies terceiros presentes",
+        "penalty": 0,
+        "rule": "2 sessão / 4 persistente; teto 20"
+      },
+      {
+        "id": "storage",
+        "label": "Armazenamento terceiro acessado",
+        "penalty": 0,
+        "rule": "2 por origem e API; teto 10"
+      },
+      {
+        "id": "canvas",
+        "label": "Leitura de canvas",
+        "penalty": 10,
+        "rule": "10 se observada; pode ser legítima"
+      },
+      {
+        "id": "sync",
+        "label": "Correlação de identificador / bounce",
+        "penalty": 10,
+        "rule": "10 correlação + 5 bounce; teto 15"
+      },
+      {
+        "id": "hook",
+        "label": "Indicadores de hook ou canal persistente",
+        "penalty": 5,
+        "rule": "5 comunicação + 5 alteração; teto 10"
+      }
+    ],
+    "value": 75,
+    "version": "1.0"
+  },
+  "signals": [
+    {
+      "confidence": "baixa",
+      "kind": "query",
+      "parameters": [
+        "uid"
+      ],
+      "url": "http://127.0.0.1:8787/pixel?uid=%5Bredigido%5D"
+    },
+    {
+      "confidence": "média",
+      "from": "localhost",
+      "kind": "cookie-sync",
+      "note": "Mesmo identificador observado em sites distintos; valor omitido. Não prova sincronização.",
+      "parameter": "uid",
+      "source": "cookie",
+      "to": "127.0.0.1",
+      "url": "http://127.0.0.1:8787/pixel?uid=%5Bredigido%5D"
+    }
+  ],
+  "startedAt": "2026-09-23T21:10:11.555Z",
+  "truncated": false,
+  "url": "http://localhost:8787/",
+  "warnings": []
+}

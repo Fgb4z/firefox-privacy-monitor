@@ -1,0 +1,257 @@
+{
+  "baselineReady": true,
+  "capturedAt": "2026-09-23T21:10:16.849Z",
+  "cookieAttempts": [],
+  "cookieBaselineNote": "Snapshot assíncrono no início da navegação; cookies muito precoces podem entrar no baseline. Presença não prova injeção nesta página.",
+  "cookieChanges": [],
+  "cookies": [
+    {
+      "domain": "localhost",
+      "firstPartyDomain": "",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "http_session",
+      "newSinceBaseline": false,
+      "partitionKey": null,
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": true,
+      "storeId": "firefox-default",
+      "thirdParty": false
+    },
+    {
+      "domain": "localhost",
+      "expirationDate": 1790284211.566,
+      "firstPartyDomain": "",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "http_persistent",
+      "newSinceBaseline": false,
+      "partitionKey": null,
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": false,
+      "storeId": "firefox-default",
+      "thirdParty": false
+    },
+    {
+      "domain": "localhost",
+      "firstPartyDomain": "",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "js_session",
+      "newSinceBaseline": false,
+      "partitionKey": null,
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": true,
+      "storeId": "firefox-default",
+      "thirdParty": false
+    }
+  ],
+  "events": [
+    {
+      "api": "instrumentation",
+      "detail": "25 métodos/propriedades monitorados. Wrappers do próprio monitor excluídos da baseline.",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "coverage",
+      "outcome": "ready",
+      "thirdParty": false,
+      "time": 1790197816461
+    },
+    {
+      "api": "localStorage",
+      "detail": "1 chaves presentes (não atribui escritas à página).",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "storage-snapshot",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197816475
+    },
+    {
+      "api": "sessionStorage",
+      "detail": "1 chaves presentes (não atribui escritas à página).",
+      "frameId": 0,
+      "frameOrigin": "http://localhost:8787",
+      "kind": "storage-snapshot",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790197816475
+    }
+  ],
+  "id": "1-1790197816316",
+  "requests": [
+    {
+      "blocked": false,
+      "domain": "localhost",
+      "frameId": 0,
+      "id": "84",
+      "origin": "",
+      "redirectUrl": "http://127.0.0.1:8787/hop?uid=%5Bredigido%5D",
+      "rule": null,
+      "status": 302,
+      "thirdParty": false,
+      "time": 1790197816313,
+      "tracker": null,
+      "type": "main_frame",
+      "url": "http://localhost:8787/bounce"
+    },
+    {
+      "blocked": false,
+      "domain": "127.0.0.1",
+      "frameId": 0,
+      "id": "84",
+      "origin": "",
+      "redirectUrl": "http://localhost:8787/arrived?uid=%5Bredigido%5D",
+      "rule": null,
+      "status": 302,
+      "thirdParty": true,
+      "time": 1790197816388,
+      "tracker": null,
+      "type": "main_frame",
+      "url": "http://127.0.0.1:8787/hop?uid=%5Bredigido%5D"
+    },
+    {
+      "blocked": false,
+      "completedAt": 1790197816438,
+      "domain": "localhost",
+      "error": null,
+      "frameId": 0,
+      "id": "84",
+      "origin": "",
+      "rule": null,
+      "status": 200,
+      "thirdParty": false,
+      "time": 1790197816411,
+      "tracker": null,
+      "type": "main_frame",
+      "url": "http://localhost:8787/arrived?uid=%5Bredigido%5D"
+    },
+    {
+      "blocked": false,
+      "completedAt": 1790197816752,
+      "domain": "localhost",
+      "error": null,
+      "frameId": 0,
+      "id": "85",
+      "origin": "http://localhost:8787/arrived?uid=%5Bredigido%5D",
+      "rule": null,
+      "status": 204,
+      "thirdParty": false,
+      "time": 1790197816531,
+      "tracker": null,
+      "type": "image",
+      "url": "http://localhost:8787/favicon.ico"
+    }
+  ],
+  "rules": [],
+  "schemaVersion": 1,
+  "score": {
+    "meaning": "100 = menor exposição observada; não certifica segurança ou ausência de rastreamento.",
+    "rows": [
+      {
+        "id": "thirdParty",
+        "label": "Conexões externas respondidas",
+        "penalty": 3,
+        "rule": "3 por domínio; teto 15"
+      },
+      {
+        "id": "trackers",
+        "label": "Domínios do catálogo demonstrativo respondidos",
+        "penalty": 0,
+        "rule": "5 por domínio; teto 20"
+      },
+      {
+        "id": "cookies",
+        "label": "Cookies terceiros presentes",
+        "penalty": 0,
+        "rule": "2 sessão / 4 persistente; teto 20"
+      },
+      {
+        "id": "storage",
+        "label": "Armazenamento terceiro acessado",
+        "penalty": 0,
+        "rule": "2 por origem e API; teto 10"
+      },
+      {
+        "id": "canvas",
+        "label": "Leitura de canvas",
+        "penalty": 0,
+        "rule": "10 se observada; pode ser legítima"
+      },
+      {
+        "id": "sync",
+        "label": "Correlação de identificador / bounce",
+        "penalty": 15,
+        "rule": "10 correlação + 5 bounce; teto 15"
+      },
+      {
+        "id": "hook",
+        "label": "Indicadores de hook ou canal persistente",
+        "penalty": 0,
+        "rule": "5 comunicação + 5 alteração; teto 10"
+      }
+    ],
+    "value": 82,
+    "version": "1.0"
+  },
+  "signals": [
+    {
+      "from": "http://localhost:8787/bounce",
+      "kind": "redirect",
+      "requestId": "84",
+      "status": 302,
+      "to": "http://127.0.0.1:8787/hop?uid=%5Bredigido%5D"
+    },
+    {
+      "confidence": "baixa",
+      "kind": "query",
+      "parameters": [
+        "uid"
+      ],
+      "url": "http://127.0.0.1:8787/hop?uid=%5Bredigido%5D"
+    },
+    {
+      "from": "http://127.0.0.1:8787/hop?uid=%5Bredigido%5D",
+      "kind": "redirect",
+      "requestId": "84",
+      "status": 302,
+      "to": "http://localhost:8787/arrived?uid=%5Bredigido%5D"
+    },
+    {
+      "confidence": "média",
+      "from": "http://localhost:8787/bounce",
+      "kind": "bounce",
+      "note": "Cadeia HTTP entre sites distintos; intenção de rastreamento não comprovada.",
+      "to": "http://localhost:8787/arrived?uid=%5Bredigido%5D",
+      "via": "http://127.0.0.1:8787/hop?uid=%5Bredigido%5D"
+    },
+    {
+      "confidence": "média",
+      "from": "127.0.0.1",
+      "kind": "cookie-sync",
+      "note": "Mesmo identificador observado em sites distintos; valor omitido. Não prova sincronização.",
+      "parameter": "uid",
+      "source": "query",
+      "to": "localhost",
+      "url": "http://localhost:8787/arrived?uid=%5Bredigido%5D"
+    },
+    {
+      "confidence": "baixa",
+      "kind": "query",
+      "parameters": [
+        "uid"
+      ],
+      "url": "http://localhost:8787/arrived?uid=%5Bredigido%5D"
+    }
+  ],
+  "startedAt": "2026-09-23T21:10:16.317Z",
+  "truncated": false,
+  "url": "http://localhost:8787/arrived?uid=%5Bredigido%5D",
+  "warnings": []
+}
