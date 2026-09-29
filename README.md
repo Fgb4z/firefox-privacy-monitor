@@ -1,6 +1,8 @@
 # Firefox Privacy Monitor
 
-Extensão acadêmica para Firefox, com processamento local, relatório por página e lista de bloqueio personalizada. Entrega prevista: **29/09/2026**. Os três sites sorteados ainda precisam ser informados.
+Extensão acadêmica para Firefox, com processamento local, relatório por página e lista de bloqueio personalizada. Autor: **Fernando Guerra Boni**. Entrega: **29/09/2026**. Sites escolhidos após confirmação de seleção livre: **BBC News, Magazine Luiza e Wikipédia**.
+
+[**Relatório final em PDF**](docs/relatorio/relatorio-final.pdf) — oito testes DDG, HARs reais, prints, comparação com Blacklight/uBlock e score dos três sites. O Blacklight recebeu uma página de erro da Magazine Luiza; essa limitação e os testes com falhas estão explicitamente discutidos. Os resultados não são uma garantia de conceito A.
 
 ## Instalar e usar
 
@@ -58,16 +60,17 @@ O teste real usa cache em `.cache/selenium/`, perfil temporário e não altera s
 - [Roteiro completo de coleta DDG, HAR, Blacklight e uBlock](docs/VALIDACAO.md).
 - [Checklist e cronograma até 29/09](docs/ENTREGA.md).
 - [Dados que alimentam o relatório](docs/relatorio/dados.json).
-- [PDF rascunho](docs/relatorio/relatorio-rascunho.pdf): **não é a entrega final**.
+- [PDF final](docs/relatorio/relatorio-final.pdf), com autoria, resultados, capturas e reconciliação por domínio.
 - [Organização das evidências](evidencias/README.md).
 
-Para iniciar a reconciliação por domínio:
+Para regenerar os dados e o PDF a partir das evidências já coletadas:
 
 ```powershell
-node scripts/compare-har.mjs evidencias/sites/site-1/monitor.har evidencias/sites/site-1/monitor.json evidencias/sites/site-1/blacklight-dominios.json evidencias/sites/site-1/ublock-dominios.json evidencias/sites/site-1/reconciliacao.json
+node scripts/prepare-report-data.mjs
+npm.cmd run report -- --final
 ```
 
-As duas listas externas devem ser JSON normalizado: `[{"domain":"tracker.example","evidence":"arquivo.png: seção / logger.txt: linha","note":"observação"}]`. Elas são transcritas do Blacklight/logger, preservando o arquivo original. A tabela une os domínios observados nos quatro conjuntos e fornece índices de entradas do HAR. **Não inventa motivos de divergência.** Use-a para preencher `reconciliation` no relatório com `domain`, `plugin`, `blacklight`, `ublock`, `explanation` e `evidence`.
+As reconciliações completas estão em `evidencias/sites/site-N/analise.md` e `reconciliacao.json`, agrupadas por domínio registrável, com hosts, índices HAR e linhas do logger preservados. A análise exclui downloads de listas do próprio uBlock e identifica seus aliases DNS. `scripts/compare-har.mjs` continua disponível para uma comparação inicial com listas externas normalizadas; o fluxo da coleta final está em [VALIDACAO.md](docs/VALIDACAO.md).
 
 ## Estrutura
 

@@ -4,7 +4,7 @@
 
 Uma navegação principal em uma aba define uma coleta. Recarregar substitui a coleta; redirects HTTP do mesmo requestId pertencem à mesma navegação. Pedidos atrasados permanecem associados ao estado de origem. Eventos de frames recebem a origem do remetente verificado pelo Firefox. Trocar de aba não mistura relatórios. Uma passagem rápida entre documentos preserva o indício de bounce no destino, não todos os relatórios anteriores.
 
-Conexões são classificadas pelo eTLD+1 da Public Suffix List incluída no tldts (inclusive domínios privados, como github.io). Subdomínios da mesma organização são primeira parte; IPs/localhost usam o host. Não há resolução DNS para desmascarar CNAME. Terceiro não é sinônimo de rastreador. O catálogo pequeno em `src/core.js` é apenas demonstrativo e pode estar incompleto/desatualizado. A lista de bloqueio é independente desse catálogo.
+Conexões são classificadas pelo eTLD+1 da Public Suffix List incluída no tldts (inclusive domínios privados, como github.io). Hosts sob o mesmo domínio registrável são primeira parte; isso não equivale a identificar a organização proprietária. IPs/localhost usam o host. Não há resolução DNS para desmascarar CNAME. Terceiro não é sinônimo de rastreador. O catálogo pequeno em `src/core.js` é apenas demonstrativo e pode estar incompleto/desatualizado. A lista de bloqueio é independente desse catálogo. Pedidos sem tabId conhecido também obedecem ao bloqueio global, mas não são atribuídos a uma aba arbitrária.
 
 ## Cookies
 
@@ -55,6 +55,8 @@ No **js-leaks**, os wrappers do próprio monitor podem ser denunciados. Document
 | Hook/canal | 5 alteração de referência + 5 handshake WebSocket ou polling | 10 | Comportamentos que exigem investigação |
 
 Pesos são escolhas didáticas documentadas, **sem calibração estatística**. Penalidades podem acumular sobre um mesmo domínio por evidências distintas. Requisições bloqueadas não contam como conexão respondida, mas seus sinais de intenção podem permanecer na categoria correlação/bounce. Cookies preexistentes podem continuar reduzindo a nota depois de bloquear um domínio. As proteções do navegador e de outras extensões alteram o que é observável.
+
+Nas parcelas de rede, “domínio” significa host distinto (`requests[].domain`), após a classificação primeira/terceira parte por PSL. Na comparação entre ferramentas, os hosts são agrupados por domínio registrável, mantendo a lista completa de hosts e recursos. Downloads de listas do próprio uBlock não integram a análise do site; o campo de contexto do logger permite separá-los. Aliases DNS do uBlock são identificados por `aliasURL`, uma cobertura que o monitor não implementa.
 
 Não criar categorias A/B/C para esse score: são conceitos da avaliação acadêmica, não graus de privacidade. Não traduzir automaticamente achados do Blacklight para nossa nota; comparar categorias, tempos e condições, mencionando explicitamente o que cada ferramenta consegue observar.
 

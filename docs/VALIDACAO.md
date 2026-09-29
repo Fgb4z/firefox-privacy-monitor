@@ -31,7 +31,7 @@ Para cada grupo/subteste:
 
 ## Três sites reais
 
-Aguardar o sorteio. Não substituir por sites escolhidos arbitrariamente. Para cada site:
+Fernando confirmou que os sites podem ser escolhidos livremente. A entrega usa BBC News, Magazine Luiza e Wikipédia. A tentativa anterior da CNN Brasil ficou em `evidencias/adicionais/cnn`, após falhas do Blacklight. Para repetir a coleta de cada site:
 
 1. Condição M: abrir DevTools → Rede antes da navegação, habilitar persistência do log e registrar cache. Navegar, seguir o consentimento definido e aguardar um intervalo fixo (ex.: 30s). Fazer as mesmas interações nas repetições.
 2. No painel de Rede, exportar **Salvar tudo como HAR** (nome pode variar com idioma/versão). Salvar em `evidencias/sites/site-N/monitor.har`.
@@ -49,3 +49,31 @@ O JSON do monitor redige parâmetros; o HAR original pode ser necessário para c
 ## Gerar o PDF
 
 Editar `docs/relatorio/dados.json` com caminhos relativos à raiz. `npm.cmd run report` sempre produz rascunho explicitamente identificado e lista pendências. `npm.cmd run report -- --final` exige textos preenchidos, oito testes, três sites, evidências existentes, scores e reconciliações. Os scores dos sites são recalculados a partir dos JSONs indicados. A checagem de preenchimento não certifica a qualidade da explicação: revisar visualmente o PDF e conferir todos os arquivos.
+
+## Coleta executada e reprodução automatizada
+
+As evidências entregues usam Firefox 156.0.1 headless em perfis novos e independentes, por Selenium. Os HARs vêm da API **nativa do Firefox DevTools**, `NetMonitorAPI.getHar/HarExporter`, aberta antes da navegação. Não são conversões do relatório do monitor. Imagens da página e do painel são capturas reais separadas. Horários ISO em UTC estão nos metadados; as coletas ocorreram na noite de 28/09 em Brasília.
+
+```powershell
+node scripts/collect-ddg.mjs             # aceita um ID de teste opcional
+node scripts/ddg-js-baseline.mjs         # controle sem extensão
+node scripts/collect-sites.mjs          # aceita site-1, site-2 ou site-3
+node scripts/download-ublock.mjs         # pacote oficial Mozilla Add-ons
+node scripts/collect-ublock.mjs
+node scripts/collect-blacklight.mjs
+node scripts/fetch-blacklight-results.mjs
+node scripts/prepare-blacklight-evidence.mjs
+```
+
+O último comando baixa os arquivos oficiais Blacklight. Para extrair seus HARs privados e consolidar a comparação:
+
+```powershell
+python -c "import zipfile,pathlib; root=pathlib.Path('.cache/blacklight'); [(root.joinpath(p.name.replace('-archive.zip','-requests.har')).write_bytes(zipfile.ZipFile(p).read('raw/requests.har'))) for p in root.glob('*-archive.zip')]"
+node scripts/prepare-comparison.mjs
+node scripts/prepare-report-data.mjs
+npm.cmd run report -- --final
+```
+
+Esses comandos de coleta acessam a rede e **substituem os arquivos** da condição executada; preservar as coletas anteriores antes de repetir. O Firefox da automação fica em `.cache/selenium`, sem alterar o navegador pessoal. As preferências reais estão em `ambiente.json`; ETP do perfil Selenium foi `custom`, trackingProtection=false e cookieBehavior=5. Isso não é uma afirmação sobre padrões do Firefox de uso pessoal. Os metadados uBlock registram versão/listas; o Blacklight registra região, navegador, histórico e horários.
+
+Resultados que exigem interpretação: WebSocket já falhava sem a regra; Prefetch Cache não passou no teste de particionamento; js-leaks compara com Firefox 92; o Blacklight da Magazine Luiza recebeu um documento de erro. Não declarar todos os testes aprovados. A reconciliação cita recursos concretos e deixa explícito quando não há evidência para isolar a causa de uma ausência.

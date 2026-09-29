@@ -1,43 +1,44 @@
 # Entrega — 29/09/2026
 
-## Situação
+Autor: **Fernando Guerra Boni**, sem matrícula conforme solicitado.
 
-- [x] Implementação da extensão e instruções de instalação.
-- [x] Testes automatizados, fixture controlada e ferramentas de evidência.
-- [x] Metodologia explícita do score e limitações.
-- [x] Modelo estruturado e gerador de PDF com pendências.
-- [ ] Instalar Firefox de uso manual e carregar a extensão.
-- [ ] Receber os três sites sorteados.
-- [ ] Executar e documentar os oito grupos DDG, incluindo js-leaks.
-- [ ] HARs reais DevTools + prints do monitor para os três sites.
-- [ ] Resultados Blacklight e logger uBlock dos três sites.
-- [ ] Reconciliação de todos os domínios divergentes, nos dois sentidos.
-- [ ] Comparação crítica do score com Blacklight.
-- [ ] Preencher autoria, matrícula e ambiente; gerar e revisar PDF final.
-- [ ] Verificar acesso do professor ao repositório e subir evidências revisadas.
-- [ ] Histórico real de commits ao longo dos dias de trabalho.
+## Concluído no repositório local
 
-## Próximos dias
+- [x] Extensão Firefox instalável, painel, bloqueio personalizado e `.gitignore`.
+- [x] Detecções, metodologia do score e limites documentados.
+- [x] Testes automatizados e fixture no Firefox real.
+- [x] Oito grupos DDG, prints do monitor, resultados da página e HARs.
+- [x] BBC News, Magazine Luiza e Wikipédia: HARs nativos DevTools, prints e JSON.
+- [x] Resultados oficiais Blacklight, incluindo HAR, e logger uBlock separado.
+- [x] Reconciliação por domínio com referências a recursos/linhas e discussão do score.
+- [x] [Relatório final PDF](relatorio/relatorio-final.pdf) com autoria preenchida.
 
-| Data | Resultado a produzir |
-|---|---|
-| 23/09 | Base implementada, verificação técnica e primeiro commit real |
-| 24/09 | Firefox manual, Tracker Reporting, Storage blocking e canvas; corrigir divergências |
-| 25/09 | Bounce, parâmetros, Tracker Blocking, Storage partitioning e js-leaks |
-| 26/09 | Três sites sorteados: coleta monitor, HAR e prints |
-| 27/09 | uBlock/Blacklight, reconciliação por rastreador e evidências |
-| 28/09 | Relatório final, revisão de score, testes e repositório |
-| 29/09 | Conferência final de arquivos/acesso e envio |
+Limitações registradas: Blacklight recebeu erro da Magazine Luiza; js-leaks tem referência Firefox 92; WebSocket já falhou no controle sem regra; Prefetch Cache não passou. Algumas diferenças entre execuções independentes não permitem provar a causa. Esses pontos não foram omitidos nem tratados como aprovação.
 
-Se o sorteio chegar depois, ajuste o cronograma sem omitir análises. Faça commits de mudanças reais (código, evidências, correções, análise) nos dias em que trabalhar. Não retrodate commits nem divida artificialmente o histórico para simular dias de trabalho. A implementação inicial por si só não satisfaz o requisito de histórico ao longo da semana.
+## Falta para entregar
 
-Comandos úteis, após revisar `git diff` e as evidências:
+- [ ] Ler o PDF final e conferir se corresponde às orientações do professor.
+- [ ] Fazer os commits das alterações finais e `git push`.
+- [ ] Conferir no GitHub se PDF, código, HARs e prints aparecem e se o professor tem acesso.
+- [ ] Enviar o PDF e o link do repositório pelo canal de entrega da disciplina.
+
+Não há necessidade de nova coleta para preencher campos do relatório. Uma nota específica depende da avaliação do professor; a existência dos arquivos não comprova aprovação integral em todos os critérios.
+
+## Commits finais por assunto
+
+O histórico anterior foi preservado. Sugestão de grupos reais, após revisar `git diff`:
 
 ```powershell
-git status
-git add README.md package.json package-lock.json src extension scripts tests docs evidencias .gitignore
-git commit -m "Implementa monitor de privacidade e estrutura de validação"
+git add src/background.js extension/dist/background.js tests/background.test.mjs tests/sanitize.test.mjs scripts
+git commit -m "fix: bloqueia workers e consolida ferramentas de coleta"
+
+git add evidencias
+git commit -m "test: registra testes DDG e comparacoes dos tres sites"
+
+git add README.md docs
+git commit -m "docs: finaliza relatorio e checklist de entrega"
+
 git push origin HEAD
 ```
 
-Não incluir `.cache`, perfis, `node_modules`, tokens ou HARs com dados pessoais. Os bundles de `extension/dist` fazem parte do instalável; precisam acompanhar os fontes e ser regenerados quando estes mudarem.
+Esses commits organizam mudanças diferentes; não simulam trabalho em dias anteriores. Não retrodate commits. Commit é local: as alterações só aparecem no GitHub depois do push. Verificar `git status` ao final. `.cache`, perfis, dependências e originais privados continuam ignorados; bundles instaláveis e evidências públicas acompanham o Git.

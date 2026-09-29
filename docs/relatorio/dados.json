@@ -1,22 +1,2287 @@
 {
   "title": "Firefox Privacy Monitor — Avaliação Intermediária de Cibersegurança",
-  "author": "PENDENTE",
-  "registration": "PENDENTE",
+  "author": "Fernando Guerra Boni",
   "deadline": "2026-09-29",
-  "environment": "PENDENTE: Firefox/versão, SO, ETP, cookies, região, consentimento, extensões e respectivas versões/listas, data e duração de cada execução.",
+  "environment": "Coletas em 28/09/2026, horário de Brasília (arquivos ISO em UTC, já em 29/09). Windows, Firefox 156.0.1 headless, Selenium WebDriver 4.49.0, janela 1440×1100. Perfil novo por site e condição, sem login e sem interagir com consentimento; observação de 30 s após navegação. M: apenas Privacy Monitor 1.0.0, lista de bloqueio vazia nos sites. U: apenas uBlock Origin 1.75.0, listas padrão registradas em ublock-ambiente.json. Preferências medidas: browser.contentblocking.category=custom, privacy.trackingprotection.enabled=false, network.cookie.cookieBehavior=5, fuso America/Sao_Paulo; cabeçalhos DDG mostram en-US. São padrões do perfil de automação, não uma afirmação sobre um perfil pessoal. Localização física/IP de saída do Firefox não foi medida. B: Blacklight oficial, região us-oh, desktop, Chromium Headless 138.0.7204.0/Linux; sua configuração de dispositivo emula Chrome 115/Mac e viewport 1440×790, DPR 2. Cada horário, título e histórico estão em blacklight-resultados.json. A base Tracker Radar declarada pelo serviço é de 20/03/2024. Os ambientes e durações não são idênticos: as diferenças são discutidas sem presumir causalidade a partir de uma ausência.",
   "tests": [
-    { "id": "tracker-reporting", "name": "Tracker Reporting", "url": "https://www.first-party.site/tracker-reporting/1major-via-script.html", "procedure": "Recarregar com lista vazia; registrar domínio, recurso e status; comparar com o rastreador anunciado pela página.", "expected": "PENDENTE: transcrever o resultado esperado informado na página executada.", "observed": "PENDENTE", "explanation": "PENDENTE", "screenshot": "", "pluginJson": "" },
-    { "id": "storage-blocking", "name": "Storage blocking", "url": "https://www.first-party.site/privacy-protections/storage-blocking/", "procedure": "Executar teste e coletar APIs/frame/origem. O monitor observa acessos; ETP e cookies do Firefox controlam bloqueio de storage.", "expected": "PENDENTE: registrar resultados exibidos pela página.", "observed": "PENDENTE", "explanation": "PENDENTE", "screenshot": "", "pluginJson": "" },
-    { "id": "fingerprinting", "name": "Fingerprinting / canvas", "url": "https://www.first-party.site/privacy-protections/fingerprinting/", "procedure": "Usar HTTPS, iniciar o teste e registrar métodos de leitura canvas; salvar resultados da página.", "expected": "PENDENTE: registrar resultados exibidos pela página.", "observed": "PENDENTE", "explanation": "PENDENTE", "screenshot": "", "pluginJson": "" },
-    { "id": "bounce-tracking", "name": "Bounce tracking", "url": "https://www.first-party.site/privacy-protections/bounce-tracking/", "procedure": "Seguir fluxo completo na mesma aba; capturar cadeia e destino final com monitor aberto.", "expected": "PENDENTE: registrar resultados exibidos pela página.", "observed": "PENDENTE", "explanation": "PENDENTE", "screenshot": "", "pluginJson": "" },
-    { "id": "query-parameters", "name": "Query parameters", "url": "https://www.first-party.site/privacy-protections/query-parameters/", "procedure": "Executar links de teste; comparar nomes dos parâmetros com os indícios do monitor. Ele não remove parâmetros automaticamente.", "expected": "PENDENTE: registrar resultados exibidos pela página.", "observed": "PENDENTE", "explanation": "PENDENTE", "screenshot": "", "pluginJson": "" },
-    { "id": "tracker-blocking", "name": "Tracker Blocking", "url": "https://www.first-party.site/privacy-protections/request-blocking/", "procedure": "Executar uma vez sem regras; depois incluir bad.third-party.site, recarregar e executar novamente. Salvar ambas as coletas.", "expected": "A página pede adicionar bad.third-party.site à lista. PENDENTE: registrar resultado por mecanismo na execução.", "observed": "PENDENTE", "explanation": "PENDENTE", "screenshot": "", "pluginJson": "" },
-    { "id": "storage-partitioning", "name": "Storage partitioning", "url": "https://www.first-party.site/privacy-protections/storage-partitioning/", "procedure": "Manter somente uma cópia aberta e evitar recarga forçada; executar Run Tests e salvar resultado detalhado. Correlacionar origens/partições sem inferir isolamento apenas de um acesso.", "expected": "PENDENTE: registrar quais APIs a página reporta particionadas/bloqueadas.", "observed": "PENDENTE", "explanation": "PENDENTE", "screenshot": "", "pluginJson": "" },
-    { "id": "js-leaks", "name": "js-leaks / indicadores de hook", "url": "https://www.first-party.site/security/js-leaks.html", "procedure": "Comparar perfil sem monitor e com monitor. Os wrappers do monitor podem aparecer como alterações no teste; comparar com os métodos listados em src/content.js.", "expected": "PENDENTE: registrar diferenças detectadas pela página.", "observed": "PENDENTE", "explanation": "PENDENTE", "screenshot": "", "pluginJson": "" }
+    {
+      "id": "tracker-reporting",
+      "name": "Tracker Reporting",
+      "url": "https://www.first-party.site/tracker-reporting/1major-via-script.html",
+      "procedure": "Recarregar com lista vazia; registrar domínio, recurso e status; comparar com o rastreador anunciado pela página.",
+      "expected": "A página anuncia um rastreador principal carregado por script (1 major tracker via script). É um teste de identificação de uma tentativa de conexão.",
+      "observed": "O monitor registrou doubleclick.net/tracker.js como Google Ads, terceira parte, HTTP 404. Foram três pedidos nesta coleta, incluindo documento e favicon.",
+      "explanation": "monitor.json: requests contém o URL do script e status 404; rede.har contém o mesmo recurso e resposta. Há concordância na identificação do destinatário, mas o 404 não comprova execução de código do rastreador. O score conta conexões respondidas sem erro apenas entre HTTP 200 e 399, portanto este pedido não entra nessa parcela.",
+      "screenshot": "evidencias/ddg/tracker-reporting/monitor.png",
+      "pluginJson": "evidencias/ddg/tracker-reporting/monitor.json",
+      "pageScreenshot": "evidencias/ddg/tracker-reporting/pagina.png",
+      "har": "evidencias/ddg/tracker-reporting/rede.har",
+      "execution": {
+        "url": "https://www.first-party.site/tracker-reporting/1major-via-script.html",
+        "startedAt": "2026-09-29T00:45:35.054Z",
+        "steps": [],
+        "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+        "finalUrl": "https://www.first-party.site/tracker-reporting/1major-via-script.html",
+        "completedAt": "2026-09-29T00:45:40.982Z",
+        "requests": 3,
+        "events": 3,
+        "truncated": false
+      }
+    },
+    {
+      "id": "storage-blocking",
+      "name": "Storage blocking",
+      "url": "https://www.first-party.site/privacy-protections/storage-blocking/",
+      "procedure": "Executar teste e coletar APIs/frame/origem. O monitor observa acessos; ETP e cookies do Firefox controlam bloqueio de storage.",
+      "expected": "A página grava um número aleatório e tenta recuperá-lo por APIs e contextos diferentes. O resultado permite observar acesso ou falha; não promete que um navegador deva bloquear todas as APIs.",
+      "observed": "A página informou 23 mecanismos e duas falhas no resumo. localStorage, sessionStorage e IndexedDB recuperaram o valor sintético 724 no documento. O monitor registrou chamadas dessas famílias, cookies e origens dos frames; 67 pedidos e 66 eventos.",
+      "explanation": "pagina.txt e pagina-resultados.json distinguem o resumo das falhas internas dos frames. WebSQL falhou com openDatabase is not defined; o teste CookieStore em service worker encontrou value de null. Há também falhas nos detalhes de frames, incluindo IndexedDB no iframe publicitário. O monitor não instrumenta WebSQL/CookieStore nem workers. Um evento IndexedDB com outcome=success significa que a chamada retornou, não que a operação assíncrona concluiu. O valor recuperado no teste é a evidência de persistência; a chamada sozinha não prova isso. O monitor não implementa bloqueio de storage, por isso acessos permitidos não são falhas da sua lista de bloqueio de rede.",
+      "screenshot": "evidencias/ddg/storage-blocking/monitor.png",
+      "pluginJson": "evidencias/ddg/storage-blocking/monitor.json",
+      "pageScreenshot": "evidencias/ddg/storage-blocking/pagina.png",
+      "har": "evidencias/ddg/storage-blocking/rede.har",
+      "execution": {
+        "url": "https://www.first-party.site/privacy-protections/storage-blocking/",
+        "startedAt": "2026-09-29T00:55:37.112Z",
+        "steps": [
+          "Clique #store",
+          "Clique #retrive"
+        ],
+        "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+        "finalUrl": "https://www.first-party.site/privacy-protections/storage-blocking/#724",
+        "completedAt": "2026-09-29T00:55:54.628Z",
+        "requests": 67,
+        "events": 66,
+        "truncated": false
+      }
+    },
+    {
+      "id": "fingerprinting",
+      "name": "Fingerprinting / canvas",
+      "url": "https://www.first-party.site/privacy-protections/fingerprinting/",
+      "procedure": "Usar HTTPS, iniciar o teste e registrar métodos de leitura canvas; salvar resultados da página.",
+      "expected": "A página coleta propriedades que podem compor um fingerprint e adverte que nem todas precisam ser alteradas para haver proteção. Exige HTTPS para todas as APIs disponíveis.",
+      "observed": "A página coletou 124 pontos de dados e informou 14 falhas. O monitor registrou cinco leituras de canvas: quatro toDataURL e uma getImageData.",
+      "explanation": "monitor.json: events de kind=canvas enumeram as cinco APIs e seus resultados. pagina.txt contém canvas e os erros individuais. Por exemplo, navigator.connection é undefined e navigator.getBattery não é função; as pilhas apontam helpers/tests.js. Essas falhas de disponibilidade não significam bloqueio pelo monitor. Ele detecta a leitura, não impede fingerprinting e não cobre todas as 124 propriedades. A concordância demonstrada é a observação do canvas; a finalidade de rastreamento não pode ser deduzida de qualquer leitura isolada.",
+      "screenshot": "evidencias/ddg/fingerprinting/monitor.png",
+      "pluginJson": "evidencias/ddg/fingerprinting/monitor.json",
+      "pageScreenshot": "evidencias/ddg/fingerprinting/pagina.png",
+      "har": "evidencias/ddg/fingerprinting/rede.har",
+      "execution": {
+        "url": "https://www.first-party.site/privacy-protections/fingerprinting/",
+        "startedAt": "2026-09-29T00:55:59.875Z",
+        "steps": [
+          "Clique #start"
+        ],
+        "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+        "finalUrl": "https://www.first-party.site/privacy-protections/fingerprinting/",
+        "completedAt": "2026-09-29T00:56:21.596Z",
+        "requests": 9,
+        "events": 9,
+        "truncated": false
+      }
+    },
+    {
+      "id": "bounce-tracking",
+      "name": "Bounce tracking",
+      "url": "https://www.first-party.site/privacy-protections/bounce-tracking/",
+      "procedure": "Seguir fluxo completo na mesma aba; capturar cadeia e destino final com monitor aberto.",
+      "expected": "O fluxo indicado pela página passa por um terceiro que grava/recupera identificadores e retorna ao primeiro site, mostrando se havia um ID anterior.",
+      "observed": "Após o link, a navegação foi first-party.site → bad.third-party.site → first-party.site. O monitor preservou um sinal bounce de baixa confiança, com permanência intermediária de 604 ms. A página informou geração de ID novo; parâmetros bounceUIDlocalStorage e bounceUIDcookie estavam vazios nessa primeira passagem.",
+      "explanation": "monitor.json: signals[0] contém from/via/to e dwellMs=604; rede.har preserva os documentos intermediários, enquanto o relatório final contém apenas a navegação corrente. pagina.txt e execucao.json registram o resultado e URL final. A cadeia rápida comprova o padrão de navegação, mas não comprova retransmissão de um identificador preexistente nesta primeira visita. Login/pagamento também poderiam produzir esse padrão; a classificação permanece heurística.",
+      "screenshot": "evidencias/ddg/bounce-tracking/monitor.png",
+      "pluginJson": "evidencias/ddg/bounce-tracking/monitor.json",
+      "pageScreenshot": "evidencias/ddg/bounce-tracking/pagina.png",
+      "har": "evidencias/ddg/bounce-tracking/rede.har",
+      "execution": {
+        "url": "https://www.first-party.site/privacy-protections/bounce-tracking/",
+        "startedAt": "2026-09-29T00:46:36.534Z",
+        "steps": [
+          "Link Go to first-party.site: A → bad.third-party.site → A"
+        ],
+        "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+        "finalUrl": "https://www.first-party.site/privacy-protections/bounce-tracking/?bounceUIDlocalStorage=&bounceUIDcookie=&isNew=101",
+        "completedAt": "2026-09-29T00:46:55.361Z",
+        "requests": 2,
+        "events": 3,
+        "truncated": false
+      }
+    },
+    {
+      "id": "query-parameters",
+      "name": "Query parameters",
+      "url": "https://www.first-party.site/privacy-protections/query-parameters/",
+      "procedure": "Executar links de teste; comparar nomes dos parâmetros com os indícios do monitor. Ele não remove parâmetros automaticamente.",
+      "expected": "Para o link utm_source com um parâmetro comum, a própria página indica que, havendo remoção dos parâmetros de rastreamento, deveria restar somente q=other.",
+      "observed": "O destino preservou utm_source=something e q=other. O monitor marcou utm_source como indício de parâmetro de rastreamento.",
+      "explanation": "instrucoes-pagina.txt contém o resultado esperado; execucao.json registra a URL efetiva e monitor.json o sinal query com parameters=[utm_source]. Há divergência em relação a um produto que remove parâmetros porque o escopo implementado é detecção: nenhuma rotina de reescrita de URL está instalada. A presença de utm_source indica atribuição de campanha, não prova cookie sync, e sozinha não reduz o score.",
+      "screenshot": "evidencias/ddg/query-parameters/monitor.png",
+      "pluginJson": "evidencias/ddg/query-parameters/monitor.json",
+      "pageScreenshot": "evidencias/ddg/query-parameters/pagina.png",
+      "har": "evidencias/ddg/query-parameters/rede.har",
+      "execution": {
+        "url": "https://www.first-party.site/privacy-protections/query-parameters/",
+        "startedAt": "2026-09-29T00:46:59.894Z",
+        "steps": [
+          "Link utm_source + q"
+        ],
+        "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+        "finalUrl": "https://www.first-party.site/privacy-protections/query-parameters/query.html?utm_source=something&q=other",
+        "completedAt": "2026-09-29T00:47:08.865Z",
+        "requests": 3,
+        "events": 3,
+        "truncated": false
+      }
+    },
+    {
+      "id": "tracker-blocking",
+      "name": "Tracker Blocking",
+      "url": "https://www.first-party.site/privacy-protections/request-blocking/",
+      "procedure": "Executar uma vez sem regras; depois incluir bad.third-party.site, recarregar e executar novamente. Salvar ambas as coletas.",
+      "expected": "A página pede adicionar bad.third-party.site à lista e verifica mecanismos de carregamento HTML, CSS, JavaScript, frames e workers. Com a regra ativa, os recursos externos desse domínio não devem carregar.",
+      "observed": "Foram salvas execuções sem regra e com a regra. Na segunda, os 23 mecanismos terminaram sem sucesso de carregamento: dez not loaded e treze failed. O monitor registrou 22 pedidos cancelados na aba, incluindo a tentativa WebSocket.",
+      "explanation": "pagina-resultados.json preserva o atributo title de cada li com id test-*; comparar com sem-bloqueio/pagina-resultados.json, e com requests[].blocked em monitor.json. failed é o estado exibido pelo teste e não prova isoladamente que todo erro foi causado pelo bloqueio: a condição sem regra já tem falhas, detalhadas na tabela por mecanismo. Foi corrigido o bloqueio de pedidos com tabId=-1 (worker/service worker); eles obedecem à lista global, mas não entram em um relatório de aba sem atribuição conhecida. Portanto 23 mecanismos e 22 registros não são contagens equivalentes. Não houve pedido permitido para bad.third-party.site no relatório da condição bloqueada.",
+      "screenshot": "evidencias/ddg/tracker-blocking/monitor.png",
+      "pluginJson": "evidencias/ddg/tracker-blocking/monitor.json",
+      "pageScreenshot": "evidencias/ddg/tracker-blocking/pagina.png",
+      "har": "evidencias/ddg/tracker-blocking/rede.har",
+      "execution": {
+        "url": "https://www.first-party.site/privacy-protections/request-blocking/",
+        "startedAt": "2026-09-29T00:52:31.245Z",
+        "steps": [
+          "Clique #start",
+          "Clique #start",
+          "Segunda execução após bloquear bad.third-party.site"
+        ],
+        "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+        "finalUrl": "https://www.first-party.site/privacy-protections/request-blocking/",
+        "completedAt": "2026-09-29T00:53:20.919Z",
+        "requests": 31,
+        "events": 12,
+        "truncated": false
+      },
+      "mechanisms": [
+        {
+          "id": "test-html-script",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-html-style",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-html-img",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-html-picture",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-html-object",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-html-audio",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-html-video",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-html-iframe",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-css-import",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-css-font",
+          "before": "loaded",
+          "after": "not loaded"
+        },
+        {
+          "id": "test-css-background",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-js-websocket",
+          "before": "failed",
+          "after": "failed"
+        },
+        {
+          "id": "test-js-server-sent-events",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-js-fetch",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-js-xmlhttprequest",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-js-sendBeacon",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-other-favicon",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-other-iframe-fetch",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-other-iframe-fetch-depth-2",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-other-webworker-fetch",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-other-serviceworker-fetch",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-other-csp-report",
+          "before": "loaded",
+          "after": "failed"
+        },
+        {
+          "id": "test-other-redirected-fetch",
+          "before": "loaded",
+          "after": "failed"
+        }
+      ]
+    },
+    {
+      "id": "storage-partitioning",
+      "name": "Storage partitioning",
+      "url": "https://www.first-party.site/privacy-protections/storage-partitioning/",
+      "procedure": "Manter somente uma cópia aberta e evitar recarga forçada; executar Run Tests e salvar resultado detalhado. Correlacionar origens/partições sem inferir isolamento apenas de um acesso.",
+      "expected": "A página verifica se armazenamento/caches ficam particionados ou bloqueados entre sites; pede uma única cópia aberta e proíbe recarga forçada durante o teste.",
+      "observed": "Dos 21 mecanismos, a página classificou 19 como pass, WebSQL como unsupported e Prefetch Cache como error. localStorage, sessionStorage, IndexedDB e cookies mostraram o mesmo valor no contexto same-site e null no cross-site. O monitor registrou 30 pedidos e 22 eventos.",
+      "explanation": "pagina.txt preserva os valores por contexto. Prefetch Cache exibiu same-site=[1,1], cross-site=[1,2], resultado inconsistente para o teste; não foi declarado aprovado. WebSQL não existe neste Firefox. ServiceWorker, BroadcastChannel e Web Locks tiveram negações/timeouts cross-site que a página classificou pass; isso permite bloqueio ou isolamento, não prova armazenamento bem-sucedido em todas as partições. O monitor observa métodos/origens e partitionKey dos cookies, mas a prova de isolamento vem da comparação feita pela página. Não atribuímos ao monitor a proteção que o navegador fornece.",
+      "screenshot": "evidencias/ddg/storage-partitioning/monitor.png",
+      "pluginJson": "evidencias/ddg/storage-partitioning/monitor.json",
+      "pageScreenshot": "evidencias/ddg/storage-partitioning/pagina.png",
+      "har": "evidencias/ddg/storage-partitioning/rede.har",
+      "execution": {
+        "url": "https://www.first-party.site/privacy-protections/storage-partitioning/",
+        "startedAt": "2026-09-29T00:48:08.794Z",
+        "steps": [
+          "Clique #run",
+          "Clique #toggle-details"
+        ],
+        "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+        "finalUrl": "https://www.first-party.site/privacy-protections/storage-partitioning/",
+        "completedAt": "2026-09-29T00:48:45.476Z",
+        "requests": 30,
+        "events": 22,
+        "truncated": false
+      }
+    },
+    {
+      "id": "js-leaks",
+      "name": "js-leaks / indicadores de hook",
+      "url": "https://www.first-party.site/security/js-leaks.html",
+      "procedure": "Comparar perfil sem monitor e com monitor. Os wrappers do monitor podem aparecer como alterações no teste; comparar com os métodos listados em src/content.js.",
+      "expected": "O js-leaks compara objetos JavaScript com uma referência escolhida. Foi selecionada a referência Firefox 92 disponível na página e executado um controle sem extensões no mesmo Firefox 156.",
+      "observed": "Com monitor: 904 linhas added/changed; sem monitor: 891. As 13 linhas adicionais correspondem a se_exportedFunctionSymbol, IndexedDB.open/deleteDatabase e cinco métodos de cada Storage (clear/getItem/key/removeItem/setItem). O monitor não registrou alterações posteriores de referência nessa página.",
+      "explanation": "Comparar pagina.txt e sem-monitor.txt, com os prints de ambas as condições. A diferença de 13 linhas identifica a instrumentação do próprio monitor, consistente com src/content.js; não é indício de um invasor. As 891 diferenças já presentes no controle não são atribuíveis à extensão; a referência Firefox 92 não corresponde à versão 156 executada. A baseline interna é posterior aos próprios wrappers, por isso não gera um evento hook para si mesma. A fixture em evidencias/locais demonstra separadamente mudança posterior de fetch e polling, com dados sintéticos explicitamente identificados.",
+      "screenshot": "evidencias/ddg/js-leaks/monitor.png",
+      "pluginJson": "evidencias/ddg/js-leaks/monitor.json",
+      "pageScreenshot": "evidencias/ddg/js-leaks/pagina.png",
+      "har": "evidencias/ddg/js-leaks/rede.har",
+      "execution": {
+        "url": "https://www.first-party.site/security/js-leaks.html",
+        "startedAt": "2026-09-29T00:48:50.117Z",
+        "steps": [
+          "Clique #run"
+        ],
+        "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+        "profiles": [
+          {
+            "text": "Firefox 92",
+            "value": "firefox_92"
+          },
+          {
+            "text": "Chrome 92",
+            "value": "chrome_92"
+          },
+          {
+            "text": "Chrome 110",
+            "value": "chrome_110"
+          },
+          {
+            "text": "Chrome 139",
+            "value": "chrome_139"
+          },
+          {
+            "text": "Safari 14",
+            "value": "safari_14"
+          },
+          {
+            "text": "Safari iOS 14",
+            "value": "safari_14_ios"
+          },
+          {
+            "text": "Safari 16.1",
+            "value": "safari_16_1"
+          },
+          {
+            "text": "Android Webview 83",
+            "value": "android_webview_83"
+          },
+          {
+            "text": "Edge 110",
+            "value": "edge_110"
+          }
+        ],
+        "selectedProfile": "firefox_92",
+        "finalUrl": "https://www.first-party.site/security/js-leaks.html",
+        "completedAt": "2026-09-29T00:49:05.716Z",
+        "requests": 5,
+        "events": 3,
+        "truncated": false
+      }
+    }
   ],
   "sites": [
-    { "id": "site-1", "url": "PENDENTE: sorteio", "har": "", "pluginJson": "", "screenshot": "", "blacklightEvidence": "", "ublockEvidence": "", "score": null, "scoreDiscussion": "PENDENTE", "reconciliation": [] },
-    { "id": "site-2", "url": "PENDENTE: sorteio", "har": "", "pluginJson": "", "screenshot": "", "blacklightEvidence": "", "ublockEvidence": "", "score": null, "scoreDiscussion": "PENDENTE", "reconciliation": [] },
-    { "id": "site-3", "url": "PENDENTE: sorteio", "har": "", "pluginJson": "", "screenshot": "", "blacklightEvidence": "", "ublockEvidence": "", "score": null, "scoreDiscussion": "PENDENTE", "reconciliation": [] }
-  ]
+    {
+      "id": "site-1",
+      "url": "https://www.bbc.com/news",
+      "har": "evidencias/sites/site-1/monitor.har",
+      "pluginJson": "evidencias/sites/site-1/monitor.json",
+      "screenshot": "evidencias/sites/site-1/monitor.png",
+      "blacklightEvidence": "evidencias/sites/site-1/blacklight-resultados.json",
+      "ublockEvidence": "evidencias/sites/site-1/ublock-logger.txt",
+      "score": 25,
+      "scoreDiscussion": "BBC News: score 25, penalidades 15 (terceiros) +20 (catálogo) +20 (cookies) +10 (storage) +10 (correlação). Blacklight identificou 27 rastreadores publicitários e 23 cookies terceiros, concordando com a exposição extensa observada; não atribui uma nota comparável a 25/100. O monitor possui catálogo menor, portanto vê conexões como pubmatic.com/rubiconproject.com sem necessariamente rotulá-las. Ausência de rótulo não é perda da requisição. Há correlações concretas de identificadores, como cookie de adnxs.com e uid em elb.the-ozone-project.com/setuid; o JSON registra a origem e o HAR público preserva igualdade por hash. Blacklight não informou canvas e o monitor não viu leituras. Alguns pedidos só existem no HAR Blacklight; por exemplo adsafeprotected.com. Para 2mdn.net e insightexpressai.com há classificação no cartão, mas ausência no HAR do próprio serviço, uma limitação documental indicada por domínio no apêndice.",
+      "reconciliation": [
+        {
+          "domain": "2mdn.net",
+          "hosts": [],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. O cartão Blacklight inclui este domínio, porém o HAR do próprio Blacklight não contém pedido correspondente. Há uma diferença de cobertura entre os artefatos da mesma ferramenta; o cartão comprova a classificação, mas este HAR não permite afirmar status, conclusão ou causa da ausência local.",
+          "evidence": "blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "360yield.com",
+          "hosts": [
+            "ice.360yield.com",
+            "dsp.360yield.com"
+          ],
+          "plugin": "4 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 4 entradas deste domínio, por exemplo https://ice.360yield.com/match (query preservada no HAR) (HTTP 302, entrada 267). O monitor observou a conexão, mas não a rotulou como rastreador: 360yield.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. O cartão Blacklight inclui este domínio, porém o HAR do próprio Blacklight não contém pedido correspondente. Há uma diferença de cobertura entre os artefatos da mesma ferramenta; o cartão comprova a classificação, mas este HAR não permite afirmar status, conclusão ou causa da ausência local.",
+          "evidence": "monitor.har: log.entries[267], [276], [283], [330]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "3lift.com",
+          "hosts": [
+            "eb2.3lift.com"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://eb2.3lift.com/getuid (query preservada no HAR) (HTTP 302, entrada 173). O monitor observou a conexão, mas não a rotulou como rastreador: 3lift.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[173], [178], [281]; blacklight.har: log.entries[228], [231]; blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "a-mo.net",
+          "hosts": [
+            "sync.a-mo.net"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://sync.a-mo.net/setuid/magnite (query preservada no HAR) (HTTP 204, entrada 261). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[261]"
+        },
+        {
+          "domain": "adform.net",
+          "hosts": [
+            "c1.adform.net"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://c1.adform.net/serving/cookie/match (query preservada no HAR) (HTTP 302, entrada 303). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[303], [326]"
+        },
+        {
+          "domain": "adnxs.com",
+          "hosts": [
+            "ib.adnxs.com"
+          ],
+          "plugin": "5 pedidos; catálogo: sem classificação",
+          "blacklight": "3 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 5 entradas deste domínio, por exemplo https://ib.adnxs.com/getuidj (query preservada no HAR) (HTTP 200, entrada 125). O monitor observou a conexão, mas não a rotulou como rastreador: adnxs.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[125], [184], [185], [190]; blacklight.har: log.entries[144], [250], [255]; blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "adsafeprotected.com",
+          "hosts": [
+            "dt.adsafeprotected.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[160]: https://dt.adsafeprotected.com/dt (query preservada no HAR) HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://secretivesponge.com/dist/qiwf1_xzb1hv6.module.js (entrada 205, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[160], [205]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "adsrvr.org",
+          "hosts": [
+            "match.adsrvr.org",
+            "insight.adsrvr.org"
+          ],
+          "plugin": "6 pedidos; catálogo: sem classificação",
+          "blacklight": "5 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 6 entradas deste domínio, por exemplo https://match.adsrvr.org/track/cmf/generic (query preservada no HAR) (HTTP 302, entrada 200). O monitor observou a conexão, mas não a rotulou como rastreador: adsrvr.org não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[200], [207], [209], [213]; blacklight.har: log.entries[165], [209], [234], [235]; blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "adtrafficquality.google",
+          "hosts": [
+            "ep1.adtrafficquality.google",
+            "ep2.adtrafficquality.google"
+          ],
+          "plugin": "5 pedidos; catálogo: sem classificação",
+          "blacklight": "5 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 5 entradas deste domínio, por exemplo https://ep1.adtrafficquality.google/getconfig/sodar (query preservada no HAR) (HTTP 200, entrada 147). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (5 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[147], [150], [152], [162]; blacklight.har: log.entries[162], [166], [173], [206]"
+        },
+        {
+          "domain": "amazon-adsystem.com",
+          "hosts": [
+            "s.amazon-adsystem.com",
+            "aax-eu.amazon-adsystem.com",
+            "aax.amazon-adsystem.com"
+          ],
+          "plugin": "6 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 6 entradas deste domínio, por exemplo https://s.amazon-adsystem.com/dcm (query preservada no HAR) (HTTP 302, entrada 233). O monitor observou a conexão, mas não a rotulou como rastreador: amazon-adsystem.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[233], [236], [251], [256]; blacklight.har: log.entries[152], [199]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "bbc-reporting-api.app",
+          "hosts": [
+            "dotcom.bbc-reporting-api.app"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta *$ping,3p, aplicada a https://dotcom.bbc-reporting-api.app/report-endpoint (query preservada no HAR) (linha 1). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "ublock-logger.txt: linhas 1"
+        },
+        {
+          "domain": "bbc.co.uk",
+          "hosts": [
+            "www.bbc.co.uk",
+            "federated-id.live.api.bbc.co.uk"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "3 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://www.bbc.co.uk/userinfo (HTTP 200, entrada 62). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 3 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 38, 42, 88. Blacklight também contatou este domínio (2 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[62], [91], [98]; blacklight.har: log.entries[78], [89]; ublock.har: log.entries[62], [85], [88]; ublock-logger.txt: linhas 38, 42, 88"
+        },
+        {
+          "domain": "bbc.com",
+          "hosts": [
+            "www.bbc.com",
+            "gn-web-assets.api.bbc.com",
+            "a1.api.bbc.com"
+          ],
+          "plugin": "10 pedidos; catálogo: sem classificação",
+          "blacklight": "18 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "18 registros; 2 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 10 entradas deste domínio, por exemplo https://www.bbc.com/news (HTTP 200, entrada 0). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 2 linhas de bloqueio/redirecionamento, com regra concreta ||a1.api.bbc.com^, aplicada a https://a1.api.bbc.com/event (query preservada no HAR) (linha 12). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight também contatou este domínio (18 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[0], [3], [86], [87]; blacklight.har: log.entries[0], [4], [102], [103]; ublock.har: log.entries[0], [3], [89], [90]; ublock-logger.txt: linhas 12, 32"
+        },
+        {
+          "domain": "bbc.map.fastly.net",
+          "hosts": [
+            "bbc.map.fastly.net"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 1 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 83. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções. A linha 83 é um alias DNS resolvido pelo uBlock: https://bbc.map.fastly.net/, com aliasURL=https://www.bbc.co.uk/userinfo. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 83"
+        },
+        {
+          "domain": "bbci.co.uk",
+          "hosts": [
+            "static.bbci.co.uk",
+            "emp.bbci.co.uk",
+            "static.files.bbci.co.uk",
+            "ichef.bbci.co.uk",
+            "mybbc-analytics.files.bbci.co.uk",
+            "web-cdn.api.bbci.co.uk"
+          ],
+          "plugin": "70 pedidos; catálogo: sem classificação",
+          "blacklight": "80 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "72 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 70 entradas deste domínio, por exemplo https://static.bbci.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js (HTTP 200, entrada 1). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 72 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 39, 40, 46. Blacklight também contatou este domínio (80 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[1], [4], [5], [6]; blacklight.har: log.entries[1], [5], [6], [7]; ublock.har: log.entries[2], [4], [5], [6]; ublock-logger.txt: linhas 39, 40, 46, 59, 61"
+        },
+        {
+          "domain": "bbcverticals.com",
+          "hosts": [
+            "static-web-assets.gnl-common.bbcverticals.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "5 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 5 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 14, 17, 21. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções. A linha 14 é um alias DNS resolvido pelo uBlock: https://static-web-assets.gnl-common.bbcverticals.com/, com aliasURL=https://gn-web-assets.api.bbc.com/ngas/vendor/edr/edr.min.js. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 14, 17, 21, 23, 168"
+        },
+        {
+          "domain": "bidr.io",
+          "hosts": [
+            "match.prod.bidr.io"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://match.prod.bidr.io/cookie-sync/rp (query preservada no HAR) (HTTP 303, entrada 241). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[241], [260], [302]"
+        },
+        {
+          "domain": "bidswitch.net",
+          "hosts": [
+            "x.bidswitch.net"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://x.bidswitch.net/sync (query preservada no HAR) (HTTP 302, entrada 334). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[334], [335], [339]"
+        },
+        {
+          "domain": "casalemedia.com",
+          "hosts": [
+            "ssum.casalemedia.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://ssum.casalemedia.com/usermatchredir (query preservada no HAR) (HTTP 302, entrada 284). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[284], [287]"
+        },
+        {
+          "domain": "chartbeat.com",
+          "hosts": [
+            "static.chartbeat.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "1 pedidos; categorias: ddg_join_ads",
+          "ublock": "3 registros; 3 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://static.chartbeat.com/js/chartbeat.js (HTTP 200, entrada 75). O monitor observou a conexão, mas não a rotulou como rastreador: chartbeat.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. uBlock produziu 3 linhas de bloqueio/redirecionamento, com regra concreta chartbeat.js, aplicada a https://static.chartbeat.com/js/chartbeat.js (linha 52). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[75]; blacklight.har: log.entries[108]; ublock-logger.txt: linhas 52, 53, 54; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "chartbeat.net",
+          "hosts": [
+            "ping.chartbeat.net"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://ping.chartbeat.net/ping (query preservada no HAR) (HTTP 200, entrada 80). O monitor observou a conexão, mas não a rotulou como rastreador: chartbeat.net não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[80], [285]; blacklight.har: log.entries[123], [192]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "cloudflareinsights.com",
+          "hosts": [
+            "static.cloudflareinsights.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "1 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495 (HTTP 200, entrada 186). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (1 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[186]; blacklight.har: log.entries[249]"
+        },
+        {
+          "domain": "cootlogix.com",
+          "hosts": [
+            "sync.cootlogix.com"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://sync.cootlogix.com/api/user/image/55537adc33d1b40300987e8e (query preservada no HAR) (HTTP 302, entrada 203). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[203], [225], [269]"
+        },
+        {
+          "domain": "cxense.com",
+          "hosts": [
+            "cdn.cxense.com",
+            "id.cxense.com",
+            "comcluster.cxense.com",
+            "stats-collector.cxense.com"
+          ],
+          "plugin": "12 pedidos; catálogo: sem classificação",
+          "blacklight": "9 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "2 registros; 2 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 11 entradas deste domínio, por exemplo https://cdn.cxense.com/ari.js (HTTP 200, entrada 89). O monitor observou a conexão, mas não a rotulou como rastreador: cxense.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. uBlock produziu 2 linhas de bloqueio/redirecionamento, com regra concreta ||cxense.com^$3p, aplicada a https://cdn.cxense.com/cx.cce.js (linha 20). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[89], [92], [107], [115]; blacklight.har: log.entries[90], [94], [107], [125]; ublock.har: log.entries[83], [99]; ublock-logger.txt: linhas 20, 44; blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "deepintent.com",
+          "hosts": [
+            "match.deepintent.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://match.deepintent.com/usersync/141 (query preservada no HAR) (HTTP 200, entrada 309). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[309]"
+        },
+        {
+          "domain": "demdex.net",
+          "hosts": [
+            "dpm.demdex.net"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://dpm.demdex.net/ibs:dpid=19566&dpuuid=7BDFB66C-6EC9-4FAA-9970-EC23CE249692 (HTTP 302, entrada 312). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[312], [319]"
+        },
+        {
+          "domain": "dotmetrics.net",
+          "hosts": [
+            "uk-script.dotmetrics.net",
+            "rm-script.dotmetrics.net"
+          ],
+          "plugin": "6 pedidos; catálogo: sem classificação",
+          "blacklight": "9 pedidos; categorias: cookies",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 5 entradas deste domínio, por exemplo https://uk-script.dotmetrics.net/door.js (query preservada no HAR) (HTTP 200, entrada 79). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||dotmetrics.net^, aplicada a https://uk-script.dotmetrics.net/door.js (query preservada no HAR) (linha 48). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[79], [96], [97], [99]; blacklight.har: log.entries[92], [104], [105], [106]; ublock.har: log.entries[79]; ublock-logger.txt: linhas 48; blacklight-resultados.json: cards cookies"
+        },
+        {
+          "domain": "doubleclick.net",
+          "hosts": [
+            "securepubads.g.doubleclick.net",
+            "cm.g.doubleclick.net",
+            "googleads.g.doubleclick.net",
+            "ad.doubleclick.net"
+          ],
+          "plugin": "12 pedidos; catálogo: Google Ads",
+          "blacklight": "13 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "3 registros; 3 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 12 entradas deste domínio, por exemplo https://securepubads.g.doubleclick.net/tag/js/gpt.js (HTTP 200, entrada 108). O catálogo do monitor identifica Google Ads nos hosts securepubads.g.doubleclick.net, cm.g.doubleclick.net. uBlock produziu 3 linhas de bloqueio/redirecionamento, com regra concreta googletagservices_gpt.js:5, aplicada a https://securepubads.g.doubleclick.net/tag/js/gpt.js (linha 28). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[108], [114], [151], [165]; blacklight.har: log.entries[98], [117], [128], [129]; ublock-logger.txt: linhas 28, 29, 30; blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "doubleverify.com",
+          "hosts": [
+            "pub.doubleverify.com",
+            "cdn.doubleverify.com",
+            "tps.doubleverify.com",
+            "tpsc-ue1.doubleverify.com"
+          ],
+          "plugin": "11 pedidos; catálogo: sem classificação",
+          "blacklight": "7 pedidos; categorias: ddg_join_ads",
+          "ublock": "3 registros; 2 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 11 entradas deste domínio, por exemplo https://pub.doubleverify.com/dvtag/29028254/DV1298722/pub.js (HTTP 200, entrada 104). O monitor observou a conexão, mas não a rotulou como rastreador: doubleverify.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. uBlock produziu 2 linhas de bloqueio/redirecionamento, com regra concreta ||doubleverify.com^, aplicada a https://pub.doubleverify.com/dvtag/signals/bsc/pub.json (query preservada no HAR) (linha 6). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[104], [121], [122], [136]; blacklight.har: log.entries[101], [118], [119], [127]; ublock.har: log.entries[96], [109], [110]; ublock-logger.txt: linhas 6, 7; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "dscg.akamaiedge.net",
+          "hosts": [
+            "e3891.dscg.akamaiedge.net"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "69 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 69 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 58, 60, 62. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções. A linha 58 é um alias DNS resolvido pelo uBlock: https://e3891.dscg.akamaiedge.net/, com aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/favicon-16x16.png. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 58, 60, 62, 69, 71"
+        },
+        {
+          "domain": "dv.tech",
+          "hosts": [
+            "vtrk.dv.tech"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "3 registros; 3 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://vtrk.dv.tech/ (query preservada no HAR) (HTTP 204, entrada 141). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 3 linhas de bloqueio/redirecionamento, com regra concreta ||vtrk.dv.tech^, aplicada a https://vtrk.dv.tech/ (query preservada no HAR) (linha 2). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight também contatou este domínio (2 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[141]; blacklight.har: log.entries[135], [198]; ublock.har: log.entries[111]; ublock-logger.txt: linhas 2, 3, 5"
+        },
+        {
+          "domain": "edigitalsurvey.com",
+          "hosts": [
+            "edigitalsurvey.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://edigitalsurvey.com/l.php (query preservada no HAR) (HTTP 200, entrada 140). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||edigitalsurvey.com^$3p, aplicada a https://edigitalsurvey.com/l.php (query preservada no HAR) (linha 9). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight também contatou este domínio (2 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[140]; blacklight.har: log.entries[150], [200]; ublock.har: log.entries[108]; ublock-logger.txt: linhas 9"
+        },
+        {
+          "domain": "eu-1-id5-sync.com",
+          "hosts": [
+            "lbs.eu-1-id5-sync.com",
+            "lb.eu-1-id5-sync.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "4 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://lbs.eu-1-id5-sync.com/lbs/v1 (HTTP 200, entrada 145). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (4 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[145], [146]; blacklight.har: log.entries[169], [170], [211], [212]"
+        },
+        {
+          "domain": "google.com",
+          "hosts": [
+            "www.google.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "5 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://www.google.com/recaptcha/api2/aframe (HTTP 200, entrada 153). O monitor observou a conexão, mas não a rotulou como rastreador: google.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[153]; blacklight.har: log.entries[130], [131], [147], [157]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "googleadservices.com",
+          "hosts": [
+            "www.googleadservices.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[140]: https://www.googleadservices.com/pagead/conversion/417091839/ (query preservada no HAR) HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://www.googletagmanager.com/gtag/js (query preservada no HAR) (entrada 140, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[140], [142]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "googlesyndication.com",
+          "hosts": [
+            "pagead2.googlesyndication.com",
+            "3d5dfdb31b64a13720c4b19502a7cb57.safeframe.googlesyndication.com",
+            "tpc.googlesyndication.com",
+            "e1a11632b464a2aaeec77565a20a6336.safeframe.googlesyndication.com",
+            "3e1e0dd4ef1106237865de79915e3a76.safeframe.googlesyndication.com"
+          ],
+          "plugin": "11 pedidos; catálogo: Google Ads",
+          "blacklight": "14 pedidos; categorias: ddg_join_ads",
+          "ublock": "4 registros; 4 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 11 entradas deste domínio, por exemplo https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js (HTTP 200, entrada 100). O catálogo do monitor identifica Google Ads nos hosts pagead2.googlesyndication.com, 3d5dfdb31b64a13720c4b19502a7cb57.safeframe.googlesyndication.com, tpc.googlesyndication.com. uBlock produziu 4 linhas de bloqueio/redirecionamento, com regra concreta googlesyndication_adsbygoogle.js:5, aplicada a https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js (linha 33). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[100], [142], [148], [154]; blacklight.har: log.entries[111], [146], [158], [164]; ublock-logger.txt: linhas 33, 34, 35, 36; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "googletagmanager.com",
+          "hosts": [
+            "www.googletagmanager.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "1 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[115]: https://www.googletagmanager.com/gtag/js (query preservada no HAR) HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0gkzda.jd-xsx.js (entrada 115, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[115]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "id5-sync.com",
+          "hosts": [
+            "cdn.id5-sync.com",
+            "api.id5-sync.com",
+            "id5-sync.com"
+          ],
+          "plugin": "12 pedidos; catálogo: sem classificação",
+          "blacklight": "10 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 12 entradas deste domínio, por exemplo https://cdn.id5-sync.com/api/1.0/id5-api.js (HTTP 200, entrada 126). O monitor observou a conexão, mas não a rotulou como rastreador: id5-sync.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[126], [139], [144], [159]; blacklight.har: log.entries[154], [161], [168], [210]; blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "imrworldwide.com",
+          "hosts": [
+            "secure-us.imrworldwide.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "3 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[138]: https://secure-us.imrworldwide.com/cgi-bin/m (query preservada no HAR) HTTP 302. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://scripts.webcontentassessor.com/scripts/64ca3dfd44dd68a629e2e51a27e7ccd960974b5961e4ca2897139d14bf10be8b (entrada 138, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[138], [148], [195]; blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "insightexpressai.com",
+          "hosts": [],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas. O cartão Blacklight inclui este domínio, porém o HAR do próprio Blacklight não contém pedido correspondente. Há uma diferença de cobertura entre os artefatos da mesma ferramenta; o cartão comprova a classificação, mas este HAR não permite afirmar status, conclusão ou causa da ausência local.",
+          "evidence": "blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "intentiq.com",
+          "hosts": [
+            "sync.intentiq.com",
+            "syncv4.intentiq.com"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://sync.intentiq.com/profiles_engine/ProfilesEngineServlet (query preservada no HAR) (HTTP 302, entrada 274). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[274], [275], [279]"
+        },
+        {
+          "domain": "ipredictive.com",
+          "hosts": [
+            "sync.ipredictive.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://sync.ipredictive.com/d/sync/cookie/generic (query preservada no HAR) (HTTP 302, entrada 243). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[243]"
+        },
+        {
+          "domain": "kargo.com",
+          "hosts": [
+            "crb.kargo.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://crb.kargo.com/api/v1/dsync/PrebidServer (query preservada no HAR) (HTTP 302, entrada 341). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[341]"
+        },
+        {
+          "domain": "lijit.com",
+          "hosts": [
+            "ce.lijit.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://ce.lijit.com/merge (query preservada no HAR) (HTTP 302, entrada 250). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[250], [270]"
+        },
+        {
+          "domain": "linkedin.com",
+          "hosts": [
+            "px.ads.linkedin.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://px.ads.linkedin.com/setuid (query preservada no HAR) (HTTP 200, entrada 253). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[253]"
+        },
+        {
+          "domain": "live-federated-id-alb-1756651342.eu-west-1.elb.amazonaws.com",
+          "hosts": [
+            "live-federated-id-alb-1756651342.eu-west-1.elb.amazonaws.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "2 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 2 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 37, 41. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções. A linha 37 é um alias DNS resolvido pelo uBlock: https://live-federated-id-alb-1756651342.eu-west-1.elb.amazonaws.com/, com aliasURL=https://federated-id.live.api.bbc.co.uk/v2/encryptforallthirdparties. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 37, 41"
+        },
+        {
+          "domain": "merequartz.com",
+          "hosts": [
+            "merequartz.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (2 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[159]: https://merequartz.com/aadetect/px.gif (query preservada no HAR) HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido.",
+          "evidence": "blacklight.har: log.entries[159], [167]"
+        },
+        {
+          "domain": "mparticle.com",
+          "hosts": [
+            "jssdkcdns.mparticle.com",
+            "identity.mparticle.com",
+            "jssdks.mparticle.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "3 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (3 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[93]: https://jssdkcdns.mparticle.com/JS/v2/eu1-ef76cdfb8673b34095fff2156cdfa7d8/config (query preservada no HAR) HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0n-kjrsnwe2tb.js (entrada 93, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[93], [116], [141]"
+        },
+        {
+          "domain": "onaudience.com",
+          "hosts": [
+            "pixel.onaudience.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://pixel.onaudience.com/ (query preservada no HAR) (HTTP 302, entrada 314). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[314]"
+        },
+        {
+          "domain": "openx.net",
+          "hosts": [
+            "us-u.openx.net",
+            "rtb.openx.net"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://us-u.openx.net/w/1.0/cm (query preservada no HAR) (HTTP 302, entrada 199). O monitor observou a conexão, mas não a rotulou como rastreador: openx.net não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. O cartão Blacklight inclui este domínio, porém o HAR do próprio Blacklight não contém pedido correspondente. Há uma diferença de cobertura entre os artefatos da mesma ferramenta; o cartão comprova a classificação, mas este HAR não permite afirmar status, conclusão ou causa da ausência local.",
+          "evidence": "monitor.har: log.entries[199], [210], [298]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "optimizely.com",
+          "hosts": [
+            "cdn.optimizely.com",
+            "a4621041136.cdn.optimizely.com",
+            "logx.optimizely.com"
+          ],
+          "plugin": "4 pedidos; catálogo: sem classificação",
+          "blacklight": "7 pedidos; categorias: cookies",
+          "ublock": "2 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 4 entradas deste domínio, por exemplo https://cdn.optimizely.com/public/4621041136/s/bbcx_prod.js (HTTP 200, entrada 48). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||optimizely.com/public/, aplicada a https://cdn.optimizely.com/public/4621041136/s/bbcx_prod.js (linha 211). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[48], [69], [74], [94]; blacklight.har: log.entries[2], [71], [79], [83]; ublock.har: log.entries[48], [75]; ublock-logger.txt: linhas 211; blacklight-resultados.json: cards cookies"
+        },
+        {
+          "domain": "permutive.com",
+          "hosts": [
+            "cdn.permutive.com",
+            "api.permutive.com"
+          ],
+          "plugin": "14 pedidos; catálogo: sem classificação",
+          "blacklight": "7 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 14 entradas deste domínio, por exemplo https://cdn.permutive.com/e488cdb0-e7cb-4d91-9648-60d437d8e491-web.js (HTTP 200, entrada 103). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||permutive.com^$3p, aplicada a https://cdn.permutive.com/e488cdb0-e7cb-4d91-9648-60d437d8e491-web.js (linha 26). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight também contatou este domínio (7 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[103], [124], [127], [128]; blacklight.har: log.entries[100], [120], [156], [187]; ublock.har: log.entries[95]; ublock-logger.txt: linhas 26"
+        },
+        {
+          "domain": "piano.io",
+          "hosts": [
+            "c2-eu.piano.io",
+            "buy-eu.piano.io"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "3 pedidos; categorias: cookies",
+          "ublock": "2 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://c2-eu.piano.io/xbuilder/experience/execute (query preservada no HAR) (HTTP 200, entrada 93). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 2 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 4, 19. Blacklight associou o domínio às categorias cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[93], [149]; blacklight.har: log.entries[95], [149], [186]; ublock.har: log.entries[100], [112]; ublock-logger.txt: linhas 4, 19; blacklight-resultados.json: cards cookies"
+        },
+        {
+          "domain": "primis.tech",
+          "hosts": [
+            "live.primis.tech"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://live.primis.tech/live/liveCS.php (query preservada no HAR) (HTTP 301, entrada 264). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[264]"
+        },
+        {
+          "domain": "privacy-mgmt.com",
+          "hosts": [
+            "cdn.privacy-mgmt.com"
+          ],
+          "plugin": "8 pedidos; catálogo: sem classificação",
+          "blacklight": "10 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "8 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 8 entradas deste domínio, por exemplo https://cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js (HTTP 200, entrada 72). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta /v2/pv-data?, aplicada a https://cdn.privacy-mgmt.com/wrapper/v2/pv-data (query preservada no HAR) (linha 43). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight também contatou este domínio (10 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[72], [76], [77], [78]; blacklight.har: log.entries[80], [84], [85], [86]; ublock.har: log.entries[71], [76], [77], [78]; ublock-logger.txt: linhas 43"
+        },
+        {
+          "domain": "prmutv.co",
+          "hosts": [
+            "e488cdb0-e7cb-4d91-9648-60d437d8e491.prmutv.co"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "1 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://e488cdb0-e7cb-4d91-9648-60d437d8e491.prmutv.co/v2.0/pxid (query preservada no HAR) (HTTP 200, entrada 123). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (1 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[123]; blacklight.har: log.entries[143]"
+        },
+        {
+          "domain": "pubmatic.com",
+          "hosts": [
+            "image8.pubmatic.com",
+            "image2.pubmatic.com",
+            "image4.pubmatic.com",
+            "ads.pubmatic.com",
+            "ut.pubmatic.com",
+            "image6.pubmatic.com",
+            "simage2.pubmatic.com",
+            "simage4.pubmatic.com"
+          ],
+          "plugin": "17 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 17 entradas deste domínio, por exemplo https://image8.pubmatic.com/AdServer/ImgSync (query preservada no HAR) (HTTP 302, entrada 202). O monitor observou a conexão, mas não a rotulou como rastreador: pubmatic.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. O cartão Blacklight inclui este domínio, porém o HAR do próprio Blacklight não contém pedido correspondente. Há uma diferença de cobertura entre os artefatos da mesma ferramenta; o cartão comprova a classificação, mas este HAR não permite afirmar status, conclusão ou causa da ausência local.",
+          "evidence": "monitor.har: log.entries[202], [217], [228], [266]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "qvdt3feo.com",
+          "hosts": [
+            "qvdt3feo.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://qvdt3feo.com/sync (query preservada no HAR) (HTTP 302, entrada 291). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[291], [322]"
+        },
+        {
+          "domain": "rlcdn.com",
+          "hosts": [
+            "check.analytics.rlcdn.com",
+            "id.rlcdn.com",
+            "idsync.rlcdn.com"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "1 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://check.analytics.rlcdn.com/check/14523 (HTTP 200, entrada 177). O monitor observou a conexão, mas não a rotulou como rastreador: rlcdn.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[177], [237], [313]; blacklight.har: log.entries[242]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "rubiconproject.com",
+          "hosts": [
+            "secure-assets.rubiconproject.com",
+            "pixel.rubiconproject.com",
+            "eus.rubiconproject.com",
+            "token.rubiconproject.com"
+          ],
+          "plugin": "23 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 23 entradas deste domínio, por exemplo https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html (query preservada no HAR) (HTTP 301, entrada 198). O monitor observou a conexão, mas não a rotulou como rastreador: rubiconproject.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. O cartão Blacklight inclui este domínio, porém o HAR do próprio Blacklight não contém pedido correspondente. Há uma diferença de cobertura entre os artefatos da mesma ferramenta; o cartão comprova a classificação, mas este HAR não permite afirmar status, conclusão ou causa da ausência local.",
+          "evidence": "monitor.har: log.entries[198], [201], [208], [218]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "scorecardresearch.com",
+          "hosts": [
+            "sb.scorecardresearch.com"
+          ],
+          "plugin": "2 pedidos; catálogo: Comscore",
+          "blacklight": "4 pedidos; categorias: cookies",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://sb.scorecardresearch.com/internal-cs/default/beacon.js (HTTP 200, entrada 111). O catálogo do monitor identifica Comscore nos hosts sb.scorecardresearch.com. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||scorecardresearch.com^, aplicada a https://sb.scorecardresearch.com/internal-cs/default/beacon.js (linha 13). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[111], [117]; blacklight.har: log.entries[139], [151], [153], [201]; ublock.har: log.entries[106]; ublock-logger.txt: linhas 13; blacklight-resultados.json: cards cookies"
+        },
+        {
+          "domain": "secretivesponge.com",
+          "hosts": [
+            "secretivesponge.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "3 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (3 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[136]: https://secretivesponge.com/dist/qiwf1_xzb1hv6.module.js, HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi  (entrada 136, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[136], [232], [236]"
+        },
+        {
+          "domain": "semasio.net",
+          "hosts": [
+            "uipglob.semasio.net"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: ddg_join_ads, cookies",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://uipglob.semasio.net/id5/1/get (query preservada no HAR) (HTTP 302, entrada 226). O monitor observou a conexão, mas não a rotulou como rastreador: semasio.net não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads, cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[226], [246]; blacklight.har: log.entries[241], [245]; blacklight-resultados.json: cards ddg_join_ads, cookies"
+        },
+        {
+          "domain": "simpli.fi",
+          "hosts": [
+            "um.simpli.fi"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://um.simpli.fi/pubmatic (query preservada no HAR) (HTTP 302, entrada 304). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[304]"
+        },
+        {
+          "domain": "sitescout.com",
+          "hosts": [
+            "pixel-sync.sitescout.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://pixel-sync.sitescout.com/dmp/pixelSync (query preservada no HAR) (HTTP 302, entrada 205). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[205], [212]"
+        },
+        {
+          "domain": "speedcurve.com",
+          "hosts": [
+            "cdn.speedcurve.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "1 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://cdn.speedcurve.com/js/lux.js (query preservada no HAR) (HTTP 200, entrada 112). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||speedcurve.com^$3p, aplicada a https://cdn.speedcurve.com/js/lux.js (query preservada no HAR) (linha 16). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight também contatou este domínio (1 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[112]; blacklight.har: log.entries[240]; ublock.har: log.entries[104]; ublock-logger.txt: linhas 16"
+        },
+        {
+          "domain": "sportradarserving.com",
+          "hosts": [
+            "a.sportradarserving.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://a.sportradarserving.com/sync (query preservada no HAR) (HTTP 302, entrada 336). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[336], [338]"
+        },
+        {
+          "domain": "springserve.com",
+          "hosts": [
+            "sync.springserve.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://sync.springserve.com/usersync (query preservada no HAR) (HTTP 200, entrada 259). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[259]"
+        },
+        {
+          "domain": "stackadapt.com",
+          "hosts": [
+            "sync.srv.stackadapt.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://sync.srv.stackadapt.com/sync (query preservada no HAR) (HTTP 302, entrada 290). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O domínio não consta no HAR Blacklight desta amostra. A diferença de tráfego está comprovada, mas a causa individual não pode ser afirmada apenas com ausência; condições e horários diferem, conforme os metadados das duas execuções.",
+          "evidence": "monitor.har: log.entries[290], [310]"
+        },
+        {
+          "domain": "tapad.com",
+          "hosts": [
+            "pixel.tapad.com"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://pixel.tapad.com/idsync/ex/push (query preservada no HAR) (HTTP 302, entrada 192). O monitor observou a conexão, mas não a rotulou como rastreador: tapad.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. O cartão Blacklight inclui este domínio, porém o HAR do próprio Blacklight não contém pedido correspondente. Há uma diferença de cobertura entre os artefatos da mesma ferramenta; o cartão comprova a classificação, mas este HAR não permite afirmar status, conclusão ou causa da ausência local.",
+          "evidence": "monitor.har: log.entries[192], [194], [221]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "the-ozone-project.com",
+          "hosts": [
+            "prebid.the-ozone-project.com",
+            "elb.the-ozone-project.com"
+          ],
+          "plugin": "20 pedidos; catálogo: sem classificação",
+          "blacklight": "9 pedidos; categorias: cookies",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 19 entradas deste domínio, por exemplo https://prebid.the-ozone-project.com/hw2/OZONEBBC4784/1500000107/current/ozpb.min.js (HTTP 200, entrada 102). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||the-ozone-project.com^, aplicada a https://prebid.the-ozone-project.com/hw2/OZONEBBC4784/1500000107/current/ozpb.min.js (linha 27). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[102], [118], [119], [120]; blacklight.har: log.entries[99], [112], [113], [114]; ublock.har: log.entries[94]; ublock-logger.txt: linhas 27; blacklight-resultados.json: cards cookies"
+        },
+        {
+          "domain": "tinypass.com",
+          "hosts": [
+            "cdn.tinypass.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "1 pedidos; categorias: cookies",
+          "ublock": "2 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://cdn.tinypass.com/api/tinypass.min.js (HTTP 200, entrada 2). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 2 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 193, 210. Blacklight associou o domínio às categorias cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[2]; blacklight.har: log.entries[3]; ublock.har: log.entries[1]; ublock-logger.txt: linhas 193, 210; blacklight-resultados.json: cards cookies"
+        },
+        {
+          "domain": "undertone.com",
+          "hosts": [
+            "cdn.undertone.com",
+            "evt.undertone.com",
+            "usr.undertone.com"
+          ],
+          "plugin": "10 pedidos; catálogo: sem classificação",
+          "blacklight": "1 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 10 entradas deste domínio, por exemplo https://cdn.undertone.com/js/usersync.html (query preservada no HAR) (HTTP 200, entrada 193). O monitor observou a conexão, mas não a rotulou como rastreador: undertone.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[193], [206], [214], [215]; blacklight.har: log.entries[258]; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "webcontentassessor.com",
+          "hosts": [
+            "scripts.webcontentassessor.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://scripts.webcontentassessor.com/scripts/64ca3dfd44dd68a629e2e51a27e7ccd960974b5961e4ca2897139d14bf10be8b (HTTP 200, entrada 101). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||webcontentassessor.com^, aplicada a https://scripts.webcontentassessor.com/scripts/64ca3dfd44dd68a629e2e51a27e7ccd960974b5961e4ca2897139d14bf10be8b (linha 31). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight também contatou este domínio (2 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[101], [155]; blacklight.har: log.entries[97], [213]; ublock.har: log.entries[93]; ublock-logger.txt: linhas 31"
+        },
+        {
+          "domain": "yahoo.com",
+          "hosts": [
+            "ups.analytics.yahoo.com"
+          ],
+          "plugin": "6 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: ddg_join_ads",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 6 entradas deste domínio, por exemplo https://ups.analytics.yahoo.com/ups/58545/occ (HTTP 302, entrada 204). O monitor observou a conexão, mas não a rotulou como rastreador: yahoo.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas. O cartão Blacklight inclui este domínio, porém o HAR do próprio Blacklight não contém pedido correspondente. Há uma diferença de cobertura entre os artefatos da mesma ferramenta; o cartão comprova a classificação, mas este HAR não permite afirmar status, conclusão ou causa da ausência local.",
+          "evidence": "monitor.har: log.entries[204], [211], [255], [306]; blacklight-resultados.json: cards ddg_join_ads"
+        }
+      ],
+      "name": "BBC News",
+      "pageScreenshot": "evidencias/sites/site-1/pagina.png",
+      "blacklightScreenshot": "evidencias/sites/site-1/blacklight.png",
+      "blacklightPage": "evidencias/sites/site-1/blacklight-pagina-inspecionada.jpg",
+      "ublockScreenshot": "evidencias/sites/site-1/ublock-logger.png",
+      "penalties": [
+        {
+          "id": "thirdParty",
+          "label": "Conexões externas respondidas",
+          "penalty": 15,
+          "rule": "3 por domínio; teto 15"
+        },
+        {
+          "id": "trackers",
+          "label": "Domínios do catálogo demonstrativo respondidos",
+          "penalty": 20,
+          "rule": "5 por domínio; teto 20"
+        },
+        {
+          "id": "cookies",
+          "label": "Cookies terceiros presentes",
+          "penalty": 20,
+          "rule": "2 sessão / 4 persistente; teto 20"
+        },
+        {
+          "id": "storage",
+          "label": "Armazenamento terceiro acessado",
+          "penalty": 10,
+          "rule": "2 por origem e API; teto 10"
+        },
+        {
+          "id": "canvas",
+          "label": "Leitura de canvas",
+          "penalty": 0,
+          "rule": "10 se observada; pode ser legítima"
+        },
+        {
+          "id": "sync",
+          "label": "Correlação de identificador / bounce",
+          "penalty": 10,
+          "rule": "10 correlação + 5 bounce; teto 15"
+        },
+        {
+          "id": "hook",
+          "label": "Indicadores de hook ou canal persistente",
+          "penalty": 0,
+          "rule": "5 comunicação + 5 alteração; teto 10"
+        }
+      ],
+      "summary": {
+        "requests": 349,
+        "harEntries": 343,
+        "thirdPartyHosts": 103,
+        "cookies": 124,
+        "thirdPartyCookies": 94,
+        "cookieAttempts": 335,
+        "blacklightTrackers": 27,
+        "blacklightCookies": 23,
+        "ublockBlockedLogRows": 29,
+        "ublockBlockedHosts": 17
+      },
+      "cookieBreakdown": [
+        {
+          "party": "Primeira parte",
+          "duration": "Sessão",
+          "present": 3,
+          "httpAttempts": 0
+        },
+        {
+          "party": "Primeira parte",
+          "duration": "Persistente",
+          "present": 27,
+          "httpAttempts": 0
+        },
+        {
+          "party": "Terceira parte",
+          "duration": "Sessão",
+          "present": 0,
+          "httpAttempts": 0
+        },
+        {
+          "party": "Terceira parte",
+          "duration": "Persistente",
+          "present": 94,
+          "httpAttempts": 335
+        }
+      ],
+      "conditions": {
+        "monitor": {
+          "site": "BBC News",
+          "requestedUrl": "https://www.bbc.com/news",
+          "startedAt": "2026-09-29T00:53:47.815Z",
+          "condition": "M: somente Privacy Monitor; perfil Firefox novo por site",
+          "consent": "Sem interação com avisos de cookies; nenhum login, formulário ou compra.",
+          "observationSeconds": 30,
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "harSource": "Firefox DevTools NetMonitorAPI.getHar → HarExporter",
+          "warnings": [],
+          "preferences": {
+            "acceptLanguage": "und",
+            "cookieBehavior": 5,
+            "etp": "custom",
+            "timezone": "America/Sao_Paulo",
+            "trackingProtection": false
+          },
+          "finalUrl": "https://www.bbc.com/news",
+          "title": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+          "rawHarDigest": "sha256:3bf16706b6daced4dac7",
+          "harEntries": 343,
+          "score": 25,
+          "requests": 349,
+          "browserVersion": "156.0.1",
+          "completedAt": "2026-09-29T00:54:23.119Z"
+        },
+        "ublock": {
+          "site": "https://www.bbc.com/news",
+          "startedAt": "2026-09-29T00:54:03.490Z",
+          "condition": "U: uBlock Origin sozinho em perfil novo; sem Privacy Monitor",
+          "ublock": {
+            "source": "Mozilla Add-ons",
+            "url": "https://addons.mozilla.org/firefox/downloads/file/5034826/ublock_origin-1.75.0.xpi",
+            "version": "1.75.0",
+            "hash": "sha256:5b74415860456370644bd80f16125e865b0e6c356bb5dfcfb84069967eaa5287",
+            "downloadedAt": "2026-09-29T00:38:18.071Z"
+          },
+          "consent": "Sem interação com cookies, sem login",
+          "observationSeconds": 30,
+          "settings": {
+            "selectedFilterLists": [
+              "user-filters",
+              "ublock-filters",
+              "ublock-badware",
+              "ublock-privacy",
+              "ublock-unbreak",
+              "ublock-quick-fixes",
+              "easylist",
+              "easyprivacy",
+              "urlhaus-1",
+              "plowe-0"
+            ],
+            "version": "1.75.0"
+          },
+          "finalUrl": "https://www.bbc.com/news",
+          "title": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+          "harEntries": 113,
+          "logLines": 247,
+          "blockedRequests": 29,
+          "blockedDomains": 17,
+          "completedAt": "2026-09-29T00:54:56.019Z"
+        },
+        "blacklight": {
+          "startedAt": "2026-09-29T00:52:15.727Z",
+          "endedAt": "2026-09-29T00:52:38.609Z",
+          "pageTitle": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+          "browsingHistory": [
+            "https://www.bbc.com/news"
+          ],
+          "location": "us-oh"
+        }
+      }
+    },
+    {
+      "id": "site-2",
+      "url": "https://www.magazineluiza.com.br/",
+      "har": "evidencias/sites/site-2/monitor.har",
+      "pluginJson": "evidencias/sites/site-2/monitor.json",
+      "screenshot": "evidencias/sites/site-2/monitor.png",
+      "blacklightEvidence": "evidencias/sites/site-2/blacklight-resultados.json",
+      "ublockEvidence": "evidencias/sites/site-2/ublock-logger.txt",
+      "score": 13,
+      "scoreDiscussion": "Magazine Luiza: score 13, penalidades 15 (terceiros) +20 (catálogo) +20 (cookies) +2 (storage) +10 (canvas) +10 (correlação) +10 (hook/polling). Blacklight apontou um rastreador publicitário, zero cookies terceiros e Hotjar como session replay. Essa aparente avaliação mais favorável não mede a mesma página: seu pageTitle é Magazine Luiza | Não é possível acessar a página, e o histórico inclui atendimento.magazineluiza.com.br/hc/pt-br/. O Firefox recebeu a loja normal, comprovada por pagina.png e ambiente.json. O HAR Blacklight tem 59 entradas contra 279 do monitor; sua imagem oficial da página confirma a diferença de conteúdo. As duas leituras toDataURL e alterações de window.fetch/window.open no monitor são indícios, sem prova de fingerprinting intencional ou sequestro. A repetição de cid entre analytics.google.com e stats.g.doubleclick.net está no HAR; a classificação não prova cookie sync de publicidade entre empresas independentes. A comparação fica condicionada ao acesso diferente do serviço, e não autoriza classificar a loja como segura.",
+      "reconciliation": [
+        {
+          "domain": "a.akamaiedge.net",
+          "hosts": [
+            "e326558.a.akamaiedge.net"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "33 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 33 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 2, 4, 7. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox. A linha 2 é um alias DNS resolvido pelo uBlock: https://e326558.a.akamaiedge.net/, com aliasURL=https://federation.magazineluiza.com.br/graphql (query preservada no HAR) O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 2, 4, 7, 12, 35"
+        },
+        {
+          "domain": "adnxs.com",
+          "hosts": [
+            "ib.adnxs.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://ib.adnxs.com/setuid (query preservada no HAR) (HTTP 307, entrada 232). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[232], [239]"
+        },
+        {
+          "domain": "ads-twitter.com",
+          "hosts": [
+            "static.ads-twitter.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "2 registros; 2 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://static.ads-twitter.com/uwt.js (HTTP 200, entrada 49). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 2 linhas de bloqueio/redirecionamento, com regra concreta ||ads-twitter.com^, aplicada a https://static.ads-twitter.com/uwt.js (linha 276). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[49]; ublock.har: log.entries[34], [48]; ublock-logger.txt: linhas 276, 306"
+        },
+        {
+          "domain": "aedf1f689f9b4287e.awsglobalaccelerator.com",
+          "hosts": [
+            "aedf1f689f9b4287e.awsglobalaccelerator.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "4 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 4 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 95, 103, 105. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox. A linha 95 é um alias DNS resolvido pelo uBlock: https://aedf1f689f9b4287e.awsglobalaccelerator.com/, com aliasURL=https://app.securiti.ai/privaci/v1/consent/cookie/singleupload. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 95, 103, 105, 140"
+        },
+        {
+          "domain": "azioncdn.net",
+          "hosts": [
+            "3394488p.ha.azioncdn.net",
+            "1794488p.ha.azioncdn.net",
+            "424488p.ha.azioncdn.net"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "22 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 22 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 107, 113, 115. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox. A linha 107 é um alias DNS resolvido pelo uBlock: https://3394488p.ha.azioncdn.net/, com aliasURL=https://site-content.magazineluiza.com.br/static/img/default/favicon-cc4cf323.png. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 107, 113, 115, 117, 119"
+        },
+        {
+          "domain": "azionedge.net",
+          "hosts": [
+            "i7y6ykysln.map.azionedge.net",
+            "crvkgf2pqk.map.azionedge.net",
+            "pdkndo7mjx.map.azionedge.net"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "17 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 17 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 146, 148, 150. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox. A linha 146 é um alias DNS resolvido pelo uBlock: https://i7y6ykysln.map.azionedge.net/, com aliasURL=https://assets.mlcdn.com.br/banner/campanhas/hotlink-utilidades.png. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 146, 148, 150, 152, 154"
+        },
+        {
+          "domain": "bing.com",
+          "hosts": [
+            "bat.bing.com"
+          ],
+          "plugin": "7 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 7 entradas deste domínio, por exemplo https://bat.bing.com/bat.js (HTTP 200, entrada 63). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||bat.bing.com^, aplicada a https://bat.bing.com/bat.js (linha 271). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[63], [155], [168], [169]; ublock.har: log.entries[54]; ublock-logger.txt: linhas 271"
+        },
+        {
+          "domain": "btg360.com.br",
+          "hosts": [
+            "c.btg360.com.br"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||btg360.com.br^$3p, aplicada a https://c.btg360.com.br/__client.gif (query preservada no HAR) (linha 77). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "ublock.har: log.entries[190]; ublock-logger.txt: linhas 77"
+        },
+        {
+          "domain": "cloudflare.com",
+          "hosts": [
+            "cdnjs.cloudflare.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "3 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (3 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[11]: https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css, HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://atendimento.magazineluiza.com.br/hc/pt-br/ (entrada 11, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[11], [12], [20]"
+        },
+        {
+          "domain": "cloudflarestream.com",
+          "hosts": [
+            "customer-axfyyvfgsfxowp1c.cloudflarestream.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "6 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 6 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 110, 125, 126. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "ublock.har: log.entries[95], [105], [128], [129]; ublock-logger.txt: linhas 110, 125, 126, 158, 194"
+        },
+        {
+          "domain": "creativecdn.com",
+          "hosts": [
+            "tags.creativecdn.com",
+            "us.creativecdn.com",
+            "ash46.creativecdn.com"
+          ],
+          "plugin": "6 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 6 entradas deste domínio, por exemplo https://tags.creativecdn.com/msWukR4UlwKQouZSY8IT.js (HTTP 200, entrada 175). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||creativecdn.com^, aplicada a https://tags.creativecdn.com/msWukR4UlwKQouZSY8IT.js (linha 251). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[175], [205], [210], [224]; ublock.har: log.entries[65]; ublock-logger.txt: linhas 251"
+        },
+        {
+          "domain": "criteo.net",
+          "hosts": [
+            "client-side-metrics.us5.us.criteo.net"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||criteo.net^, aplicada a https://client-side-metrics.us5.us.criteo.net/iex (query preservada no HAR) (linha 75). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "ublock.har: log.entries[191]; ublock-logger.txt: linhas 75"
+        },
+        {
+          "domain": "d31wfa8az5rt1f.cloudfront.net",
+          "hosts": [
+            "d31wfa8az5rt1f.cloudfront.net"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "6 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 6 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 142, 217, 221. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox. A linha 142 é um alias DNS resolvido pelo uBlock: https://d31wfa8az5rt1f.cloudfront.net/, com aliasURL=https://cdn-prod.securiti.ai/consent/cookie_banner/7923f79c-dd89-44df-bbc4-cc5a1f904fbf/0b729802-6884-47fb-b13a-da5dc5874f35/en.json. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 142, 217, 221, 254, 264"
+        },
+        {
+          "domain": "datadoghq-browser-agent.com",
+          "hosts": [
+            "www.datadoghq-browser-agent.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://www.datadoghq-browser-agent.com/us5/v7/datadog-rum.js (HTTP 200, entrada 18). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||datadoghq-browser-agent.com^$3p, aplicada a https://www.datadoghq-browser-agent.com/us5/v7/datadog-rum.js (linha 339). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[18]; ublock.har: log.entries[18]; ublock-logger.txt: linhas 339"
+        },
+        {
+          "domain": "doubleclick.net",
+          "hosts": [
+            "ad.doubleclick.net",
+            "stats.g.doubleclick.net",
+            "googleads.g.doubleclick.net",
+            "6590300.fls.doubleclick.net"
+          ],
+          "plugin": "11 pedidos; catálogo: Google Ads",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "3 registros; 3 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 11 entradas deste domínio, por exemplo https://ad.doubleclick.net/ccm/s/collect (query preservada no HAR) (HTTP 204, entrada 51). O catálogo do monitor identifica Google Ads nos hosts ad.doubleclick.net, stats.g.doubleclick.net, googleads.g.doubleclick.net, 6590300.fls.doubleclick.net. uBlock produziu 3 linhas de bloqueio/redirecionamento, com regra concreta noop.txt, aplicada a https://ad.doubleclick.net/ccm/s/collect (query preservada no HAR) (linha 302). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[51], [71], [77], [86]; ublock-logger.txt: linhas 302, 303, 304"
+        },
+        {
+          "domain": "dsca.akamaiedge.net",
+          "hosts": [
+            "e326558.dsca.akamaiedge.net"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "27 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 27 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 223, 225, 244. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox. A linha 223 é um alias DNS resolvido pelo uBlock: https://e326558.dsca.akamaiedge.net/, com aliasURL=https://m.magazineluiza.com.br/mixer-web/static/v1.208.2/_next/static/chunks/6033.718869598469d016.js. O monitor observa o URL original e não resolve CNAME; essa é uma diferença concreta de representação/cobertura, não necessariamente uma conexão adicional.",
+          "evidence": "ublock-logger.txt: linhas 223, 225, 244, 283, 285"
+        },
+        {
+          "domain": "facebook.com",
+          "hosts": [
+            "www.facebook.com"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://www.facebook.com/tr/ (HTTP 200, entrada 167). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[167]"
+        },
+        {
+          "domain": "facebook.net",
+          "hosts": [
+            "connect.facebook.net"
+          ],
+          "plugin": "2 pedidos; catálogo: Meta SDK",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://connect.facebook.net/en_US/fbevents.js (HTTP 200, entrada 56). O catálogo do monitor identifica Meta SDK nos hosts connect.facebook.net. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta /fbevents.js, aplicada a https://connect.facebook.net/en_US/fbevents.js (linha 278). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[56], [151]; ublock.har: log.entries[53]; ublock-logger.txt: linhas 278"
+        },
+        {
+          "domain": "go-mpulse.net",
+          "hosts": [
+            "s.go-mpulse.net",
+            "c.go-mpulse.net"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "2 registros; 2 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://s.go-mpulse.net/boomerang/7NWWZ-QTX5S-W4TRK-CT6RN-DNXLL (HTTP 200, entrada 19). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 2 linhas de bloqueio/redirecionamento, com regra concreta ||go-mpulse.net^, aplicada a https://s.go-mpulse.net/boomerang/7NWWZ-QTX5S-W4TRK-CT6RN-DNXLL (linha 334). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[19], [67]; ublock.har: log.entries[19], [21]; ublock-logger.txt: linhas 334, 337"
+        },
+        {
+          "domain": "google-analytics.com",
+          "hosts": [
+            "www.google-analytics.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (2 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[46]: https://www.google-analytics.com/g/collect (query preservada no HAR) HTTP 204. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://www.googletagmanager.com/gtag/js (query preservada no HAR) (entrada 46, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[46], [58]"
+        },
+        {
+          "domain": "google.com",
+          "hosts": [
+            "www.google.com",
+            "analytics.google.com",
+            "adservice.google.com"
+          ],
+          "plugin": "47 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "2 registros; 2 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 47 entradas deste domínio, por exemplo https://www.google.com/ccm/collect (query preservada no HAR) (HTTP 200, entrada 50). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 2 linhas de bloqueio/redirecionamento, com regra concreta ||google.com/ccm/, aplicada a https://www.google.com/ccm/collect (query preservada no HAR) (linha 270). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[50], [69], [70], [76]; ublock.har: log.entries[35], [55]; ublock-logger.txt: linhas 270, 305"
+        },
+        {
+          "domain": "google.com.br",
+          "hosts": [
+            "www.google.com.br"
+          ],
+          "plugin": "4 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 4 entradas deste domínio, por exemplo https://www.google.com.br/ads/ga-audiences (query preservada no HAR) (HTTP 200, entrada 72). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[72], [78], [161], [163]"
+        },
+        {
+          "domain": "googletagmanager.com",
+          "hosts": [
+            "www.googletagmanager.com"
+          ],
+          "plugin": "6 pedidos; catálogo: sem classificação",
+          "blacklight": "2 pedidos; categorias: ddg_join_ads",
+          "ublock": "9 registros; 7 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 6 entradas deste domínio, por exemplo https://www.googletagmanager.com/gtm.js (query preservada no HAR) (HTTP 200, entrada 20). O monitor observou a conexão, mas não a rotulou como rastreador: googletagmanager.com não está no catálogo demonstrativo de src/core.js. Blacklight a classifica por Tracker Radar; trata-se de diferença de classificação, não ausência de captura. uBlock produziu 7 linhas de bloqueio/redirecionamento, com regra concreta ||googletagmanager.com^, aplicada a https://www.googletagmanager.com/td (query preservada no HAR) (linha 301). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias ddg_join_ads; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[20], [47], [48], [73]; blacklight.har: log.entries[10], [33]; ublock.har: log.entries[20], [33], [36]; ublock-logger.txt: linhas 301, 308, 309, 310, 311; blacklight-resultados.json: cards ddg_join_ads"
+        },
+        {
+          "domain": "hotjar.com",
+          "hosts": [
+            "static.hotjar.com",
+            "script.hotjar.com"
+          ],
+          "plugin": "2 pedidos; catálogo: Hotjar",
+          "blacklight": "1 pedidos; categorias: session_recorders",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://static.hotjar.com/c/hotjar-4936838.js (query preservada no HAR) (HTTP 200, entrada 66). O catálogo do monitor identifica Hotjar nos hosts static.hotjar.com, script.hotjar.com. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||hotjar.com^, aplicada a https://static.hotjar.com/c/hotjar-4936838.js (query preservada no HAR) (linha 266). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. Blacklight associou o domínio às categorias session_recorders; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[66], [144]; blacklight.har: log.entries[38]; ublock.har: log.entries[57]; ublock-logger.txt: linhas 266; blacklight-resultados.json: cards session_recorders"
+        },
+        {
+          "domain": "hotjar.io",
+          "hosts": [
+            "vc.hotjar.io"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://vc.hotjar.io/sessions/4936838 (query preservada no HAR) (HTTP 204, entrada 165). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[165]"
+        },
+        {
+          "domain": "jquery.com",
+          "hosts": [
+            "code.jquery.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "3 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (3 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[14]: https://code.jquery.com/jquery-1.11.0.min.js, HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://atendimento.magazineluiza.com.br/hc/pt-br/ (entrada 14, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[14], [15], [19]"
+        },
+        {
+          "domain": "magazineluiza.com.br",
+          "hosts": [
+            "www.magazineluiza.com.br",
+            "m.magazineluiza.com.br",
+            "federation.magazineluiza.com.br",
+            "site-content.magazineluiza.com.br",
+            "roger.magazineluiza.com.br",
+            "atendimento.magazineluiza.com.br",
+            "minhaconta.magazineluiza.com.br"
+          ],
+          "plugin": "105 pedidos; catálogo: sem classificação",
+          "blacklight": "31 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "146 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 102 entradas deste domínio, por exemplo https://www.magazineluiza.com.br/ (HTTP 200, entrada 0). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 146 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 1, 3, 5. Blacklight também contatou este domínio (31 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[0], [1], [2], [3]; blacklight.har: log.entries[0], [1], [2], [7]; ublock.har: log.entries[0], [1], [2], [3]; ublock-logger.txt: linhas 1, 3, 5, 8, 11"
+        },
+        {
+          "domain": "mlcdn.com.br",
+          "hosts": [
+            "wx.mlcdn.com.br",
+            "a-static.mlcdn.com.br",
+            "assets.mlcdn.com.br",
+            "s.mlcdn.com.br",
+            "tom.mlcdn.com.br"
+          ],
+          "plugin": "29 pedidos; catálogo: sem classificação",
+          "blacklight": "11 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "37 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 29 entradas deste domínio, por exemplo https://wx.mlcdn.com.br/site/shared/services/cliente_ouro.png (HTTP 200, entrada 21). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 37 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 114, 116, 118. Blacklight também contatou este domínio (11 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[21], [22], [23], [24]; blacklight.har: log.entries[3], [4], [5], [6]; ublock.har: log.entries[49], [50], [51], [52]; ublock-logger.txt: linhas 114, 116, 118, 120, 122"
+        },
+        {
+          "domain": "on.aws",
+          "hosts": [
+            "od-18c216b54e2045bdbb2d2f70bc4834b0.ecs.us-east-2.on.aws"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://od-18c216b54e2045bdbb2d2f70bc4834b0.ecs.us-east-2.on.aws/events (query preservada no HAR) (HTTP 200, entrada 166). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[166]"
+        },
+        {
+          "domain": "pinimg.com",
+          "hosts": [
+            "s.pinimg.com"
+          ],
+          "plugin": "2 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 2 entradas deste domínio, por exemplo https://s.pinimg.com/ct/core.js (HTTP 200, entrada 57). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||s.pinimg.com/ct/core.js, aplicada a https://s.pinimg.com/ct/core.js (linha 277). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[57], [68]; ublock.har: log.entries[47]; ublock-logger.txt: linhas 277"
+        },
+        {
+          "domain": "pinterest.com",
+          "hosts": [
+            "ct.pinterest.com"
+          ],
+          "plugin": "3 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 3 entradas deste domínio, por exemplo https://ct.pinterest.com/user/ (query preservada no HAR) (HTTP 200, entrada 80). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[80], [82], [173]"
+        },
+        {
+          "domain": "questionpro.com",
+          "hosts": [
+            "intercept-widget.questionpro.com",
+            "intercept-api.questionpro.com"
+          ],
+          "plugin": "7 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "1 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 7 entradas deste domínio, por exemplo https://intercept-widget.questionpro.com/static/js/loader.js (HTTP 200, entrada 178). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta ||questionpro.com^$3p,from=~questionpro.com.au|~questionpro.eu, aplicada a https://intercept-widget.questionpro.com/static/js/loader.js (linha 247). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[178], [180], [181], [184]; ublock.har: log.entries[67]; ublock-logger.txt: linhas 247"
+        },
+        {
+          "domain": "securiti.ai",
+          "hosts": [
+            "cdn-prod.securiti.ai",
+            "app.securiti.ai"
+          ],
+          "plugin": "10 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "10 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 10 entradas deste domínio, por exemplo https://cdn-prod.securiti.ai/consent/cookie-consent.css (HTTP 200, entrada 64). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 10 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 96, 104, 106. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[64], [65], [79], [103]; ublock.har: log.entries[58], [59], [63], [77]; ublock-logger.txt: linhas 96, 104, 106, 141, 143"
+        },
+        {
+          "domain": "spotify.com",
+          "hosts": [
+            "pixels.spotify.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "6 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O logger uBlock tem 6 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 26, 29, 31. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "ublock.har: log.entries[359], [432], [447]; ublock-logger.txt: linhas 26, 29, 31, 46, 48"
+        },
+        {
+          "domain": "t.co",
+          "hosts": [
+            "t.co"
+          ],
+          "plugin": "5 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 5 entradas deste domínio, por exemplo https://t.co/1/i/adsctp (HTTP 200, entrada 152). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[152], [156], [158], [259]"
+        },
+        {
+          "domain": "tiktok.com",
+          "hosts": [
+            "analytics.tiktok.com"
+          ],
+          "plugin": "9 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "6 registros; 6 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 9 entradas deste domínio, por exemplo https://analytics.tiktok.com/i18n/pixel/events.js (query preservada no HAR) (HTTP 200, entrada 244). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 6 linhas de bloqueio/redirecionamento, com regra concreta ||analytics.tiktok.com^, aplicada a https://analytics.tiktok.com/api/v2/pixel (linha 10). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[244], [245], [246], [248]; ublock.har: log.entries[344], [345], [348], [371]; ublock-logger.txt: linhas 10, 23, 24, 44, 56"
+        },
+        {
+          "domain": "tiktokw.us",
+          "hosts": [
+            "analytics-ipv6.tiktokw.us"
+          ],
+          "plugin": "1 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 1 entradas deste domínio, por exemplo https://analytics-ipv6.tiktokw.us/ipv6/enrich_ipv6 (HTTP 200, entrada 247). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[247]"
+        },
+        {
+          "domain": "topsortassets.com",
+          "hosts": [
+            "topsortassets.com"
+          ],
+          "plugin": "6 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "15 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 6 entradas deste domínio, por exemplo https://topsortassets.com/asset_01m3cpjg50e9pbwaw2ybbypwjy.png (HTTP 200, entrada 84). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 15 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 6, 9, 14. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[84], [189], [255], [264]; ublock.har: log.entries[71], [72], [73], [74]; ublock-logger.txt: linhas 6, 9, 14, 38, 70"
+        },
+        {
+          "domain": "twitter.com",
+          "hosts": [
+            "analytics.twitter.com"
+          ],
+          "plugin": "7 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 5 entradas deste domínio, por exemplo https://analytics.twitter.com/1/i/adsctp (HTTP 200, entrada 153). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[153], [157], [159], [260]"
+        },
+        {
+          "domain": "visualwebsiteoptimizer.com",
+          "hosts": [
+            "dev.visualwebsiteoptimizer.com"
+          ],
+          "plugin": "6 pedidos; catálogo: sem classificação",
+          "blacklight": "0 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "7 registros; 1 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 6 entradas deste domínio, por exemplo https://dev.visualwebsiteoptimizer.com/j.php (query preservada no HAR) (HTTP 200, entrada 177). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. uBlock produziu 1 linhas de bloqueio/redirecionamento, com regra concreta /v.gif?, aplicada a https://dev.visualwebsiteoptimizer.com/collect/v.gif (query preservada no HAR) (linha 99). Linhas de redirecionamento e bloqueio do mesmo recurso não são somadas como rastreadores distintos. O HAR Blacklight pertence à navegação que recebeu a página de erro da loja e depois atendimento.magazineluiza.com.br/hc/pt-br/. Essa diferença de documento é comprovada por pageTitle e browsingHistory em blacklight-resultados.json; a ausência aqui não é comparável ao carregamento normal no Firefox.",
+          "evidence": "monitor.har: log.entries[177], [206], [207], [209]; ublock.har: log.entries[68], [149], [150], [151]; ublock-logger.txt: linhas 99"
+        },
+        {
+          "domain": "zdassets.com",
+          "hosts": [
+            "static.zdassets.com",
+            "ekr.zdassets.com"
+          ],
+          "plugin": "0 pedidos; catálogo: sem classificação",
+          "blacklight": "6 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "0 registros; 0 bloqueados/redirecionados",
+          "explanation": "Este domínio não consta no HAR da execução M; isso limita a afirmação a esta amostra. O domínio não foi registrado no logger uBlock nesta execução separada; não equivale a uma decisão explícita de permitir. Blacklight também contatou este domínio (6 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões. A ocorrência exclusiva do Blacklight está concretamente registrada em blacklight.har[8]: https://static.zdassets.com/hc/assets/application-b925b7498ff4356827db8a6064e91e2b.css, HTTP 200. Não foi reproduzida no Firefox; não há base para atribuí-la a uma falha do catálogo, pois nem o HAR local contém o pedido. O iniciador registrado pelo Blacklight foi https://atendimento.magazineluiza.com.br/hc/pt-br/ (entrada 8, campo _initiator). Isso identifica a cadeia executada nessa condição, sem presumir a mesma execução no Firefox.",
+          "evidence": "blacklight.har: log.entries[8], [34], [35], [39]"
+        }
+      ],
+      "name": "Magazine Luiza",
+      "pageScreenshot": "evidencias/sites/site-2/pagina.png",
+      "blacklightScreenshot": "evidencias/sites/site-2/blacklight.png",
+      "blacklightPage": "evidencias/sites/site-2/blacklight-pagina-inspecionada.jpg",
+      "ublockScreenshot": "evidencias/sites/site-2/ublock-logger.png",
+      "penalties": [
+        {
+          "id": "thirdParty",
+          "label": "Conexões externas respondidas",
+          "penalty": 15,
+          "rule": "3 por domínio; teto 15"
+        },
+        {
+          "id": "trackers",
+          "label": "Domínios do catálogo demonstrativo respondidos",
+          "penalty": 20,
+          "rule": "5 por domínio; teto 20"
+        },
+        {
+          "id": "cookies",
+          "label": "Cookies terceiros presentes",
+          "penalty": 20,
+          "rule": "2 sessão / 4 persistente; teto 20"
+        },
+        {
+          "id": "storage",
+          "label": "Armazenamento terceiro acessado",
+          "penalty": 2,
+          "rule": "2 por origem e API; teto 10"
+        },
+        {
+          "id": "canvas",
+          "label": "Leitura de canvas",
+          "penalty": 10,
+          "rule": "10 se observada; pode ser legítima"
+        },
+        {
+          "id": "sync",
+          "label": "Correlação de identificador / bounce",
+          "penalty": 10,
+          "rule": "10 correlação + 5 bounce; teto 15"
+        },
+        {
+          "id": "hook",
+          "label": "Indicadores de hook ou canal persistente",
+          "penalty": 10,
+          "rule": "5 comunicação + 5 alteração; teto 10"
+        }
+      ],
+      "summary": {
+        "requests": 284,
+        "harEntries": 279,
+        "thirdPartyHosts": 39,
+        "cookies": 100,
+        "thirdPartyCookies": 17,
+        "cookieAttempts": 1047,
+        "blacklightTrackers": 1,
+        "blacklightCookies": 0,
+        "ublockBlockedLogRows": 32,
+        "ublockBlockedHosts": 16
+      },
+      "cookieBreakdown": [
+        {
+          "party": "Primeira parte",
+          "duration": "Sessão",
+          "present": 35,
+          "httpAttempts": 924
+        },
+        {
+          "party": "Primeira parte",
+          "duration": "Persistente",
+          "present": 48,
+          "httpAttempts": 81
+        },
+        {
+          "party": "Terceira parte",
+          "duration": "Sessão",
+          "present": 0,
+          "httpAttempts": 4
+        },
+        {
+          "party": "Terceira parte",
+          "duration": "Persistente",
+          "present": 17,
+          "httpAttempts": 38
+        }
+      ],
+      "conditions": {
+        "monitor": {
+          "site": "Magazine Luiza",
+          "requestedUrl": "https://www.magazineluiza.com.br/",
+          "startedAt": "2026-09-29T00:38:10.107Z",
+          "condition": "M: somente Privacy Monitor; perfil Firefox novo por site",
+          "consent": "Sem interação com avisos de cookies; nenhum login, formulário ou compra.",
+          "observationSeconds": 30,
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "harSource": "Firefox DevTools NetMonitorAPI.getHar → HarExporter",
+          "warnings": [],
+          "preferences": {
+            "acceptLanguage": "und",
+            "cookieBehavior": 5,
+            "etp": "custom",
+            "timezone": "America/Sao_Paulo",
+            "trackingProtection": false
+          },
+          "finalUrl": "https://www.magazineluiza.com.br/",
+          "title": "Magazine Luiza | Pra você é Magalu!",
+          "rawHarDigest": "sha256:c9ac7a4204b12a1306a4",
+          "harEntries": 279,
+          "score": 13,
+          "requests": 284,
+          "browserVersion": "156.0.1",
+          "completedAt": "2026-09-29T00:38:45.684Z"
+        },
+        "ublock": {
+          "site": "https://www.magazineluiza.com.br/",
+          "startedAt": "2026-09-29T00:42:18.221Z",
+          "condition": "U: uBlock Origin sozinho em perfil novo; sem Privacy Monitor",
+          "ublock": {
+            "source": "Mozilla Add-ons",
+            "url": "https://addons.mozilla.org/firefox/downloads/file/5034826/ublock_origin-1.75.0.xpi",
+            "version": "1.75.0",
+            "hash": "sha256:5b74415860456370644bd80f16125e865b0e6c356bb5dfcfb84069967eaa5287",
+            "downloadedAt": "2026-09-29T00:38:18.071Z"
+          },
+          "consent": "Sem interação com cookies, sem login",
+          "observationSeconds": 30,
+          "settings": {
+            "selectedFilterLists": [
+              "user-filters",
+              "ublock-filters",
+              "ublock-badware",
+              "ublock-privacy",
+              "ublock-unbreak",
+              "ublock-quick-fixes",
+              "easylist",
+              "easyprivacy",
+              "urlhaus-1",
+              "plowe-0"
+            ],
+            "version": "1.75.0"
+          },
+          "finalUrl": "https://www.magazineluiza.com.br/",
+          "title": "Magazine Luiza | Pra você é Magalu!",
+          "harEntries": 497,
+          "logLines": 406,
+          "blockedRequests": 32,
+          "blockedDomains": 16,
+          "completedAt": "2026-09-29T00:43:10.568Z"
+        },
+        "blacklight": {
+          "startedAt": "2026-09-29T00:45:46.550Z",
+          "endedAt": "2026-09-29T00:45:54.539Z",
+          "pageTitle": "Magazine Luiza | Não é possível acessar a página",
+          "browsingHistory": [
+            "https://www.magazineluiza.com.br/",
+            "https://atendimento.magazineluiza.com.br/hc/pt-br/"
+          ],
+          "location": "us-oh"
+        }
+      }
+    },
+    {
+      "id": "site-3",
+      "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+      "har": "evidencias/sites/site-3/monitor.har",
+      "pluginJson": "evidencias/sites/site-3/monitor.json",
+      "screenshot": "evidencias/sites/site-3/monitor.png",
+      "blacklightEvidence": "evidencias/sites/site-3/blacklight-resultados.json",
+      "ublockEvidence": "evidencias/sites/site-3/ublock-logger.txt",
+      "score": 68,
+      "scoreDiscussion": "Wikipédia: score 68, penalidades 12 (quatro hosts terceiros com resposta considerada no score) +20 (cookies). Blacklight apontou zero rastreadores publicitários e seis cookies terceiros; uBlock não bloqueou pedidos na amostra. O monitor também não classificou rastreadores, canvas ou hooks. A nota inferior a 100 resulta da separação por domínio registrável: wikipedia.org e wikimedia.org são sites distintos para a PSL, mesmo integrando a infraestrutura Wikimedia. O HAR registra imagens em thumb.wikimedia.org e os fluxos meta.wikimedia.org/auth.wikimedia.org; cookies como WMF-Last-Access e NetworkProbeLimit não são automaticamente publicitários. O monitor contou 11 cookies terceiros presentes, enquanto Blacklight registrou seis segundo seu método e ambiente. A tabela por domínio e os cookies por nome/partição permitem verificar o escopo, sem igualar inventário a injeções. Esse caso demonstra um viés explícito do score didático: penaliza infraestrutura compartilhada e cookies sem avaliar sua finalidade.",
+      "reconciliation": [
+        {
+          "domain": "wikimedia.org",
+          "hosts": [
+            "thumb.wikimedia.org",
+            "meta.wikimedia.org",
+            "auth.wikimedia.org",
+            "upload.wikimedia.org",
+            "intake-analytics.wikimedia.org"
+          ],
+          "plugin": "13 pedidos; catálogo: sem classificação",
+          "blacklight": "31 pedidos; categorias: cookies",
+          "ublock": "20 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 11 entradas deste domínio, por exemplo https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg (query preservada no HAR) (HTTP 200, entrada 13). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 20 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 3, 4, 6. Blacklight associou o domínio às categorias cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+          "evidence": "monitor.har: log.entries[13], [15], [16], [18]; blacklight.har: log.entries[15], [16], [17], [18]; ublock.har: log.entries[15], [16], [17], [18]; ublock-logger.txt: linhas 3, 4, 6, 8, 10; blacklight-resultados.json: cards cookies"
+        },
+        {
+          "domain": "wikipedia.org",
+          "hosts": [
+            "pt.wikipedia.org"
+          ],
+          "plugin": "22 pedidos; catálogo: sem classificação",
+          "blacklight": "30 pedidos; categorias: nenhuma nos cartões",
+          "ublock": "24 registros; 0 bloqueados/redirecionados",
+          "explanation": "Firefox registrou 22 entradas deste domínio, por exemplo https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal (HTTP 200, entrada 0). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 24 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 5, 7, 9. Blacklight também contatou este domínio (30 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+          "evidence": "monitor.har: log.entries[0], [1], [2], [3]; blacklight.har: log.entries[0], [1], [2], [3]; ublock.har: log.entries[0], [1], [2], [3]; ublock-logger.txt: linhas 5, 7, 9, 11, 13"
+        }
+      ],
+      "name": "Wikipédia",
+      "pageScreenshot": "evidencias/sites/site-3/pagina.png",
+      "blacklightScreenshot": "evidencias/sites/site-3/blacklight.png",
+      "blacklightPage": "evidencias/sites/site-3/blacklight-pagina-inspecionada.jpg",
+      "ublockScreenshot": "evidencias/sites/site-3/ublock-logger.png",
+      "penalties": [
+        {
+          "id": "thirdParty",
+          "label": "Conexões externas respondidas",
+          "penalty": 12,
+          "rule": "3 por domínio; teto 15"
+        },
+        {
+          "id": "trackers",
+          "label": "Domínios do catálogo demonstrativo respondidos",
+          "penalty": 0,
+          "rule": "5 por domínio; teto 20"
+        },
+        {
+          "id": "cookies",
+          "label": "Cookies terceiros presentes",
+          "penalty": 20,
+          "rule": "2 sessão / 4 persistente; teto 20"
+        },
+        {
+          "id": "storage",
+          "label": "Armazenamento terceiro acessado",
+          "penalty": 0,
+          "rule": "2 por origem e API; teto 10"
+        },
+        {
+          "id": "canvas",
+          "label": "Leitura de canvas",
+          "penalty": 0,
+          "rule": "10 se observada; pode ser legítima"
+        },
+        {
+          "id": "sync",
+          "label": "Correlação de identificador / bounce",
+          "penalty": 0,
+          "rule": "10 correlação + 5 bounce; teto 15"
+        },
+        {
+          "id": "hook",
+          "label": "Indicadores de hook ou canal persistente",
+          "penalty": 0,
+          "rule": "5 comunicação + 5 alteração; teto 10"
+        }
+      ],
+      "summary": {
+        "requests": 35,
+        "harEntries": 36,
+        "thirdPartyHosts": 5,
+        "cookies": 17,
+        "thirdPartyCookies": 11,
+        "cookieAttempts": 43,
+        "blacklightTrackers": 0,
+        "blacklightCookies": 6,
+        "ublockBlockedLogRows": 0,
+        "ublockBlockedHosts": 0
+      },
+      "cookieBreakdown": [
+        {
+          "party": "Primeira parte",
+          "duration": "Sessão",
+          "present": 2,
+          "httpAttempts": 1
+        },
+        {
+          "party": "Primeira parte",
+          "duration": "Persistente",
+          "present": 4,
+          "httpAttempts": 11
+        },
+        {
+          "party": "Terceira parte",
+          "duration": "Sessão",
+          "present": 1,
+          "httpAttempts": 7
+        },
+        {
+          "party": "Terceira parte",
+          "duration": "Persistente",
+          "present": 10,
+          "httpAttempts": 24
+        }
+      ],
+      "conditions": {
+        "monitor": {
+          "site": "Wikipédia",
+          "requestedUrl": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+          "startedAt": "2026-09-29T00:38:50.507Z",
+          "condition": "M: somente Privacy Monitor; perfil Firefox novo por site",
+          "consent": "Sem interação com avisos de cookies; nenhum login, formulário ou compra.",
+          "observationSeconds": 30,
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "harSource": "Firefox DevTools NetMonitorAPI.getHar → HarExporter",
+          "warnings": [],
+          "preferences": {
+            "acceptLanguage": "und",
+            "cookieBehavior": 5,
+            "etp": "custom",
+            "timezone": "America/Sao_Paulo",
+            "trackingProtection": false
+          },
+          "finalUrl": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+          "title": "Wikipédia, a enciclopédia livre",
+          "rawHarDigest": "sha256:3f6384e1c990e2abdb5f",
+          "harEntries": 36,
+          "score": 68,
+          "requests": 35,
+          "browserVersion": "156.0.1",
+          "completedAt": "2026-09-29T00:39:23.948Z"
+        },
+        "ublock": {
+          "site": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+          "startedAt": "2026-09-29T00:43:15.774Z",
+          "condition": "U: uBlock Origin sozinho em perfil novo; sem Privacy Monitor",
+          "ublock": {
+            "source": "Mozilla Add-ons",
+            "url": "https://addons.mozilla.org/firefox/downloads/file/5034826/ublock_origin-1.75.0.xpi",
+            "version": "1.75.0",
+            "hash": "sha256:5b74415860456370644bd80f16125e865b0e6c356bb5dfcfb84069967eaa5287",
+            "downloadedAt": "2026-09-29T00:38:18.071Z"
+          },
+          "consent": "Sem interação com cookies, sem login",
+          "observationSeconds": 30,
+          "settings": {
+            "selectedFilterLists": [
+              "user-filters",
+              "ublock-filters",
+              "ublock-badware",
+              "ublock-privacy",
+              "ublock-unbreak",
+              "ublock-quick-fixes",
+              "easylist",
+              "easyprivacy",
+              "urlhaus-1",
+              "plowe-0"
+            ],
+            "version": "1.75.0"
+          },
+          "finalUrl": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+          "title": "Wikipédia, a enciclopédia livre",
+          "harEntries": 36,
+          "logLines": 80,
+          "blockedRequests": 0,
+          "blockedDomains": 0,
+          "completedAt": "2026-09-29T00:44:08.083Z"
+        },
+        "blacklight": {
+          "startedAt": "2026-09-29T00:46:31.289Z",
+          "endedAt": "2026-09-29T00:46:37.381Z",
+          "pageTitle": "Wikipédia, a enciclopédia livre",
+          "browsingHistory": [
+            "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"
+          ],
+          "location": "us-oh"
+        }
+      }
+    }
+  ],
+  "selectionNote": "Sites livres conforme esclarecimento de Fernando em 28/09. BBC News substituiu CNN Brasil após falhas/timeout do Blacklight em diferentes regiões; coleta CNN preservada em evidencias/adicionais/cnn.",
+  "method": "HARs locais exportados do Firefox DevTools pela API nativa NetMonitorAPI.getHar/HarExporter, com painel Rede aberto antes da navegação e persistência de log. Não foram sintetizados do monitor. HAR Blacklight extraído do ZIP oficial do próprio resultado. Prints são capturas reais do Firefox em execução headless; imagem da página e painel identificado pela URL estão separados. Na cópia pública, cookies e valores de query recebem SHA-256 truncado consistente; corpos, credenciais e cabeçalhos de autenticação são omitidos. Isso preserva comparações de igualdade sem publicar identificadores brutos. Metadados, caminhos, horários, status e nomes permanecem. Arquivos originais privados ficam em .cache e não fazem parte do Git. Os três conjuntos são amostras independentes, não execuções simultâneas do mesmo carregamento."
 }
