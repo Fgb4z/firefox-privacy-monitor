@@ -1,0 +1,30 @@
+{
+  "site": "Wikipédia",
+  "requestedUrl": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+  "startedAt": "2026-09-29T00:38:50.507Z",
+  "condition": "M: somente Privacy Monitor; perfil Firefox novo por site",
+  "consent": "Sem interação com avisos de cookies; nenhum login, formulário ou compra.",
+  "observationSeconds": 30,
+  "headless": true,
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "harSource": "Firefox DevTools NetMonitorAPI.getHar → HarExporter",
+  "warnings": [],
+  "preferences": {
+    "acceptLanguage": "und",
+    "cookieBehavior": 5,
+    "etp": "custom",
+    "timezone": "America/Sao_Paulo",
+    "trackingProtection": false
+  },
+  "finalUrl": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+  "title": "Wikipédia, a enciclopédia livre",
+  "rawHarDigest": "sha256:3f6384e1c990e2abdb5f",
+  "harEntries": 36,
+  "score": 68,
+  "requests": 35,
+  "browserVersion": "156.0.1",
+  "completedAt": "2026-09-29T00:39:23.948Z"
+}

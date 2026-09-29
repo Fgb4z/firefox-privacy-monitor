@@ -1,0 +1,16 @@
+[
+  {
+    "domain": "googletagmanager.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "hotjar.com",
+    "categories": [
+      "session_recorders"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=session_recorders].domains"
+  }
+]

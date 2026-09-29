@@ -1,0 +1,212 @@
+[
+  {
+    "classes": "category-html",
+    "html": "<li class=\"category-html\">HTML\n                <ul>\n                <li id=\"test-html-script\"><div class=\"status loaded\" title=\"loaded\"></div> - script - <span class=\"description\">Try loading a JavaScript file using <code>&lt;script&gt;</code> element.</span></li><li id=\"test-html-style\"><div class=\"status loaded\" title=\"loaded\"></div> - style - <span class=\"description\">Try loading a CSS file using <code>&lt;link&gt;</code> element.</span></li><li id=\"test-html-img\"><div class=\"status loaded\" title=\"loaded\"></div> - img - <span class=\"description\">Try loading an image using <code>&lt;img&gt;</code> element.</span></li><li id=\"test-html-picture\"><div class=\"status loaded\" title=\"loaded\"></div> - picture - <span class=\"description\">Try loading an image using <code>&lt;picture&gt;</code> element.</span></li><li id=\"test-html-object\"><div class=\"status loaded\" title=\"loaded\"></div> - object - <span class=\"description\">Try loading an image using <code>&lt;object&gt;</code> element.</span></li><li id=\"test-html-audio\"><div class=\"status loaded\" title=\"loaded\"></div> - audio - <span class=\"description\">Try loading an audio file using <code>&lt;audio&gt;</code> element.</span></li><li id=\"test-html-video\"><div class=\"status loaded\" title=\"loaded\"></div> - video - <span class=\"description\">Try loading a video file using <code>&lt;video&gt;</code> element.</span></li><li id=\"test-html-iframe\"><div class=\"status loaded\" title=\"loaded\"></div> - iframe - <span class=\"description\">Try loading a frame using <code>&lt;iframe&gt;</code> element.</span></li></ul>\n            </li>",
+    "id": "",
+    "tag": "LI",
+    "text": "HTML\n - script - Try loading a JavaScript file using <script> element.\n - style - Try loading a CSS file using <link> element.\n - img - Try loading an image using <img> element.\n - picture - Try loading an image using <picture> element.\n - object - Try loading an image using <object> element.\n - audio - Try loading an audio file using <audio> element.\n - video - Try loading a video file using <video> element.\n - iframe - Try loading a frame using <iframe> element."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-html-script\"><div class=\"status loaded\" title=\"loaded\"></div> - script - <span class=\"description\">Try loading a JavaScript file using <code>&lt;script&gt;</code> element.</span></li>",
+    "id": "test-html-script",
+    "tag": "LI",
+    "text": " - script - Try loading a JavaScript file using <script> element."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-html-style\"><div class=\"status loaded\" title=\"loaded\"></div> - style - <span class=\"description\">Try loading a CSS file using <code>&lt;link&gt;</code> element.</span></li>",
+    "id": "test-html-style",
+    "tag": "LI",
+    "text": " - style - Try loading a CSS file using <link> element."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-html-img\"><div class=\"status loaded\" title=\"loaded\"></div> - img - <span class=\"description\">Try loading an image using <code>&lt;img&gt;</code> element.</span></li>",
+    "id": "test-html-img",
+    "tag": "LI",
+    "text": " - img - Try loading an image using <img> element."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-html-picture\"><div class=\"status loaded\" title=\"loaded\"></div> - picture - <span class=\"description\">Try loading an image using <code>&lt;picture&gt;</code> element.</span></li>",
+    "id": "test-html-picture",
+    "tag": "LI",
+    "text": " - picture - Try loading an image using <picture> element."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-html-object\"><div class=\"status loaded\" title=\"loaded\"></div> - object - <span class=\"description\">Try loading an image using <code>&lt;object&gt;</code> element.</span></li>",
+    "id": "test-html-object",
+    "tag": "LI",
+    "text": " - object - Try loading an image using <object> element."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-html-audio\"><div class=\"status loaded\" title=\"loaded\"></div> - audio - <span class=\"description\">Try loading an audio file using <code>&lt;audio&gt;</code> element.</span></li>",
+    "id": "test-html-audio",
+    "tag": "LI",
+    "text": " - audio - Try loading an audio file using <audio> element."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-html-video\"><div class=\"status loaded\" title=\"loaded\"></div> - video - <span class=\"description\">Try loading a video file using <code>&lt;video&gt;</code> element.</span></li>",
+    "id": "test-html-video",
+    "tag": "LI",
+    "text": " - video - Try loading a video file using <video> element."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-html-iframe\"><div class=\"status loaded\" title=\"loaded\"></div> - iframe - <span class=\"description\">Try loading a frame using <code>&lt;iframe&gt;</code> element.</span></li>",
+    "id": "test-html-iframe",
+    "tag": "LI",
+    "text": " - iframe - Try loading a frame using <iframe> element."
+  },
+  {
+    "classes": "category-css",
+    "html": "<li class=\"category-css\">CSS\n                <ul>\n                <li id=\"test-css-import\"><div class=\"status loaded\" title=\"loaded\"></div> - import - <span class=\"description\">Try loading a CSS file using <code>@import url(…)</code>.</span></li><li id=\"test-css-font\"><div class=\"status loaded\" title=\"loaded\"></div> - font - <span class=\"description\">Try loading a font file using <code>@font-face {src: url(…)}</code>.</span></li><li id=\"test-css-background\"><div class=\"status loaded\" title=\"loaded\"></div> - background - <span class=\"description\">Try loading an image using <code>background: url(…)</code>.</span></li></ul>\n            </li>",
+    "id": "",
+    "tag": "LI",
+    "text": "CSS\n - import - Try loading a CSS file using @import url(…).\n - font - Try loading a font file using @font-face {src: url(…)}.\n - background - Try loading an image using background: url(…)."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-css-import\"><div class=\"status loaded\" title=\"loaded\"></div> - import - <span class=\"description\">Try loading a CSS file using <code>@import url(…)</code>.</span></li>",
+    "id": "test-css-import",
+    "tag": "LI",
+    "text": " - import - Try loading a CSS file using @import url(…)."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-css-font\"><div class=\"status loaded\" title=\"loaded\"></div> - font - <span class=\"description\">Try loading a font file using <code>@font-face {src: url(…)}</code>.</span></li>",
+    "id": "test-css-font",
+    "tag": "LI",
+    "text": " - font - Try loading a font file using @font-face {src: url(…)}."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-css-background\"><div class=\"status loaded\" title=\"loaded\"></div> - background - <span class=\"description\">Try loading an image using <code>background: url(…)</code>.</span></li>",
+    "id": "test-css-background",
+    "tag": "LI",
+    "text": " - background - Try loading an image using background: url(…)."
+  },
+  {
+    "classes": "category-js",
+    "html": "<li class=\"category-js\">JS\n                <ul>\n                <li id=\"test-js-websocket\"><div class=\"status failed\" title=\"failed\"></div> - websocket - <span class=\"description\">Try connecting to a WebSocket.</span></li><li id=\"test-js-server-sent-events\"><div class=\"status loaded\" title=\"loaded\"></div> - server-sent-events - <span class=\"description\">Try connecting to an EventSource.</span></li><li id=\"test-js-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - fetch - <span class=\"description\">Try requesting data using <code>fetch(…)</code>.</span></li><li id=\"test-js-xmlhttprequest\"><div class=\"status loaded\" title=\"loaded\"></div> - xmlhttprequest - <span class=\"description\">Try requesting data using <code>XMLHttpRequest</code>.</span></li><li id=\"test-js-sendBeacon\"><div class=\"status loaded\" title=\"loaded\"></div> - sendBeacon - <span class=\"description\">Try sending data using <code>sendBeacon</code>.</span></li></ul>\n            </li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS\n - websocket - Try connecting to a WebSocket.\n - server-sent-events - Try connecting to an EventSource.\n - fetch - Try requesting data using fetch(…).\n - xmlhttprequest - Try requesting data using XMLHttpRequest.\n - sendBeacon - Try sending data using sendBeacon."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-js-websocket\"><div class=\"status failed\" title=\"failed\"></div> - websocket - <span class=\"description\">Try connecting to a WebSocket.</span></li>",
+    "id": "test-js-websocket",
+    "tag": "LI",
+    "text": " - websocket - Try connecting to a WebSocket."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-js-server-sent-events\"><div class=\"status loaded\" title=\"loaded\"></div> - server-sent-events - <span class=\"description\">Try connecting to an EventSource.</span></li>",
+    "id": "test-js-server-sent-events",
+    "tag": "LI",
+    "text": " - server-sent-events - Try connecting to an EventSource."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-js-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - fetch - <span class=\"description\">Try requesting data using <code>fetch(…)</code>.</span></li>",
+    "id": "test-js-fetch",
+    "tag": "LI",
+    "text": " - fetch - Try requesting data using fetch(…)."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-js-xmlhttprequest\"><div class=\"status loaded\" title=\"loaded\"></div> - xmlhttprequest - <span class=\"description\">Try requesting data using <code>XMLHttpRequest</code>.</span></li>",
+    "id": "test-js-xmlhttprequest",
+    "tag": "LI",
+    "text": " - xmlhttprequest - Try requesting data using XMLHttpRequest."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-js-sendBeacon\"><div class=\"status loaded\" title=\"loaded\"></div> - sendBeacon - <span class=\"description\">Try sending data using <code>sendBeacon</code>.</span></li>",
+    "id": "test-js-sendBeacon",
+    "tag": "LI",
+    "text": " - sendBeacon - Try sending data using sendBeacon."
+  },
+  {
+    "classes": "category-other",
+    "html": "<li class=\"category-other\">Other\n                <ul>\n                <li id=\"test-other-favicon\"><div class=\"status loaded\" title=\"loaded\"></div> - favicon - <span class=\"description\">Try loading an image using <code>&lt;link rel=\"shortcut icon\" …</code>.</span></li><li id=\"test-other-iframe-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - iframe-fetch - <span class=\"description\">Try requesting data from within a first-party iframe.</span></li><li id=\"test-other-iframe-fetch-depth-2\"><div class=\"status loaded\" title=\"loaded\"></div> - iframe-fetch-depth-2 - <span class=\"description\">Try requesting data from two frames deep (iframe within an iframe).</span></li><li id=\"test-other-webworker-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - webworker-fetch - <span class=\"description\">Try fetching data from within a WebWorker.</span></li><li id=\"test-other-serviceworker-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - serviceworker-fetch - <span class=\"description\">Try fetching data from within a ServiceWorker.</span></li><li id=\"test-other-csp-report\"><div class=\"status loaded\" title=\"loaded\"></div> - csp-report - <span class=\"description\">Try sending data via CSP report.</span></li><li id=\"test-other-redirected-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - redirected-fetch - <span class=\"description\">Try requesting tracker via redirect through a safe domain.</span></li></ul>\n            </li>",
+    "id": "",
+    "tag": "LI",
+    "text": "Other\n - favicon - Try loading an image using <link rel=\"shortcut icon\" ….\n - iframe-fetch - Try requesting data from within a first-party iframe.\n - iframe-fetch-depth-2 - Try requesting data from two frames deep (iframe within an iframe).\n - webworker-fetch - Try fetching data from within a WebWorker.\n - serviceworker-fetch - Try fetching data from within a ServiceWorker.\n - csp-report - Try sending data via CSP report.\n - redirected-fetch - Try requesting tracker via redirect through a safe domain."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-other-favicon\"><div class=\"status loaded\" title=\"loaded\"></div> - favicon - <span class=\"description\">Try loading an image using <code>&lt;link rel=\"shortcut icon\" …</code>.</span></li>",
+    "id": "test-other-favicon",
+    "tag": "LI",
+    "text": " - favicon - Try loading an image using <link rel=\"shortcut icon\" …."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-other-iframe-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - iframe-fetch - <span class=\"description\">Try requesting data from within a first-party iframe.</span></li>",
+    "id": "test-other-iframe-fetch",
+    "tag": "LI",
+    "text": " - iframe-fetch - Try requesting data from within a first-party iframe."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-other-iframe-fetch-depth-2\"><div class=\"status loaded\" title=\"loaded\"></div> - iframe-fetch-depth-2 - <span class=\"description\">Try requesting data from two frames deep (iframe within an iframe).</span></li>",
+    "id": "test-other-iframe-fetch-depth-2",
+    "tag": "LI",
+    "text": " - iframe-fetch-depth-2 - Try requesting data from two frames deep (iframe within an iframe)."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-other-webworker-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - webworker-fetch - <span class=\"description\">Try fetching data from within a WebWorker.</span></li>",
+    "id": "test-other-webworker-fetch",
+    "tag": "LI",
+    "text": " - webworker-fetch - Try fetching data from within a WebWorker."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-other-serviceworker-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - serviceworker-fetch - <span class=\"description\">Try fetching data from within a ServiceWorker.</span></li>",
+    "id": "test-other-serviceworker-fetch",
+    "tag": "LI",
+    "text": " - serviceworker-fetch - Try fetching data from within a ServiceWorker."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-other-csp-report\"><div class=\"status loaded\" title=\"loaded\"></div> - csp-report - <span class=\"description\">Try sending data via CSP report.</span></li>",
+    "id": "test-other-csp-report",
+    "tag": "LI",
+    "text": " - csp-report - Try sending data via CSP report."
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-other-redirected-fetch\"><div class=\"status loaded\" title=\"loaded\"></div> - redirected-fetch - <span class=\"description\">Try requesting tracker via redirect through a safe domain.</span></li>",
+    "id": "test-other-redirected-fetch",
+    "tag": "LI",
+    "text": " - redirected-fetch - Try requesting tracker via redirect through a safe domain."
+  },
+  {
+    "classes": "",
+    "html": "<li><div class=\"status loaded\"></div> - request has loaded</li>",
+    "id": "",
+    "tag": "LI",
+    "text": " - request has loaded"
+  },
+  {
+    "classes": "",
+    "html": "<li><div class=\"status\"></div> - request hasn't loaded</li>",
+    "id": "",
+    "tag": "LI",
+    "text": " - request hasn't loaded"
+  },
+  {
+    "classes": "",
+    "html": "<li><div class=\"status failed\"></div> - request failed (e.g. due to being blocked)</li>",
+    "id": "",
+    "tag": "LI",
+    "text": " - request failed (e.g. due to being blocked)"
+  }
+]

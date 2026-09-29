@@ -1,0 +1,98 @@
+Search term
+Skip navigation
+Menu
+The Markup
+About Us
+Donate
+A Real-Time Website Privacy Inspector
+Who is peeking over your shoulder while you work, watch videos, learn, explore, and shop on the internet? Enter the address of any website, and Blacklight will scan it and reveal the specific user-tracking technologies on the site—and who’s getting your data. You may be surprised at what you learn.
+Enter a URL for Blacklight to scan
+Location
+Ohio, U.S.
+California, U.S.
+Europe
+Device
+Mobile
+Desktop
+Inspection Caching
+Use cached results
+Force request, no caching
+Scan Site
+Blacklight is currently testing for …
+Blacklight normally takes between 30 seconds and one minute to finish all tests.
+Ad trackers
+Is this website sending data about users to advertising companies?
+Third-party cookies
+Is this website using cookies that track users around the web?
+Tracking that evades cookie blockers
+Is this website invisibly identifying your browser?
+Session-monitoring scripts
+Blacklight looks for scripts that record how a user interacts with a page.
+Keystroke capturing
+Is this website logging text typed by users, before they hit submit?
+Facebook
+Is this website sending data about users to Facebook?
+TikTok
+Is this website sending data about users to TikTok?
+Twitter/X
+Is this website sending data about users to Twitter/X?
+Google Analytics
+Is this website sending data to Google so it can advertise to its visitors?
+
+Concept and development
+Surya Mattu
+Design and front-end development
+Sam Morris
+Infrastructure and security
+Simon Fondrie-Teitler
+Research and reporting
+Aaron Sankin
+Original editing
+Evelyn Larrubia
+Copy editing
+Jill Jaroff
+Initial platform development
+Yotam Mann
+Chris Deaner
+Product Director
+Ramsey Isler
+Additional development
+Miles Hilton
+Bach Le
+Jerome Paulos
+Dan Phiffer
+Varun Subramanyan
+More on Blacklight
+Launching Blacklight Query, a Tool to Scan Websites for Privacy at Scale
+Inspect batches of websites for user-tracking tech with our new open-source command-line tool
+October 16, 2024 08:00 ET
+The High Privacy Cost of a ‘Free’ Website
+Trackers piggybacking on website tools leave some site operators in the dark about who is watching or what marketers do with the data
+September 22, 2020 08:00 ET
+Show Your Work
+How We Built a Real-Time Privacy Inspector
+Blacklight catalogs the many ways any website tracks visitors: from cookies to capturing every user keystroke and mouse movement
+September 22, 2020 08:00 ET
+Return to The Markup's homepage
+Your contributions help us investigate how technology influences our society.
+Donate
+About Us
+Our Donors
+Ethics Policy
+Events
+Governance
+Jobs
+Team
+Have a Tip?
+Newsletters
+A Letter from the President
+Awards
+Privacy Policy
+Terms of Use
+GitHub
+Bluesky
+RSS Feed
+Facebook
+Instagram
+X
+Mastodon

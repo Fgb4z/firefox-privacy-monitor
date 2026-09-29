@@ -1,0 +1,425 @@
+{
+  "site": "https://www.magazineluiza.com.br/",
+  "startedAt": "2026-09-29T00:45:36.175Z",
+  "source": "https://themarkup.org/blacklight",
+  "action": "Submissão do formulário oficial",
+  "warnings": [],
+  "options": [
+    {
+      "name": "location",
+      "value": "us-oh"
+    },
+    {
+      "name": "device",
+      "value": "desktop"
+    },
+    {
+      "name": "force",
+      "value": "true"
+    }
+  ],
+  "finalUrl": "https://themarkup.org/blacklight?url=https%3A%2F%2Fwww.magazineluiza.com.br%2F&device=desktop&location=us-oh&force=true",
+  "completedAt": "2026-09-29T00:46:24.083Z",
+  "links": [
+    {
+      "href": "https://themarkup.org/series/amazons-advantage",
+      "text": "Amazon’s Advantage"
+    },
+    {
+      "href": "https://themarkup.org/series/organ-failure",
+      "text": "Organ Failure"
+    },
+    {
+      "href": "https://themarkup.org/series/blacklight",
+      "text": "Blacklight"
+    },
+    {
+      "href": "https://themarkup.org/series/pixel-hunt/",
+      "text": "Pixel Hunt"
+    },
+    {
+      "href": "https://themarkup.org/series/citizen-browser",
+      "text": "Citizen Browser"
+    },
+    {
+      "href": "https://themarkup.org/series/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "https://themarkup.org/series/languages-of-misinformation",
+      "text": "Languages of Misinformation"
+    },
+    {
+      "href": "https://themarkup.org/series/still-loading",
+      "text": "Still Loading"
+    },
+    {
+      "href": "https://themarkup.org/series/machine-learning",
+      "text": "Machine Learning"
+    },
+    {
+      "href": "https://themarkup.org/series/working-for-an-algorithm",
+      "text": "Working for an Algorithm"
+    },
+    {
+      "href": "https://themarkup.org/about",
+      "text": "About Us"
+    },
+    {
+      "href": "https://themarkup.org/donate/?utm_source=menu",
+      "text": "Donate"
+    },
+    {
+      "href": "https://themarkup.org/awards",
+      "text": "Awards"
+    },
+    {
+      "href": "https://themarkup.org/tips",
+      "text": "Have a Tip?"
+    },
+    {
+      "href": "https://themarkup.org/team/",
+      "text": "Team"
+    },
+    {
+      "href": "https://themarkup.org/series/show-your-work",
+      "text": "Show Your Work"
+    },
+    {
+      "href": "https://themarkup.org/jobs",
+      "text": "Jobs"
+    },
+    {
+      "href": "https://themarkup.org/newsletter",
+      "text": "Newsletters"
+    },
+    {
+      "href": "https://themarkup.org/events",
+      "text": "Events"
+    },
+    {
+      "href": "https://github.com/the-markup/",
+      "text": " GitHub"
+    },
+    {
+      "href": "https://web-cdn.bsky.app/profile/did:plc:4ouag44vqmtjvbg3x2ph5u6o",
+      "text": " Bluesky"
+    },
+    {
+      "href": "https://themarkup.org/feeds/rss.xml",
+      "text": " RSS Feed"
+    },
+    {
+      "href": "https://www.facebook.com/teammarkup/",
+      "text": " Facebook"
+    },
+    {
+      "href": "https://www.instagram.com/the.markup/",
+      "text": " Instagram"
+    },
+    {
+      "href": "https://x.com/themarkup",
+      "text": " X"
+    },
+    {
+      "href": "https://mastodon.themarkup.org/@themarkup",
+      "text": " Mastodon"
+    },
+    {
+      "href": "https://themarkup.org/blacklight?url=https%3A%2F%2Fwww.magazineluiza.com.br%2F&device=desktop&location=us-oh&force=true#content",
+      "text": "Skip navigation"
+    },
+    {
+      "href": "",
+      "text": "Menu "
+    },
+    {
+      "href": "https://themarkup.org/",
+      "text": "The Markup"
+    },
+    {
+      "href": "https://themarkup.org/donate?utm_source=header",
+      "text": "Donate\n      "
+    },
+    {
+      "href": "https://themarkup.org/about",
+      "text": "About Us"
+    },
+    {
+      "href": "https://themarkup.org/donate?utm_source=header",
+      "text": "Donate"
+    },
+    {
+      "href": "https://themarkup.org/blacklight?url=https%3A%2F%2Fwww.magazineluiza.com.br%2F&device=desktop&location=us-oh&force=true#",
+      "text": "↩︎ link"
+    },
+    {
+      "href": "https://mrkp-static-production.themarkup.org/blacklight-us-oh/0cc86ef1f21ceb78af8567cd57d8f04441b5bc4f/blacklight-inspection-www.magazineluiza.com.br.zip",
+      "text": "download an archive"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector",
+      "text": "methodology"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#ad-trackers",
+      "text": "How We Define This"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#survey",
+      "text": "Survey of Popular Websites"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#third-party-cookies",
+      "text": "How We Define This"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#survey",
+      "text": "Survey of Popular Websites"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#survey",
+      "text": "scanned them"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#canvas-fingerprinting",
+      "text": "How We Define This"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#survey",
+      "text": "scanned them"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#session-recording",
+      "text": "How We Define This"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#survey",
+      "text": "scanned them"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#key-logging",
+      "text": "How We Define This"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#survey",
+      "text": "scanned them"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#facebook-pixel",
+      "text": "How We Define This"
+    },
+    {
+      "href": "https://support.google.com/analytics/answer/2700409?hl=en",
+      "text": "supposed to"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#survey",
+      "text": "scanned them"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector#google-analytics-remarketing-audiences",
+      "text": "How We Define This"
+    },
+    {
+      "href": "https://abc.xyz/",
+      "text": "Alphabet,"
+    },
+    {
+      "href": "https://nest.com/",
+      "text": "Nest"
+    },
+    {
+      "href": "https://adssettings.google.com/authenticated",
+      "text": "go here"
+    },
+    {
+      "href": "https://policies.google.com/privacy?hl=en-US",
+      "text": "Read Google's Privacy Policy"
+    },
+    {
+      "href": "https://www.hotjar.com/",
+      "text": "HotJar."
+    },
+    {
+      "href": "https://help.hotjar.com/hc/en-us/sections/115003204947-What-is-Hotjar-",
+      "text": "better understand"
+    },
+    {
+      "href": "https://www.hotjar.com/privacy/",
+      "text": "Read Hotjar's Privacy Policy"
+    },
+    {
+      "href": "https://mrkp-static-production.themarkup.org/blacklight-us-oh/0cc86ef1f21ceb78af8567cd57d8f04441b5bc4f/blacklight-inspection-www.magazineluiza.com.br.zip",
+      "text": "download an archive"
+    },
+    {
+      "href": "mailto:blacklight@themarkup.org?subject=Blacklight%20report%20for%20www.magazineluiza.com.br&body=%5BYour%20message%20here.%20Why%20does%20this%20look%20worrying%3F%5D%0A%0ADomain%3A%20www.magazineluiza.com.br%0AZip%20Archive%3A%20https://mrkp-static-production.themarkup.org/blacklight-us-oh/0cc86ef1f21ceb78af8567cd57d8f04441b5bc4f/blacklight-inspection-www.magazineluiza.com.br.zip%0AOriginal%20URL%3A%20magazineluiza.com.br",
+      "text": "Send us an Email!"
+    },
+    {
+      "href": "https://github.com/duckduckgo/tracker-radar",
+      "text": "DuckDuckGo's Tracker Radar"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector",
+      "text": "read our methodology"
+    },
+    {
+      "href": "https://themarkup.org/series/blacklight",
+      "text": "Blacklight"
+    },
+    {
+      "href": "https://themarkup.org/people/surya-mattu",
+      "text": "Surya Mattu"
+    },
+    {
+      "href": "https://themarkup.org/people/sam-morris",
+      "text": "Sam Morris"
+    },
+    {
+      "href": "https://themarkup.org/people/simon-fondrie-teitler",
+      "text": "Simon Fondrie-Teitler"
+    },
+    {
+      "href": "https://themarkup.org/people/aaron-sankin",
+      "text": "Aaron Sankin"
+    },
+    {
+      "href": "https://themarkup.org/people/evelyn-larrubia",
+      "text": "Evelyn Larrubia"
+    },
+    {
+      "href": "https://themarkup.org/people/jill-jaroff",
+      "text": "Jill Jaroff"
+    },
+    {
+      "href": "https://themarkup.org/people/ramsey-isler",
+      "text": "Ramsey Isler"
+    },
+    {
+      "href": "https://themarkup.org/people/miles-hilton",
+      "text": "Miles Hilton"
+    },
+    {
+      "href": "https://www.linkedin.com/in/bachhoangle/",
+      "text": "Bach Le"
+    },
+    {
+      "href": "https://jero.zone/",
+      "text": "Jerome Paulos"
+    },
+    {
+      "href": "https://themarkup.org/people/dan-phiffer",
+      "text": "Dan Phiffer"
+    },
+    {
+      "href": "https://www.linkedin.com/in/varun-subramanyan-/",
+      "text": "Varun Subramanyan"
+    },
+    {
+      "href": "https://themarkup.org/series/blacklight",
+      "text": "More on Blacklight"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2024/10/16/blacklight-query",
+      "text": "Launching Blacklight Query, a Tool to Scan Websites for Privacy at Scale\n\nInspect batches of websites for user-tracking tech with our new open-source command-line tool\n\nOctober 16, 2024 08:00 ET"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/blacklight-tracking-advertisers-digital-privacy-sensitive-websites",
+      "text": "The High Privacy Cost of a ‘Free’ Website\n\nTrackers piggybacking on website tools leave some site operators in the dark about who is watching or what marketers do with the data\n\nSeptember 22, 2020 08:00 ET"
+    },
+    {
+      "href": "https://themarkup.org/blacklight/2020/09/22/how-we-built-a-real-time-privacy-inspector",
+      "text": "Show Your Work\n\nHow We Built a Real-Time Privacy Inspector\n\nBlacklight catalogs the many ways any website tracks visitors: from cookies to capturing every user keystroke and mouse movement\n\nSeptember 22, 2020 08:00 ET"
+    },
+    {
+      "href": "https://themarkup.org/",
+      "text": "Return to The Markup's homepage"
+    },
+    {
+      "href": "https://themarkup.org/donate?utm_source=page-footer",
+      "text": "Donate"
+    },
+    {
+      "href": "https://themarkup.org/about",
+      "text": "About Us"
+    },
+    {
+      "href": "https://themarkup.org/donors",
+      "text": "Our Donors"
+    },
+    {
+      "href": "https://themarkup.org/ethics",
+      "text": "Ethics Policy"
+    },
+    {
+      "href": "https://themarkup.org/events/",
+      "text": "Events"
+    },
+    {
+      "href": "https://themarkup.org/board-of-directors",
+      "text": "Governance"
+    },
+    {
+      "href": "https://themarkup.org/jobs",
+      "text": "Jobs"
+    },
+    {
+      "href": "https://themarkup.org/team",
+      "text": "Team"
+    },
+    {
+      "href": "https://themarkup.org/tips",
+      "text": "Have a Tip?"
+    },
+    {
+      "href": "https://themarkup.org/newsletter",
+      "text": "Newsletters"
+    },
+    {
+      "href": "https://themarkup.org/2020/02/25/president-letter-nabiha-syed",
+      "text": "A Letter from the President"
+    },
+    {
+      "href": "https://themarkup.org/awards",
+      "text": "Awards"
+    },
+    {
+      "href": "https://themarkup.org/privacy",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "https://themarkup.org/terms",
+      "text": "Terms of Use"
+    },
+    {
+      "href": "https://github.com/the-markup/",
+      "text": " GitHub"
+    },
+    {
+      "href": "https://web-cdn.bsky.app/profile/did:plc:4ouag44vqmtjvbg3x2ph5u6o",
+      "text": " Bluesky"
+    },
+    {
+      "href": "https://themarkup.org/feeds/rss.xml",
+      "text": " RSS Feed"
+    },
+    {
+      "href": "https://www.facebook.com/teammarkup/",
+      "text": " Facebook"
+    },
+    {
+      "href": "https://www.instagram.com/the.markup/",
+      "text": " Instagram"
+    },
+    {
+      "href": "https://x.com/themarkup",
+      "text": " X"
+    },
+    {
+      "href": "https://mastodon.themarkup.org/@themarkup",
+      "text": " Mastodon"
+    }
+  ]
+}

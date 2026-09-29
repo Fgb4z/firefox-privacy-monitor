@@ -1,0 +1,13 @@
+{
+  "url": "https://www.first-party.site/privacy-protections/bounce-tracking/",
+  "startedAt": "2026-09-29T00:46:36.534Z",
+  "steps": [
+    "Link Go to first-party.site: A → bad.third-party.site → A"
+  ],
+  "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+  "finalUrl": "https://www.first-party.site/privacy-protections/bounce-tracking/?bounceUIDlocalStorage=&bounceUIDcookie=&isNew=101",
+  "completedAt": "2026-09-29T00:46:55.361Z",
+  "requests": 2,
+  "events": 3,
+  "truncated": false
+}

@@ -1,0 +1,408 @@
+[
+  {
+    "classes": "",
+    "html": "<details id=\"tests\" open=\"\">\n        <summary id=\"tests-summary\">Retrieved data from 23 storage mechanisms (2 failed). Click for details.</summary>\n        <ul id=\"tests-details\"><li id=\"test-first-party header cookie\">first party header cookie - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-safe-third party header cookie\">safe third party header cookie - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-tracking-third party header cookie\">tracking third party header cookie - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-JS-cookie\">JS cookie - <span class=\"value\">\"724\"</span> <span class=\"extra\">(expires in NaN days)</span></li><li id=\"test-JS-cookie (__Host)\">JS cookie (__Host) - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-JS-cookie (no SameSite attribute)\">JS cookie (no SameSite attribute) - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-localStorage\">localStorage - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-sessionStorage\">sessionStorage - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-IndexedDB\">IndexedDB - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-WebSQL\">WebSQL - <span class=\"value\">❌ error thrown (\"openDatabase is not defined\")</span> <span class=\"extra\"></span></li><li id=\"test-Cache-API\">Cache API - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-CookieStore\">CookieStore - <span class=\"value\">\"724\"</span> <span class=\"extra\">(expires in NaN days)</span></li><li id=\"test-JS-cookie (3rd party tracking script)\">JS cookie (3rd party tracking script) - <span class=\"value\">\"724\"</span> <span class=\"extra\">(expires in NaN days)</span></li><li id=\"test-JS-cookie (3rd party safe script)\">JS cookie (3rd party safe script) - <span class=\"value\">\"724\"</span> <span class=\"extra\">(expires in NaN days)</span></li><li id=\"test-safe-third party iframe\">safe third party iframe - <span class=\"value\"><ul><li>first party header cookie - 724  <span class=\"extra\"></span></li><li>tracking third party header cookie - 724  <span class=\"extra\"></span></li><li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li><li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li><li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li><li>localStorage - 724  <span class=\"extra\"></span></li><li>sessionStorage - 724  <span class=\"extra\"></span></li><li>IndexedDB - 724  <span class=\"extra\"></span></li><li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li><li>Cache API - 724  <span class=\"extra\"></span></li><li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li></ul></span> <span class=\"extra\"></span></li><li id=\"test-tracking-third party iframe\">tracking third party iframe - <span class=\"value\"><ul><li>first party header cookie - 724  <span class=\"extra\"></span></li><li>safe third party header cookie - 724  <span class=\"extra\"></span></li><li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li><li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li><li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li><li>localStorage - 724  <span class=\"extra\"></span></li><li>sessionStorage - 724  <span class=\"extra\"></span></li><li>IndexedDB - 724  <span class=\"extra\"></span></li><li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li><li>Cache API - 724  <span class=\"extra\"></span></li><li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li></ul></span> <span class=\"extra\"></span></li><li id=\"test-ad-third party iframe\">ad third party iframe - <span class=\"value\"><ul><li>first party header cookie - null (❌ JSON.parse: unexpected character at line 1 column 1 of the JSON data) <span class=\"extra\"></span></li><li>safe third party header cookie - 724  <span class=\"extra\"></span></li><li>tracking third party header cookie - 724  <span class=\"extra\"></span></li><li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li><li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li><li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li><li>localStorage - 724  <span class=\"extra\"></span></li><li>sessionStorage - 724  <span class=\"extra\"></span></li><li>IndexedDB - null (❌ DB is not defined) <span class=\"extra\"></span></li><li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li><li>Cache API - 724  <span class=\"extra\"></span></li><li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li></ul></span> <span class=\"extra\"></span></li><li id=\"test-browser-cache\">browser cache - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-memory\">memory - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-window.name\">window.name - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-history\">history - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-service-worker\">service worker - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li><li id=\"test-service-worker cookieStore\">service worker cookieStore - <span class=\"value\">❌ error thrown (\"can't access property \"value\" of null\")</span> <span class=\"extra\"></span></li></ul>\n    </details>",
+    "id": "tests",
+    "tag": "DETAILS",
+    "text": "Retrieved data from 23 storage mechanisms (2 failed). Click for details.\nfirst party header cookie - \"724\"\nsafe third party header cookie - \"724\"\ntracking third party header cookie - \"724\"\nJS cookie - \"724\" (expires in NaN days)\nJS cookie (__Host) - \"724\"\nJS cookie (no SameSite attribute) - \"724\"\nlocalStorage - \"724\"\nsessionStorage - \"724\"\nIndexedDB - \"724\"\nWebSQL - ❌ error thrown (\"openDatabase is not defined\")\nCache API - \"724\"\nCookieStore - \"724\" (expires in NaN days)\nJS cookie (3rd party tracking script) - \"724\" (expires in NaN days)\nJS cookie (3rd party safe script) - \"724\" (expires in NaN days)\nsafe third party iframe -\nfirst party header cookie - 724\ntracking third party header cookie - 724\nJS cookie - 724 (expires in NaN days)\nJS cookie (__Host) - 724\nJS cookie (no SameSite attribute) - 724\nlocalStorage - 724\nsessionStorage - 724\nIndexedDB - 724\nWebSQL - null (❌ openDatabase is not defined)\nCache API - 724\nCookieStore - null (❌ can't access property \"value\" of null)\ntracking third party iframe -\nfirst party header cookie - 724\nsafe third party header cookie - 724\nJS cookie - 724 (expires in NaN days)\nJS cookie (__Host) - 724\nJS cookie (no SameSite attribute) - 724\nlocalStorage - 724\nsessionStorage - 724\nIndexedDB - 724\nWebSQL - null (❌ openDatabase is not defined)\nCache API - 724\nCookieStore - null (❌ can't access property \"value\" of null)\nad third party iframe -\nfirst party header cookie - null (❌ JSON.parse: unexpected character at line 1 column 1 of the JSON data)\nsafe third party header cookie - 724\ntracking third party header cookie - 724\nJS cookie - 724 (expires in NaN days)\nJS cookie (__Host) - 724\nJS cookie (no SameSite attribute) - 724\nlocalStorage - 724\nsessionStorage - 724\nIndexedDB - null (❌ DB is not defined)\nWebSQL - null (❌ openDatabase is not defined)\nCache API - 724\nCookieStore - null (❌ can't access property \"value\" of null)\nbrowser cache - \"724\"\nmemory - \"724\"\nwindow.name - \"724\"\nhistory - \"724\"\nservice worker - \"724\"\nservice worker cookieStore - ❌ error thrown (\"can't access property \"value\" of null\")"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-first-party header cookie\">first party header cookie - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-first-party header cookie",
+    "tag": "LI",
+    "text": "first party header cookie - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-safe-third party header cookie\">safe third party header cookie - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-safe-third party header cookie",
+    "tag": "LI",
+    "text": "safe third party header cookie - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-tracking-third party header cookie\">tracking third party header cookie - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-tracking-third party header cookie",
+    "tag": "LI",
+    "text": "tracking third party header cookie - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-JS-cookie\">JS cookie - <span class=\"value\">\"724\"</span> <span class=\"extra\">(expires in NaN days)</span></li>",
+    "id": "test-JS-cookie",
+    "tag": "LI",
+    "text": "JS cookie - \"724\" (expires in NaN days)"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-JS-cookie (__Host)\">JS cookie (__Host) - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-JS-cookie (__Host)",
+    "tag": "LI",
+    "text": "JS cookie (__Host) - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-JS-cookie (no SameSite attribute)\">JS cookie (no SameSite attribute) - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-JS-cookie (no SameSite attribute)",
+    "tag": "LI",
+    "text": "JS cookie (no SameSite attribute) - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-localStorage\">localStorage - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-localStorage",
+    "tag": "LI",
+    "text": "localStorage - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-sessionStorage\">sessionStorage - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-sessionStorage",
+    "tag": "LI",
+    "text": "sessionStorage - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-IndexedDB\">IndexedDB - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-IndexedDB",
+    "tag": "LI",
+    "text": "IndexedDB - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-WebSQL\">WebSQL - <span class=\"value\">❌ error thrown (\"openDatabase is not defined\")</span> <span class=\"extra\"></span></li>",
+    "id": "test-WebSQL",
+    "tag": "LI",
+    "text": "WebSQL - ❌ error thrown (\"openDatabase is not defined\")"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-Cache-API\">Cache API - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-Cache-API",
+    "tag": "LI",
+    "text": "Cache API - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-CookieStore\">CookieStore - <span class=\"value\">\"724\"</span> <span class=\"extra\">(expires in NaN days)</span></li>",
+    "id": "test-CookieStore",
+    "tag": "LI",
+    "text": "CookieStore - \"724\" (expires in NaN days)"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-JS-cookie (3rd party tracking script)\">JS cookie (3rd party tracking script) - <span class=\"value\">\"724\"</span> <span class=\"extra\">(expires in NaN days)</span></li>",
+    "id": "test-JS-cookie (3rd party tracking script)",
+    "tag": "LI",
+    "text": "JS cookie (3rd party tracking script) - \"724\" (expires in NaN days)"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-JS-cookie (3rd party safe script)\">JS cookie (3rd party safe script) - <span class=\"value\">\"724\"</span> <span class=\"extra\">(expires in NaN days)</span></li>",
+    "id": "test-JS-cookie (3rd party safe script)",
+    "tag": "LI",
+    "text": "JS cookie (3rd party safe script) - \"724\" (expires in NaN days)"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-safe-third party iframe\">safe third party iframe - <span class=\"value\"><ul><li>first party header cookie - 724  <span class=\"extra\"></span></li><li>tracking third party header cookie - 724  <span class=\"extra\"></span></li><li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li><li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li><li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li><li>localStorage - 724  <span class=\"extra\"></span></li><li>sessionStorage - 724  <span class=\"extra\"></span></li><li>IndexedDB - 724  <span class=\"extra\"></span></li><li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li><li>Cache API - 724  <span class=\"extra\"></span></li><li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li></ul></span> <span class=\"extra\"></span></li>",
+    "id": "test-safe-third party iframe",
+    "tag": "LI",
+    "text": "safe third party iframe -\nfirst party header cookie - 724\ntracking third party header cookie - 724\nJS cookie - 724 (expires in NaN days)\nJS cookie (__Host) - 724\nJS cookie (no SameSite attribute) - 724\nlocalStorage - 724\nsessionStorage - 724\nIndexedDB - 724\nWebSQL - null (❌ openDatabase is not defined)\nCache API - 724\nCookieStore - null (❌ can't access property \"value\" of null)"
+  },
+  {
+    "classes": "",
+    "html": "<li>first party header cookie - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "first party header cookie - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>tracking third party header cookie - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "tracking third party header cookie - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie - 724 (expires in NaN days)"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie (__Host) - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie (no SameSite attribute) - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>localStorage - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "localStorage - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>sessionStorage - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "sessionStorage - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>IndexedDB - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "IndexedDB - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "WebSQL - null (❌ openDatabase is not defined)"
+  },
+  {
+    "classes": "",
+    "html": "<li>Cache API - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "Cache API - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "CookieStore - null (❌ can't access property \"value\" of null)"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-tracking-third party iframe\">tracking third party iframe - <span class=\"value\"><ul><li>first party header cookie - 724  <span class=\"extra\"></span></li><li>safe third party header cookie - 724  <span class=\"extra\"></span></li><li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li><li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li><li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li><li>localStorage - 724  <span class=\"extra\"></span></li><li>sessionStorage - 724  <span class=\"extra\"></span></li><li>IndexedDB - 724  <span class=\"extra\"></span></li><li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li><li>Cache API - 724  <span class=\"extra\"></span></li><li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li></ul></span> <span class=\"extra\"></span></li>",
+    "id": "test-tracking-third party iframe",
+    "tag": "LI",
+    "text": "tracking third party iframe -\nfirst party header cookie - 724\nsafe third party header cookie - 724\nJS cookie - 724 (expires in NaN days)\nJS cookie (__Host) - 724\nJS cookie (no SameSite attribute) - 724\nlocalStorage - 724\nsessionStorage - 724\nIndexedDB - 724\nWebSQL - null (❌ openDatabase is not defined)\nCache API - 724\nCookieStore - null (❌ can't access property \"value\" of null)"
+  },
+  {
+    "classes": "",
+    "html": "<li>first party header cookie - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "first party header cookie - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>safe third party header cookie - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "safe third party header cookie - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie - 724 (expires in NaN days)"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie (__Host) - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie (no SameSite attribute) - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>localStorage - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "localStorage - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>sessionStorage - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "sessionStorage - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>IndexedDB - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "IndexedDB - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "WebSQL - null (❌ openDatabase is not defined)"
+  },
+  {
+    "classes": "",
+    "html": "<li>Cache API - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "Cache API - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "CookieStore - null (❌ can't access property \"value\" of null)"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-ad-third party iframe\">ad third party iframe - <span class=\"value\"><ul><li>first party header cookie - null (❌ JSON.parse: unexpected character at line 1 column 1 of the JSON data) <span class=\"extra\"></span></li><li>safe third party header cookie - 724  <span class=\"extra\"></span></li><li>tracking third party header cookie - 724  <span class=\"extra\"></span></li><li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li><li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li><li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li><li>localStorage - 724  <span class=\"extra\"></span></li><li>sessionStorage - 724  <span class=\"extra\"></span></li><li>IndexedDB - null (❌ DB is not defined) <span class=\"extra\"></span></li><li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li><li>Cache API - 724  <span class=\"extra\"></span></li><li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li></ul></span> <span class=\"extra\"></span></li>",
+    "id": "test-ad-third party iframe",
+    "tag": "LI",
+    "text": "ad third party iframe -\nfirst party header cookie - null (❌ JSON.parse: unexpected character at line 1 column 1 of the JSON data)\nsafe third party header cookie - 724\ntracking third party header cookie - 724\nJS cookie - 724 (expires in NaN days)\nJS cookie (__Host) - 724\nJS cookie (no SameSite attribute) - 724\nlocalStorage - 724\nsessionStorage - 724\nIndexedDB - null (❌ DB is not defined)\nWebSQL - null (❌ openDatabase is not defined)\nCache API - 724\nCookieStore - null (❌ can't access property \"value\" of null)"
+  },
+  {
+    "classes": "",
+    "html": "<li>first party header cookie - null (❌ JSON.parse: unexpected character at line 1 column 1 of the JSON data) <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "first party header cookie - null (❌ JSON.parse: unexpected character at line 1 column 1 of the JSON data)"
+  },
+  {
+    "classes": "",
+    "html": "<li>safe third party header cookie - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "safe third party header cookie - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>tracking third party header cookie - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "tracking third party header cookie - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie - 724  <span class=\"extra\">(expires in NaN days)</span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie - 724 (expires in NaN days)"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie (__Host) - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie (__Host) - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>JS cookie (no SameSite attribute) - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "JS cookie (no SameSite attribute) - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>localStorage - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "localStorage - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>sessionStorage - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "sessionStorage - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>IndexedDB - null (❌ DB is not defined) <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "IndexedDB - null (❌ DB is not defined)"
+  },
+  {
+    "classes": "",
+    "html": "<li>WebSQL - null (❌ openDatabase is not defined) <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "WebSQL - null (❌ openDatabase is not defined)"
+  },
+  {
+    "classes": "",
+    "html": "<li>Cache API - 724  <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "Cache API - 724"
+  },
+  {
+    "classes": "",
+    "html": "<li>CookieStore - null (❌ can't access property \"value\" of null) <span class=\"extra\"></span></li>",
+    "id": "",
+    "tag": "LI",
+    "text": "CookieStore - null (❌ can't access property \"value\" of null)"
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-browser-cache\">browser cache - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-browser-cache",
+    "tag": "LI",
+    "text": "browser cache - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-memory\">memory - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-memory",
+    "tag": "LI",
+    "text": "memory - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-window.name\">window.name - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-window.name",
+    "tag": "LI",
+    "text": "window.name - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-history\">history - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-history",
+    "tag": "LI",
+    "text": "history - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-service-worker\">service worker - <span class=\"value\">\"724\"</span> <span class=\"extra\"></span></li>",
+    "id": "test-service-worker",
+    "tag": "LI",
+    "text": "service worker - \"724\""
+  },
+  {
+    "classes": "",
+    "html": "<li id=\"test-service-worker cookieStore\">service worker cookieStore - <span class=\"value\">❌ error thrown (\"can't access property \"value\" of null\")</span> <span class=\"extra\"></span></li>",
+    "id": "test-service-worker cookieStore",
+    "tag": "LI",
+    "text": "service worker cookieStore - ❌ error thrown (\"can't access property \"value\" of null\")"
+  }
+]

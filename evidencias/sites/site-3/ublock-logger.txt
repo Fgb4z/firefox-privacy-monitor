@@ -1,0 +1,79 @@
++20	Reloading all filter lists: done, took 519 ms	info
++19	Reloading all filter lists: start	info
++19			pt.wikipedia.org	3	get	image	https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WLM_Brasil_2026_-_logo_vermelho.svg/120px-WLM_Brasil_2026_-_logo_vermelho.svg.png
++19			pt.wikipedia.org	3	get	script	https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D
++19			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++19			pt.wikipedia.org	3	get	script	https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D
++19			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++19			pt.wikipedia.org	3	get	script	https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&campaign=%5Bredigido%5D&banner=%5Bredigido%5D&uselang=%5Bredigido%5D&debug=%5Bredigido%5D
++19			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/w/extensions/ImageMap/resources/desc-20.png?15600=%5Bredigido%5D
++19			pt.wikipedia.org	3	get	script	https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&action=%5Bredigido%5D&ctype=%5Bredigido%5D
++19			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=%5Bredigido%5D&type=%5Bredigido%5D&usesul3=%5Bredigido%5D
++19			pt.wikipedia.org	3	get	script	https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&action=%5Bredigido%5D&ctype=%5Bredigido%5D
++19			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++19			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/static/favicon/wikipedia.ico
++18			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/static/apple-touch/wikipedia.png
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bert_Patenaude.jpg/250px-Bert_Patenaude.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Brigitte_Bardot_-_1962.jpg/250px-Brigitte_Bardot_-_1962.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg/250px-Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/20px-X_icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/20px-Facebook_icon_%28black%29.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WhatsApp_pure_black.svg/20px-WhatsApp_pure_black.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bert_Patenaude.jpg/250px-Bert_Patenaude.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Brigitte_Bardot_-_1962.jpg/250px-Brigitte_Bardot_-_1962.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg/250px-Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/20px-X_icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/20px-Facebook_icon_%28black%29.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WhatsApp_pure_black.svg/20px-WhatsApp_pure_black.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	3	get	image	https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&variant=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++18			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net.cdn.cloudflare.net/	aliasURL=https://cdn.jsdelivr.net/gh/gorhill/uBlock@master/assets/assets.json
++18			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net/gh/gorhill/uBlock@master/assets/assets.json
++18			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D
++18	#@#+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |(^|\\)powershell(\.exe)? .*?-w(indowStyle)? h(idden)?\b|(^|\\)powershell(\.exe)? .*?-w[a-z]* m[a-z]* |(^|\\)powershell(\.exe)? .*?-NoP\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? b(ypass)?\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? u(nrestricted)?\b|(^|\\)powershell(\.exe)? .*?\biex\(|(^|\\)powershell(\.exe)? .*?Invoke-Expression|(^|\\)powershell.+?Invoke-WebRequest|(^|\\)powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|(^|\\)powershell(\.exe)? .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^c(onhost|md) .*?--headless |^iex\(i(rm|wr) |^irm .+? iex\b|^%COMSPEC% .*?\bstart .*?\/min\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^\{|^http|^(git|import|require|use) /i)		pt.wikipedia.org		get	scriptlet	https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal
++18			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-pt.svg
++18			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg
++18			pt.wikipedia.org	1	get	image	https://pt.wikipedia.org/static/images/icons/wikipedia.png
++18			pt.wikipedia.org	1	get	css	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	css	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	script	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&raw=%5Bredigido%5D&skin=%5Bredigido%5D
++18			pt.wikipedia.org	1	get	css	https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D
++18	@@||wikipedia.org^$generichide	++	pt.wikipedia.org	1		generichide	https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal
++18			pt.wikipedia.org	1	get	doc	https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal
++18	https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal
++17			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://publicsuffix.org/list/public_suffix_list.dat
++16			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/filters/badlists.txt
++15			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/filters/filters.min.txt
++14			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
++13			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/filters/privacy.min.txt
++12			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net.cdn.cloudflare.net/	aliasURL=https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/unbreak.min.txt
++12			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/unbreak.min.txt
++11			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/filters/quick-fixes.min.txt
++10	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(image/)	error
++10	Invalid filter (easylist): pornhub.com##:-abp-properties(height: 300px; width: 315px;)	error
++10	Invalid filter (easylist): pornhub.com,youporn.com##:-abp-properties(float: right; margin-top: 30px; width: 50%;)	error
++10	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(data:)	error
++10	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(base64)	error
++10	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(*data:image*)	error
++10	Invalid filter (easylist): gamepadla.com#?#.pMain:has(div:-abp-properties(Partner))	error
++9			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/thirdparties/easylist.txt
++8			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net.cdn.cloudflare.net/	aliasURL=https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/thirdparties/easyprivacy.txt
++8			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/thirdparties/easyprivacy.txt
++7			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://curbengh.github.io/malware-filter/urlhaus-filter-ag-online.txt
++4			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://pgl.yoyo.org/adservers/serverlist.php?hostformat=%5Bredigido%5D&showintro=%5Bredigido%5D&mimetype=%5Bredigido%5D
++2	Reloading all filter lists: done, took 2424 ms	info
++2	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(image/)	error
++2	Invalid filter (easylist): pornhub.com##:-abp-properties(height: 300px; width: 315px;)	error
++2	Invalid filter (easylist): pornhub.com,youporn.com##:-abp-properties(float: right; margin-top: 30px; width: 50%;)	error
++2	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(data:)	error
++2	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(base64)	error
++2	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(*data:image*)	error
++2	Invalid filter (easylist): gamepadla.com#?#.pMain:has(div:-abp-properties(Partner))	error
++1	Network error: moz-extension://273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba/assets/thirdparties/pgl.yoyo.org/as/serverlist.txt	error
++0	Reloading all filter lists: start	info

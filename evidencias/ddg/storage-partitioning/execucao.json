@@ -1,0 +1,14 @@
+{
+  "url": "https://www.first-party.site/privacy-protections/storage-partitioning/",
+  "startedAt": "2026-09-29T00:48:08.794Z",
+  "steps": [
+    "Clique #run",
+    "Clique #toggle-details"
+  ],
+  "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+  "finalUrl": "https://www.first-party.site/privacy-protections/storage-partitioning/",
+  "completedAt": "2026-09-29T00:48:45.476Z",
+  "requests": 30,
+  "events": 22,
+  "truncated": false
+}

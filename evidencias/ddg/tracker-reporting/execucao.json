@@ -1,0 +1,11 @@
+{
+  "url": "https://www.first-party.site/tracker-reporting/1major-via-script.html",
+  "startedAt": "2026-09-29T00:45:35.054Z",
+  "steps": [],
+  "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+  "finalUrl": "https://www.first-party.site/tracker-reporting/1major-via-script.html",
+  "completedAt": "2026-09-29T00:45:40.982Z",
+  "requests": 3,
+  "events": 3,
+  "truncated": false
+}

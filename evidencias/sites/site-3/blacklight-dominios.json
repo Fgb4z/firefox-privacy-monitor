@@ -1,0 +1,23 @@
+[
+  {
+    "domain": "thumb.wikimedia.org",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  },
+  {
+    "domain": "meta.wikimedia.org",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  },
+  {
+    "domain": "auth.wikimedia.org",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  }
+]

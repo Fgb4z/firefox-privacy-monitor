@@ -1,0 +1,72 @@
+[Home] ↣ [Privacy Protections Tests] ↣ [Storage Partitioning Test Page]
+This page will determine whether various storage APIs are parititoned or blocked across origins.
+NOTE: These tests will return incorrect results if:
+you have multiple copies of the test page open
+you run the tests after force reloading the page, as this bypasses Service Workers
+Run Tests
+Retrieved data from 21 storage mechanisms.
+Hide Detailed Results
+✅ document.cookie - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null }, { "value": null } ]
+✅ HTTP Cookie - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null }, { "value": null } ]
+✅ Cookie Store API - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null }, { "value": null } ]
+✅ localStorage - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null }, { "value": null } ]
+✅ sessionStorage - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null }, { "value": null } ]
+✅ IndexedDB - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null }, { "value": null } ]
+✅ WebSQL - unsupported
+same-site: [ { "value": null, "error": "Unsupported" }, { "value": null, "error": "Unsupported" } ]
+cross-site: [ { "value": null, "error": "Unsupported" }, { "value": null, "error": "Unsupported" } ]
+✅ Cache API - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null }, { "value": null } ]
+✅ ServiceWorker - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null, "error": "No service worker controller for this context." }, { "value": null, "error": "No service worker controller for this context." } ]
+✅ BroadcastChannel - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null, "error": "No BroadcastChannel message received within timeout 1000" }, { "value": null, "error": "No BroadcastChannel message received within timeout 1000" } ]
+✅ SharedWorker - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null }, { "value": null } ]
+✅ Web Locks API - pass
+same-site: [ { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" }, { "value": "1373215c-a48b-4052-b893-0c3d208d10cb" } ]
+cross-site: [ { "value": null, "error": "LockManager.query: query() is not allowed in this context" }, { "value": null, "error": "LockManager.query: query() is not allowed in this context" } ]
+✅ Fetch Cache - pass
+same-site: [ { "value": 1 }, { "value": 1 } ]
+cross-site: [ { "value": 2 }, { "value": 2 } ]
+✅ XMLHttpRequest Cache - pass
+same-site: [ { "value": 1 }, { "value": 1 } ]
+cross-site: [ { "value": 2 }, { "value": 2 } ]
+✅ Iframe Cache - pass
+same-site: [ { "value": 1 }, { "value": 1 } ]
+cross-site: [ { "value": 2 }, { "value": 2 } ]
+✅ Image Cache - pass
+same-site: [ { "value": 1 }, { "value": 1 } ]
+cross-site: [ { "value": 2 }, { "value": 2 } ]
+✅ Favicon Cache - pass
+same-site: [ { "value": 1 }, { "value": 1 } ]
+cross-site: [ { "value": 2 }, { "value": 2 } ]
+✅ Font Cache - pass
+same-site: [ { "value": 1 }, { "value": 1 } ]
+cross-site: [ { "value": 2 }, { "value": 2 } ]
+✅ CSS cache - pass
+same-site: [ { "value": "fake_8004562983323535" }, { "value": "fake_8004562983323535" } ]
+cross-site: [ { "value": "fake_6113847907343422" }, { "value": "fake_6113847907343422" } ]
+⚠️ Prefetch Cache - error
+same-site: [ { "value": 1 }, { "value": 1 } ]
+cross-site: [ { "value": 1 }, { "value": 2 } ]
+✅ HSTS - pass
+same-site: [ { "value": "http" }, { "value": "http" } ]
+cross-site: [ { "value": "http" }, { "value": "http" } ]
+Download the result

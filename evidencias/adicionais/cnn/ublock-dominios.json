@@ -1,0 +1,53 @@
+[
+  {
+    "domain": "www.youtube.com",
+    "evidence": "ublock-logger.txt linhas 4, 9",
+    "rules": [
+      "||youtube.com/youtubei/v1/log_event",
+      "/generate_204?$image"
+    ]
+  },
+  {
+    "domain": "static.doubleclick.net",
+    "evidence": "ublock-logger.txt linhas 54, 55, 56",
+    "rules": [
+      "doubleclick_instream_ad_status.js:5",
+      "||doubleclick.net/instream/ad_status.js^$script,redirect-rule=doubleclick_instream_ad_status.js:5",
+      "||doubleclick.net^"
+    ]
+  },
+  {
+    "domain": "googleads.g.doubleclick.net",
+    "evidence": "ublock-logger.txt linhas 57, 58, 59",
+    "rules": [
+      "noop.txt",
+      "||doubleclick.net^$xhr,redirect-rule=noop.txt",
+      "||doubleclick.net^"
+    ]
+  },
+  {
+    "domain": "imasdk.googleapis.com",
+    "evidence": "ublock-logger.txt linhas 121, 122, 123",
+    "rules": [
+      "google-ima.js",
+      "||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect-rule=google-ima.js,from=cnnbrasil.com.br",
+      "||imasdk.googleapis.com^"
+    ]
+  },
+  {
+    "domain": "cdn.requestmetrics.com",
+    "evidence": "ublock-logger.txt linhas 127",
+    "rules": [
+      "||requestmetrics.com^$3p"
+    ]
+  },
+  {
+    "domain": "www.googletagmanager.com",
+    "evidence": "ublock-logger.txt linhas 333, 334, 335",
+    "rules": [
+      "googletagmanager_gtm.js:5",
+      "||googletagmanager.com/gtm.js$script,redirect-rule=googletagmanager_gtm.js:5,from=~nerc.com",
+      "||googletagmanager.com^"
+    ]
+  }
+]

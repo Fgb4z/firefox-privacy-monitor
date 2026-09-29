@@ -1,0 +1,30 @@
+{
+  "site": "BBC News",
+  "requestedUrl": "https://www.bbc.com/news",
+  "startedAt": "2026-09-29T00:53:47.815Z",
+  "condition": "M: somente Privacy Monitor; perfil Firefox novo por site",
+  "consent": "Sem interação com avisos de cookies; nenhum login, formulário ou compra.",
+  "observationSeconds": 30,
+  "headless": true,
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "harSource": "Firefox DevTools NetMonitorAPI.getHar → HarExporter",
+  "warnings": [],
+  "preferences": {
+    "acceptLanguage": "und",
+    "cookieBehavior": 5,
+    "etp": "custom",
+    "timezone": "America/Sao_Paulo",
+    "trackingProtection": false
+  },
+  "finalUrl": "https://www.bbc.com/news",
+  "title": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+  "rawHarDigest": "sha256:3bf16706b6daced4dac7",
+  "harEntries": 343,
+  "score": 25,
+  "requests": 349,
+  "browserVersion": "156.0.1",
+  "completedAt": "2026-09-29T00:54:23.119Z"
+}

@@ -1,0 +1,36 @@
+{
+  "site": "https://www.cnnbrasil.com.br/",
+  "startedAt": "2026-09-29T00:41:21.757Z",
+  "condition": "U: uBlock Origin sozinho em perfil novo; sem Privacy Monitor",
+  "ublock": {
+    "source": "Mozilla Add-ons",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5034826/ublock_origin-1.75.0.xpi",
+    "version": "1.75.0",
+    "hash": "sha256:5b74415860456370644bd80f16125e865b0e6c356bb5dfcfb84069967eaa5287",
+    "downloadedAt": "2026-09-29T00:38:18.071Z"
+  },
+  "consent": "Sem interação com cookies, sem login",
+  "observationSeconds": 30,
+  "settings": {
+    "selectedFilterLists": [
+      "user-filters",
+      "ublock-filters",
+      "ublock-badware",
+      "ublock-privacy",
+      "ublock-unbreak",
+      "ublock-quick-fixes",
+      "easylist",
+      "easyprivacy",
+      "urlhaus-1",
+      "plowe-0"
+    ],
+    "version": "1.75.0"
+  },
+  "finalUrl": "https://www.cnnbrasil.com.br/",
+  "title": "CNN Brasil | Notícias Ao Vivo do Brasil e do Mundo",
+  "harEntries": 165,
+  "logLines": 392,
+  "blockedRequests": 15,
+  "blockedDomains": 6,
+  "completedAt": "2026-09-29T00:42:13.434Z"
+}

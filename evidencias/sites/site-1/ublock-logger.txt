@@ -1,0 +1,246 @@
++50	*$ping,3p	--	www.bbc.com	3	post	beacon	https://dotcom.bbc-reporting-api.app/report-endpoint?pageType=%5Bredigido%5D
++50	||vtrk.dv.tech^	--	www.bbc.com	3	post	beacon	https://vtrk.dv.tech/?ec=%5Bredigido%5D&ea=%5Bredigido%5D&ctx=%5Bredigido%5D&cmp=%5Bredigido%5D&cd110=%5Bredigido%5D&cd111=%5Bredigido%5D&cd112=%5Bredigido%5D&cd113=%5Bredigido%5D&cm106=%5Bredigido%5D&cm107=%5Bredigido%5D&cm108=%5Bredigido%5D&cm109=%5Bredigido%5D&cm110=%5Bredigido%5D&cm111=%5Bredigido%5D&cm116=%5Bredigido%5D&cm117=%5Bredigido%5D&cm118=%5Bredigido%5D&cm119=%5Bredigido%5D&cm120=%5Bredigido%5D&cm121=%5Bredigido%5D&cm122=%5Bredigido%5D&cm123=%5Bredigido%5D&cm124=%5Bredigido%5D&cm125=%5Bredigido%5D&cm126=%5Bredigido%5D&cm127=%5Bredigido%5D&cm128=%5Bredigido%5D&cm129=%5Bredigido%5D&cm130=%5Bredigido%5D&cm131=%5Bredigido%5D&cm132=%5Bredigido%5D&cm133=%5Bredigido%5D&cd114=%5Bredigido%5D&cd102=%5Bredigido%5D&cd103=%5Bredigido%5D&cd107=%5Bredigido%5D&cd109=%5Bredigido%5D&cd200=%5Bredigido%5D&cd108=%5Bredigido%5D&cd105=%5Bredigido%5D&cd106=%5Bredigido%5D&cd104=%5Bredigido%5D&cd199=%5Bredigido%5D&cd101=%5Bredigido%5D&cm101=%5Bredigido%5D&cid=%5Bredigido%5D&t=%5Bredigido%5D&v=%5Bredigido%5D&z=%5Bredigido%5D&cd160=%5Bredigido%5D
++50	||vtrk.dv.tech^	--	www.bbc.com	3	post	beacon	https://vtrk.dv.tech/?ec=%5Bredigido%5D&ea=%5Bredigido%5D&ctx=%5Bredigido%5D&cmp=%5Bredigido%5D&cd110=%5Bredigido%5D&cm106=%5Bredigido%5D&cm107=%5Bredigido%5D&cm108=%5Bredigido%5D&cm109=%5Bredigido%5D&cm110=%5Bredigido%5D&cm111=%5Bredigido%5D&cm112=%5Bredigido%5D&cd102=%5Bredigido%5D&cd103=%5Bredigido%5D&cd107=%5Bredigido%5D&cd109=%5Bredigido%5D&cd200=%5Bredigido%5D&cd108=%5Bredigido%5D&cd105=%5Bredigido%5D&cd106=%5Bredigido%5D&cd104=%5Bredigido%5D&cd199=%5Bredigido%5D&cd101=%5Bredigido%5D&cm101=%5Bredigido%5D&cid=%5Bredigido%5D&t=%5Bredigido%5D&v=%5Bredigido%5D&z=%5Bredigido%5D&cd160=%5Bredigido%5D
++25			www.bbc.com	3	get	xhr	https://buy-eu.piano.io/api/v3/anon/assets/sdk-runtime-config.js?aid=%5Bredigido%5D
++22	||vtrk.dv.tech^	--	www.bbc.com	3	post	beacon	https://vtrk.dv.tech/?ec=%5Bredigido%5D&ea=%5Bredigido%5D&ctx=%5Bredigido%5D&cmp=%5Bredigido%5D&cd111=%5Bredigido%5D&cm106=%5Bredigido%5D&cm107=%5Bredigido%5D&cd112=%5Bredigido%5D&cd115=%5Bredigido%5D&cm116=%5Bredigido%5D&cm108=%5Bredigido%5D&cm109=%5Bredigido%5D&cm110=%5Bredigido%5D&cm111=%5Bredigido%5D&cm112=%5Bredigido%5D&cm113=%5Bredigido%5D&cd102=%5Bredigido%5D&cd103=%5Bredigido%5D&cd107=%5Bredigido%5D&cd109=%5Bredigido%5D&cd200=%5Bredigido%5D&cd108=%5Bredigido%5D&cd105=%5Bredigido%5D&cd106=%5Bredigido%5D&cd104=%5Bredigido%5D&cd199=%5Bredigido%5D&cd101=%5Bredigido%5D&cm101=%5Bredigido%5D&cid=%5Bredigido%5D&t=%5Bredigido%5D&v=%5Bredigido%5D&z=%5Bredigido%5D&cd160=%5Bredigido%5D
++22	||doubleverify.com^	--	www.bbc.com	3	get	xhr	https://pub.doubleverify.com/dvtag/signals/bsc/pub.json?ctx=%5Bredigido%5D&cmp=%5Bredigido%5D&url=%5Bredigido%5D&bsc=%5Bredigido%5D&abs=%5Bredigido%5D&token=%5Bredigido%5D
++22	||doubleverify.com^	--	www.bbc.com	3	get	xhr	https://pub.doubleverify.com/dvtag/signals/ids/pub.json?ctx=%5Bredigido%5D&cmp=%5Bredigido%5D&url=%5Bredigido%5D&ids=%5Bredigido%5D&token=%5Bredigido%5D
++22	[www.bbc.com][set-constant ⁝ dvtag.getTargeting ⁝ trueFunc] TypeError: can't redefine non-configurable property "getTargeting"	error	scriptlet
++22	||edigitalsurvey.com^$3p	--	www.bbc.com	3	get	frame	https://edigitalsurvey.com/l.php?id=%5Bredigido%5D&v=%5Bredigido%5D&x=%5Bredigido%5D&y=%5Bredigido%5D&d=%5Bredigido%5D&c=%5Bredigido%5D&ck=%5Bredigido%5D&p=%5Bredigido%5D&xdm=%5Bredigido%5D&xdm_o=%5Bredigido%5D&xdm_c=%5Bredigido%5D
++22	##+js(prevent-clipboard-write, /^ms(hta|iexec)(\.exe)? |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |(^|\\)powershell(\.exe)? .*?-w(indowStyle)? h(idden)?\b|(^|\\)powershell(\.exe)? .*?-w[a-z]* m[a-z]* |(^|\\)powershell(\.exe)? .*?-NoP\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? b(ypass)?\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? u(nrestricted)?\b|(^|\\)powershell(\.exe)? .*?\biex\(|(^|\\)powershell(\.exe)? .*?Invoke-Expression|(^|\\)powershell.+?Invoke-WebRequest|(^|\\)powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|(^|\\)powershell(\.exe)? .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^c(onhost|md) .*?--headless |^iex\(i(rm|wr) |^\(?irm .+?\biex\b|^%COMSPEC% .*?\bstart .*?\/min\b|^cmd .*?\/c .*?%TEMP%.*?\.bat\b|\bconvert\b.*?\$env:ComSpec\b|^<#Verification|^Invoke-WebRequest .+?\bwscript(\.exe)?\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^\{|^http|^(git|import|require|use) /i)		www.bbc.com		post	scriptlet	https://www.bbc.com/news
++22	##+js(set-constant, dvtag.getTargeting, trueFunc)		www.bbc.com		post	scriptlet	https://www.bbc.com/news
++22	||a1.api.bbc.com^	--	www.bbc.com	1	post	xhr	https://a1.api.bbc.com/event?s=%5Bredigido%5D&idclient=%5Bredigido%5D
++22	||scorecardresearch.com^	--	www.bbc.com	3	get	script	https://sb.scorecardresearch.com/internal-cs/default/beacon.js
++22			www.bbc.com	3	get	script	https://static-web-assets.gnl-common.bbcverticals.com/	aliasURL=https://gn-web-assets.api.bbc.com/ngas/vendor/edr/edr.min.js
++22			www.bbc.com	1	get	script	https://gn-web-assets.api.bbc.com/ngas/vendor/edr/edr.min.js
++22	||speedcurve.com^$3p	--	www.bbc.com	3	get	script	https://cdn.speedcurve.com/js/lux.js?id=%5Bredigido%5D
++22			www.bbc.com	3	get	script	https://static-web-assets.gnl-common.bbcverticals.com/	aliasURL=https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-analytics.js
++22			www.bbc.com	1	get	script	https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-analytics.js
++22			www.bbc.com	3	post	xhr	https://c2-eu.piano.io/xbuilder/experience/execute?aid=%5Bredigido%5D
++22	||cxense.com^$3p	--	www.bbc.com	3	get	script	https://cdn.cxense.com/cx.cce.js
++22			www.bbc.com	3	get	script	https://static-web-assets.gnl-common.bbcverticals.com/	aliasURL=https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-preroll.js
++22			www.bbc.com	1	get	script	https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-preroll.js
++22			www.bbc.com	3	get	script	https://static-web-assets.gnl-common.bbcverticals.com/	aliasURL=https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-ads.js
++22			www.bbc.com	1	get	script	https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-ads.js
++22	@@||pub.doubleverify.com/dvtag/$script,from=bbc.com|time.com	++	www.bbc.com	3	get	script	https://pub.doubleverify.com/dvtag/29028254/DV1298722/pub.js
++22	||permutive.com^$3p	--	www.bbc.com	3	get	script	https://cdn.permutive.com/e488cdb0-e7cb-4d91-9648-60d437d8e491-web.js
++22	||the-ozone-project.com^	--	www.bbc.com	3	get	script	https://prebid.the-ozone-project.com/hw2/OZONEBBC4784/1500000107/current/ozpb.min.js
++22	googletagservices_gpt.js:5	<<	www.bbc.com	3	get	script	https://securepubads.g.doubleclick.net/tag/js/gpt.js
++22	||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect-rule=googletagservices_gpt.js:5	--	www.bbc.com	3	get	script	https://securepubads.g.doubleclick.net/tag/js/gpt.js
++22	||doubleclick.net^	--	www.bbc.com	3	get	script	https://securepubads.g.doubleclick.net/tag/js/gpt.js
++22	||webcontentassessor.com^	--	www.bbc.com	3	get	script	https://scripts.webcontentassessor.com/scripts/64ca3dfd44dd68a629e2e51a27e7ccd960974b5961e4ca2897139d14bf10be8b
++22	||a1.api.bbc.com^	--	www.bbc.com	1	post	xhr	https://a1.api.bbc.com/event?s=%5Bredigido%5D&idclient=%5Bredigido%5D
++22	googlesyndication_adsbygoogle.js:5	<<	www.bbc.com	3	get	xhr	https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
++22	||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,redirect-rule=googlesyndication_adsbygoogle.js:5,from=~authenticateme.xyz|~kio.ac|~zipextractor.app	--	www.bbc.com	3	get	xhr	https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
++22	||pagead2.googlesyndication.com^$xhr,redirect-rule=noop.js	--	www.bbc.com	3	get	xhr	https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
++22	||googlesyndication.com^	--	www.bbc.com	3	get	xhr	https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
++22			www.bbc.com	3	options	xhr	https://live-federated-id-alb-1756651342.eu-west-1.elb.amazonaws.com/	aliasURL=https://federated-id.live.api.bbc.co.uk/v2/encryptforallthirdparties
++22			www.bbc.com	3	options	xhr	https://federated-id.live.api.bbc.co.uk/v2/encryptforallthirdparties
++22	@@||mybbc-analytics.files.bbci.co.uk^$from=bbc.com	++	www.bbc.com	3	get	xhr	https://mybbc-analytics.files.bbci.co.uk/analytics-remote-config/masterbrands.json
++22	@@||mybbc-analytics.files.bbci.co.uk^$from=bbc.com	++	www.bbc.com	3	get	xhr	https://mybbc-analytics.files.bbci.co.uk/analytics-remote-config/producers.json
++22			www.bbc.com	3	post	xhr	https://live-federated-id-alb-1756651342.eu-west-1.elb.amazonaws.com/	aliasURL=https://federated-id.live.api.bbc.co.uk/v2/encryptforallthirdparties
++22			www.bbc.com	3	post	xhr	https://federated-id.live.api.bbc.co.uk/v2/encryptforallthirdparties
++22	/v2/pv-data?	--	www.bbc.com	3	post	xhr	https://cdn.privacy-mgmt.com/wrapper/v2/pv-data?hasCsp=%5Bredigido%5D&env=%5Bredigido%5D&ch=%5Bredigido%5D&scriptVersion=%5Bredigido%5D&scriptType=%5Bredigido%5D
++22	||cxense.com^$3p	--	www.bbc.com	3	get	script	https://cdn.cxense.com/ari.js
++21			www.bbc.com	3	get	xhr	https://cdn.privacy-mgmt.com/wrapper/v2/messages?hasCsp=%5Bredigido%5D&env=%5Bredigido%5D&body=%5Bredigido%5D&localState=%5Bredigido%5D&metadata=%5Bredigido%5D&nonKeyedLocalState=%5Bredigido%5D&ch=%5Bredigido%5D&scriptVersion=%5Bredigido%5D&scriptType=%5Bredigido%5D
++21	@@||mybbc-analytics.files.bbci.co.uk^$from=bbc.com	++	www.bbc.com	3	get	script	https://mybbc-analytics.files.bbci.co.uk/echo-client-js/echo-2.6.0-avi.min.js
++21			www.bbc.com	3	get	xhr	https://cdn.privacy-mgmt.com/wrapper/v2/meta-data?hasCsp=%5Bredigido%5D&accountId=%5Bredigido%5D&env=%5Bredigido%5D&metadata=%5Bredigido%5D&propertyId=%5Bredigido%5D&scriptVersion=%5Bredigido%5D&scriptType=%5Bredigido%5D
++21	||dotmetrics.net^	--	www.bbc.com	3	get	script	https://uk-script.dotmetrics.net/door.js?d=%5Bredigido%5D&t=%5Bredigido%5D
++21			www.bbc.com	3	get	xhr	https://cdn.privacy-mgmt.com/mms/v2/get_site_data?hasCsp=%5Bredigido%5D&href=%5Bredigido%5D&account_id=%5Bredigido%5D
++21			www.bbc.com	3	get	script	https://cdn.privacy-mgmt.com/unified/4.40.3/usnat.17801fe5e33dd6698495.bundle.js
++21			www.bbc.com	3	get	script	https://cdn.privacy-mgmt.com/unified/4.40.3/gdpr-tcf.205218eeda1bb062edfc.bundle.js
++21	chartbeat.js	<<	www.bbc.com	3	get	script	https://static.chartbeat.com/js/chartbeat.js
++21	||static.chartbeat.com/js/chartbeat.js$script,redirect-rule=chartbeat.js	--	www.bbc.com	3	get	script	https://static.chartbeat.com/js/chartbeat.js
++21	||chartbeat.com^$3p	--	www.bbc.com	3	get	script	https://static.chartbeat.com/js/chartbeat.js
++21			www.bbc.com	3	get	xhr	https://cdn.optimizely.com/datafiles/Y67aV8AjKqtntTQvKqk1A.json
++21	##+js(prevent-clipboard-write, /^ms(hta|iexec)(\.exe)? |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |(^|\\)powershell(\.exe)? .*?-w(indowStyle)? h(idden)?\b|(^|\\)powershell(\.exe)? .*?-w[a-z]* m[a-z]* |(^|\\)powershell(\.exe)? .*?-NoP\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? b(ypass)?\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? u(nrestricted)?\b|(^|\\)powershell(\.exe)? .*?\biex\(|(^|\\)powershell(\.exe)? .*?Invoke-Expression|(^|\\)powershell.+?Invoke-WebRequest|(^|\\)powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|(^|\\)powershell(\.exe)? .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^c(onhost|md) .*?--headless |^iex\(i(rm|wr) |^\(?irm .+?\biex\b|^%COMSPEC% .*?\bstart .*?\/min\b|^cmd .*?\/c .*?%TEMP%.*?\.bat\b|\bconvert\b.*?\$env:ComSpec\b|^<#Verification|^Invoke-WebRequest .+?\bwscript(\.exe)?\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^\{|^http|^(git|import|require|use) /i)		www.bbc.com		get	scriptlet	https://www.bbc.com/news
++21	##+js(set-constant, dvtag.getTargeting, trueFunc)		www.bbc.com		get	scriptlet	https://www.bbc.com/news
++21			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/favicon-16x16.png
++21			www.bbc.com	3	get	image	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/favicon-16x16.png
++21			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/apple-touch-icon.png
++21			www.bbc.com	3	get	image	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/apple-touch-icon.png
++20			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0yoghfwkswxeg.js
++20			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0yoghfwkswxeg.js
++20			www.bbc.com	3	get	script	https://cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js
++20	##+js(prevent-clipboard-write, /^ms(hta|iexec)(\.exe)? |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |(^|\\)powershell(\.exe)? .*?-w(indowStyle)? h(idden)?\b|(^|\\)powershell(\.exe)? .*?-w[a-z]* m[a-z]* |(^|\\)powershell(\.exe)? .*?-NoP\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? b(ypass)?\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? u(nrestricted)?\b|(^|\\)powershell(\.exe)? .*?\biex\(|(^|\\)powershell(\.exe)? .*?Invoke-Expression|(^|\\)powershell.+?Invoke-WebRequest|(^|\\)powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|(^|\\)powershell(\.exe)? .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^c(onhost|md) .*?--headless |^iex\(i(rm|wr) |^\(?irm .+?\biex\b|^%COMSPEC% .*?\bstart .*?\/min\b|^cmd .*?\/c .*?%TEMP%.*?\.bat\b|\bconvert\b.*?\$env:ComSpec\b|^<#Verification|^Invoke-WebRequest .+?\bwscript(\.exe)?\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^\{|^http|^(git|import|require|use) /i)		www.bbc.com		get	scriptlet	https://www.bbc.com/news
++20	##+js(set-constant, dvtag.getTargeting, trueFunc)		www.bbc.com		get	scriptlet	https://www.bbc.com/news
++20			www.bbc.com	3	get	script	https://cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js
++20	Reloading all filter lists: done, took 1104 ms	info
++20			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0.44191m_y6r1.js
++20			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0.44191m_y6r1.js
++20			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0.gu_l8v2fg11.js
++20			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0.gu_l8v2fg11.js
++20			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0_a80-qmpyc3s.js
++20			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0_a80-qmpyc3s.js
++20			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/00w89utsyp_2c.js
++20			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/00w89utsyp_2c.js
++20			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/04x.wea_ofqc1.js
++20			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/04x.wea_ofqc1.js
++20			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0w54l~99pq3b9.js
++20			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0w54l~99pq3b9.js
++19	##.dotcom-ad		www.bbc.com		get	dom	https://www.bbc.com/news
++19	Reloading all filter lists: start	info
++19			www.bbc.com	3	get	xhr	https://bbc.map.fastly.net/	aliasURL=https://www.bbc.co.uk/userinfo
++19			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://ichef.bbci.co.uk/news/480/cpsprodpb/3d55/live/464cb340-bafd-11f1-bc1f-3f186ca4140c.jpg.webp
++19			www.bbc.com	3	get	image	https://ichef.bbci.co.uk/news/480/cpsprodpb/3d55/live/464cb340-bafd-11f1-bc1f-3f186ca4140c.jpg.webp
++19			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://ichef.bbci.co.uk/news/800/cpsprodpb/e413/live/471b3a50-bb5f-11f1-a430-4d16ee157c41.jpg.webp
++19			www.bbc.com	3	get	image	https://ichef.bbci.co.uk/news/800/cpsprodpb/e413/live/471b3a50-bb5f-11f1-a430-4d16ee157c41.jpg.webp
++19			www.bbc.com	3	get	xhr	https://www.bbc.co.uk/userinfo
++19	##[data-component="ad-slot"]		www.bbc.com		get	dom	https://www.bbc.com/news
++19			www.bbc.com	3	get	font	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_ExBd.woff2
++19			www.bbc.com	3	get	font	https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_ExBd.woff2
++19			www.bbc.com	3	get	font	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSerif_W_Rg.woff2
++19			www.bbc.com	3	get	font	https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSerif_W_Rg.woff2
++19			www.bbc.com	3	get	font	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSerif_W_Md.woff2
++19			www.bbc.com	3	get	font	https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSerif_W_Md.woff2
++19			www.bbc.com	3	get	font	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Rg.woff2
++19			www.bbc.com	3	get	font	https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Rg.woff2
++19			www.bbc.com	3	get	font	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Bd.woff2
++19			www.bbc.com	3	get	font	https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Bd.woff2
++19			www.bbc.com	3	get	font	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Md.woff2
++19			www.bbc.com	3	get	font	https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Md.woff2
++19	##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |(^|\\)powershell(\.exe)? .*?-w(indowStyle)? h(idden)?\b|(^|\\)powershell(\.exe)? .*?-w[a-z]* m[a-z]* |(^|\\)powershell(\.exe)? .*?-NoP\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? b(ypass)?\b|(^|\\)powershell(\.exe)? .*?-e(xecution)?p(olicy)? u(nrestricted)?\b|(^|\\)powershell(\.exe)? .*?\biex\(|(^|\\)powershell(\.exe)? .*?Invoke-Expression|(^|\\)powershell.+?Invoke-WebRequest|(^|\\)powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|(^|\\)powershell(\.exe)? .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^c(onhost|md) .*?--headless |^iex\(i(rm|wr) |^irm .+? iex\b|^%COMSPEC% .*?\bstart .*?\/min\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^\{|^http|^(git|import|require|use) /i)		www.bbc.com		get	scriptlet	https://www.bbc.com/news
++19	##+js(set-constant, dvtag.getTargeting, trueFunc)		www.bbc.com		get	scriptlet	https://www.bbc.com/news
++18			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://ichef.bbci.co.uk/news/480/cpsprodpb/c6d3/live/86c72290-b8a8-11f1-8257-a79ccb54f692.jpg.webp
++18			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://ichef.bbci.co.uk/news/480/cpsprodpb/a871/live/408a3ce0-bb82-11f1-861e-959cb7a461ff.png.webp
++18			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://ichef.bbci.co.uk/news/480/cpsprodpb/445a/live/ee159a80-bb5a-11f1-b3b3-91d0b491a464.jpg.webp
++18			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://ichef.bbci.co.uk/news/480/cpsprodpb/5257/live/7f188680-bb44-11f1-a430-4d16ee157c41.jpg.webp
++18			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://ichef.bbci.co.uk/news/480/cpsprodpb/7e30/live/3900ff30-bb15-11f1-97b0-3f86b3abbccc.jpg.webp
++18			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://ichef.bbci.co.uk/news/800/cpsprodpb/b523/live/4b9ddb40-bb6a-11f1-9ecf-8dd029790cef.jpg.webp
++18			www.bbc.com	3	get	image	https://ichef.bbci.co.uk/news/480/cpsprodpb/c6d3/live/86c72290-b8a8-11f1-8257-a79ccb54f692.jpg.webp
++18			www.bbc.com	3	get	image	https://ichef.bbci.co.uk/news/480/cpsprodpb/a871/live/408a3ce0-bb82-11f1-861e-959cb7a461ff.png.webp
++18			www.bbc.com	3	get	image	https://ichef.bbci.co.uk/news/480/cpsprodpb/445a/live/ee159a80-bb5a-11f1-b3b3-91d0b491a464.jpg.webp
++18			www.bbc.com	3	get	image	https://ichef.bbci.co.uk/news/480/cpsprodpb/5257/live/7f188680-bb44-11f1-a430-4d16ee157c41.jpg.webp
++18			www.bbc.com	3	get	image	https://ichef.bbci.co.uk/news/480/cpsprodpb/7e30/live/3900ff30-bb15-11f1-97b0-3f86b3abbccc.jpg.webp
++18			www.bbc.com	3	get	image	https://ichef.bbci.co.uk/news/800/cpsprodpb/b523/live/4b9ddb40-bb6a-11f1-9ecf-8dd029790cef.jpg.webp
++18			www.bbc.com	3	get	image	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/grey-placeholder.png
++18			www.bbc.com	3	get	image	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/grey-placeholder.png
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/_ELGt22iVu1dynTsZ01Af/_clientMiddlewareManifest.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/_ELGt22iVu1dynTsZ01Af/_clientMiddlewareManifest.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/_ELGt22iVu1dynTsZ01Af/_ssgManifest.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/_ELGt22iVu1dynTsZ01Af/_ssgManifest.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/_ELGt22iVu1dynTsZ01Af/_buildManifest.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/_ELGt22iVu1dynTsZ01Af/_buildManifest.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/turbopack-0avnpsvlwixta.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/turbopack-0avnpsvlwixta.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0gix4yu_sbvqq.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0gix4yu_sbvqq.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0agz.6442iwmr.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0agz.6442iwmr.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0d2g6-1tqjvg_.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/09ty0_vng_4l8.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0s6lnx5zy53qw.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0ney8voxt0l76.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/035cetiu1lmqz.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0s8xggute43mt.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0dygf8~f-ark~.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/turbopack-15cvt~es6_j.1.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/04smg~se-wxtv.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0a--~b-snp6to.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/05iq.f2~.a~3c.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/04sq1ffotg38c.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0q2eca2.3aqm4.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0gkzda.jd-xsx.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0a7h_kuj3flvo.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0n-kjrsnwe2tb.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0.ws-k_jzc8i2.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0sm_sfi0c1mq-.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0y-nyl-getpga.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0twmm2jr6mtmc.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/12w5u9fluro3i.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/13ad5orspgznk.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0z3rjge5m4grx.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/06nzlhdny82mu.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/16q5af36gnal7.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/04fz2r3mtr4_i.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/05el2iwpn3pyx.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0r3he0rx_9z1a.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0a~1hw4fw2b6u.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0yuh-~t-ppktm.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0i3fc1sdwdxwy.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0pr885e78gdj8.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/17y-vwlw.bfs8.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0-a6nanpwqpag.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0s_kjwmep8yf2.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0zpz-874su9ks.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0k530rgixl5kt.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://emp.bbci.co.uk/emp/bump-4/bump-4.js
++18			www.bbc.com	3	get	script	https://static-web-assets.gnl-common.bbcverticals.com/	aliasURL=https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-bootstrap.js
++18			www.bbc.com	3	get	script	https://e3891.dscg.akamaiedge.net/	aliasURL=https://static.bbci.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0d2g6-1tqjvg_.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/09ty0_vng_4l8.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0s6lnx5zy53qw.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0ney8voxt0l76.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/035cetiu1lmqz.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0s8xggute43mt.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0dygf8~f-ark~.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/turbopack-15cvt~es6_j.1.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/04smg~se-wxtv.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0a--~b-snp6to.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/05iq.f2~.a~3c.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/04sq1ffotg38c.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0q2eca2.3aqm4.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0gkzda.jd-xsx.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0a7h_kuj3flvo.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0n-kjrsnwe2tb.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0.ws-k_jzc8i2.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0sm_sfi0c1mq-.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0y-nyl-getpga.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0twmm2jr6mtmc.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/12w5u9fluro3i.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/13ad5orspgznk.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0z3rjge5m4grx.js
++18			www.bbc.com	3	get	script	https://cdn.tinypass.com/api/tinypass.min.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/06nzlhdny82mu.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/16q5af36gnal7.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/04fz2r3mtr4_i.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/05el2iwpn3pyx.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0r3he0rx_9z1a.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0a~1hw4fw2b6u.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0yuh-~t-ppktm.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0i3fc1sdwdxwy.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0pr885e78gdj8.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/17y-vwlw.bfs8.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0-a6nanpwqpag.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0s_kjwmep8yf2.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0zpz-874su9ks.js
++18			www.bbc.com	3	get	script	https://static.files.bbci.co.uk/bbcdotcom/web/20260922-091849-a8520cb5b4-web-3.22.0-3/_next/static/chunks/0k530rgixl5kt.js
++18			www.bbc.com	3	get	script	https://emp.bbci.co.uk/emp/bump-4/bump-4.js
++18			www.bbc.com	1	get	script	https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-bootstrap.js
++18			www.bbc.com	3	get	script	https://cdn.tinypass.com/api/tinypass.min.js
++18	||optimizely.com/public/	--	www.bbc.com	3	get	script	https://cdn.optimizely.com/public/4621041136/s/bbcx_prod.js
++18			www.bbc.com	3	get	script	https://static.bbci.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js
++18			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.github.io/uAssetsCDN/ublock/assets.json
++18			www.bbc.com	1	get	doc	https://www.bbc.com/news
++18	https://www.bbc.com/news
++17			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://publicsuffix.org/list/public_suffix_list.dat
++16			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/filters/badlists.txt
++15			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/filters/filters.min.txt
++14			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
++13			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net.cdn.cloudflare.net/	aliasURL=https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/privacy.min.txt
++13			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/privacy.min.txt
++12			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/filters/unbreak.min.txt
++11			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.github.io/uAssetsCDN/filters/quick-fixes.min.txt
++10			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.github.io/uAssetsCDN/filters/quick-fixes.min.txt
++10	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(image/)	error
++10	Invalid filter (easylist): pornhub.com##:-abp-properties(height: 300px; width: 315px;)	error
++10	Invalid filter (easylist): pornhub.com,youporn.com##:-abp-properties(float: right; margin-top: 30px; width: 50%;)	error
++10	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(data:)	error
++10	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(base64)	error
++10	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(*data:image*)	error
++10	Invalid filter (easylist): gamepadla.com#?#.pMain:has(div:-abp-properties(Partner))	error
++9			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net.cdn.cloudflare.net/	aliasURL=https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/thirdparties/easylist.txt
++9			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/thirdparties/easylist.txt
++8			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://ublockorigin.pages.dev/thirdparties/easyprivacy.txt
++7			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://malware-filter.pages.dev/urlhaus-filter-ag-online.txt
++4			273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba.moz-extension-scheme	0,3	get	xhr	https://pgl.yoyo.org/adservers/serverlist.php?hostformat=%5Bredigido%5D&showintro=%5Bredigido%5D&mimetype=%5Bredigido%5D
++2	Reloading all filter lists: done, took 2009 ms	info
++2	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(image/)	error
++2	Invalid filter (easylist): pornhub.com##:-abp-properties(height: 300px; width: 315px;)	error
++2	Invalid filter (easylist): pornhub.com,youporn.com##:-abp-properties(float: right; margin-top: 30px; width: 50%;)	error
++2	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(data:)	error
++2	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(base64)	error
++2	Invalid filter (easylist): redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(*data:image*)	error
++2	Invalid filter (easylist): gamepadla.com#?#.pMain:has(div:-abp-properties(Partner))	error
++1	Network error: moz-extension://273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba/assets/thirdparties/pgl.yoyo.org/as/serverlist.txt	error
++0	Reloading all filter lists: start	info

@@ -1,0 +1,13 @@
+[Home] ↣ [Privacy Protections Tests] ↣ [Request Blocking Test Page]
+This page tests if different types of requests, made using various browser mechanisms, are getting blocked.
+To test your request blocking solution please add bad.third-party.site domain to your blocklist.
+Start the test Download the results
+HTML
+CSS
+JS
+Other
+Legend:
+- request has loaded
+- request hasn't loaded
+- request failed (e.g. due to being blocked)
+Debug data:

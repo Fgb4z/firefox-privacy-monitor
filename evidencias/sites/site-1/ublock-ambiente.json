@@ -1,0 +1,36 @@
+{
+  "site": "https://www.bbc.com/news",
+  "startedAt": "2026-09-29T00:54:03.490Z",
+  "condition": "U: uBlock Origin sozinho em perfil novo; sem Privacy Monitor",
+  "ublock": {
+    "source": "Mozilla Add-ons",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/5034826/ublock_origin-1.75.0.xpi",
+    "version": "1.75.0",
+    "hash": "sha256:5b74415860456370644bd80f16125e865b0e6c356bb5dfcfb84069967eaa5287",
+    "downloadedAt": "2026-09-29T00:38:18.071Z"
+  },
+  "consent": "Sem interação com cookies, sem login",
+  "observationSeconds": 30,
+  "settings": {
+    "selectedFilterLists": [
+      "user-filters",
+      "ublock-filters",
+      "ublock-badware",
+      "ublock-privacy",
+      "ublock-unbreak",
+      "ublock-quick-fixes",
+      "easylist",
+      "easyprivacy",
+      "urlhaus-1",
+      "plowe-0"
+    ],
+    "version": "1.75.0"
+  },
+  "finalUrl": "https://www.bbc.com/news",
+  "title": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+  "harEntries": 113,
+  "logLines": 247,
+  "blockedRequests": 29,
+  "blockedDomains": 17,
+  "completedAt": "2026-09-29T00:54:56.019Z"
+}

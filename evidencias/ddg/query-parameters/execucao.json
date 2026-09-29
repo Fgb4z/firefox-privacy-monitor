@@ -1,0 +1,13 @@
+{
+  "url": "https://www.first-party.site/privacy-protections/query-parameters/",
+  "startedAt": "2026-09-29T00:46:59.894Z",
+  "steps": [
+    "Link utm_source + q"
+  ],
+  "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+  "finalUrl": "https://www.first-party.site/privacy-protections/query-parameters/query.html?utm_source=something&q=other",
+  "completedAt": "2026-09-29T00:47:08.865Z",
+  "requests": 3,
+  "events": 3,
+  "truncated": false
+}

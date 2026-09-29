@@ -1,0 +1,15 @@
+{
+  "url": "https://www.first-party.site/privacy-protections/request-blocking/",
+  "startedAt": "2026-09-29T00:52:31.245Z",
+  "steps": [
+    "Clique #start",
+    "Clique #start",
+    "Segunda execução após bloquear bad.third-party.site"
+  ],
+  "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+  "finalUrl": "https://www.first-party.site/privacy-protections/request-blocking/",
+  "completedAt": "2026-09-29T00:53:20.919Z",
+  "requests": 31,
+  "events": 12,
+  "truncated": false
+}

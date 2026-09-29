@@ -1,29 +1,22 @@
-# Evidências
+# Evidências da avaliação
 
-Esta pasta não equivale a validação concluída. `locais/` contém somente resultados de fixture sintética quando `npm run test:browser` é executado. Esses arquivos não substituem DDG, HARs dos sites sorteados ou comparação Blacklight/uBlock.
+Coletas reais de 28/09/2026, noite em Brasília; timestamps ISO são UTC e podem indicar 29/09. O [PDF final](../docs/relatorio/relatorio-final.pdf) reúne as análises e capturas.
 
-Estrutura de coleta:
+| Pasta | Conteúdo |
+|---|---|
+| `ddg/` | Oito grupos DDG: resultado da página, monitor, capturas, HAR e execução |
+| `sites/site-1/` | BBC News |
+| `sites/site-2/` | Magazine Luiza |
+| `sites/site-3/` | Wikipédia em português |
+| `adicionais/cnn/` | Coleta anterior CNN Brasil; falhas do Blacklight motivaram a substituição |
+| `locais/` | Fixture sintética, explicitamente separada das coletas de sites |
 
-```text
-evidencias/
-  locais/                     # teste sintético, Firefox headless
-  ddg/
-    tracker-reporting/
-    storage-blocking/
-    fingerprinting/
-    bounce-tracking/
-    query-parameters/
-    tracker-blocking/
-    storage-partitioning/
-    js-leaks/
-  sites/
-    site-1/
-    site-2/
-    site-3/
-```
+Cada teste DDG inclui `monitor.json`, `monitor.png`, `monitor-indicios.png`, `pagina.txt/png`, `pagina-resultados.json`, `instrucoes-pagina.txt`, `rede.har` e `execucao.json`. `tracker-blocking/sem-bloqueio/` é o controle anterior à regra. `js-leaks/sem-monitor.*` contém a referência sem extensão.
 
-Cada grupo DDG: `ambiente.md`, `monitor.png`, `monitor.json`, resultado da página e evidência de divergências. Use sufixos `-antes`/`-depois` para condições diferentes.
+Cada site inclui HAR/JSON/prints do monitor, `ambiente.json`, HAR/logger/prints/metadados uBlock e resultados/prints/HAR Blacklight. `analise.md` e `reconciliacao.json` comparam domínios registráveis, mantendo os hosts e índices dos recursos. `blacklight-inicial*` são tentativas anteriores; a condição usada no PDF é a de `blacklight-resultados.json`.
 
-Cada site: `ambiente.md`, `monitor.har`, `monitor.png`, `monitor.json`, `blacklight.png`/relatório, `ublock-logger.txt` e print, listas normalizadas `blacklight-dominios.json` e `ublock-dominios.json`, `reconciliacao.json`.
+HARs Firefox foram exportados **pelo DevTools nativo** por `NetMonitorAPI.getHar/HarExporter`; HAR Blacklight vem do arquivo ZIP oficial indicado no resultado. Não foram fabricados a partir dos JSONs do monitor. Prints são capturas reais de um Firefox em execução headless, com página e painel em imagens separadas. Originais privados ficam em `.cache`, ignorada pelo Git.
 
-HARs devem ser exportados pelo DevTools da execução real. Não gerar HAR artificial a partir do JSON do monitor. Revisar dados sensíveis antes de versionar, preservando cópias originais privadas quando necessárias à análise. A ferramenta de reconciliação exporta apenas metadados redigidos e não modifica o HAR original.
+Valores de query/cookies nas cópias HAR públicas foram substituídos por hashes consistentes; credenciais e corpos foram omitidos. Nomes, domínio, path, método, status, horário e relações de igualdade são preservados. O logger mantém numeração de linhas; o contexto `.moz-extension-scheme` identifica downloads feitos pelo uBlock, excluídos da análise da página. `aliasURL` identifica aliases DNS, não novos pedidos automaticamente.
+
+Não comparar números como se tivessem o mesmo significado: pedidos, hosts, rastreadores classificados, cookies presentes, tentativas de escrita e linhas bloqueadas são medidas distintas. As falhas e diferenças de ambiente estão descritas no relatório.

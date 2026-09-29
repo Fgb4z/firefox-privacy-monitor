@@ -1,0 +1,30 @@
+{
+  "site": "Magazine Luiza",
+  "requestedUrl": "https://www.magazineluiza.com.br/",
+  "startedAt": "2026-09-29T00:38:10.107Z",
+  "condition": "M: somente Privacy Monitor; perfil Firefox novo por site",
+  "consent": "Sem interação com avisos de cookies; nenhum login, formulário ou compra.",
+  "observationSeconds": 30,
+  "headless": true,
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "harSource": "Firefox DevTools NetMonitorAPI.getHar → HarExporter",
+  "warnings": [],
+  "preferences": {
+    "acceptLanguage": "und",
+    "cookieBehavior": 5,
+    "etp": "custom",
+    "timezone": "America/Sao_Paulo",
+    "trackingProtection": false
+  },
+  "finalUrl": "https://www.magazineluiza.com.br/",
+  "title": "Magazine Luiza | Pra você é Magalu!",
+  "rawHarDigest": "sha256:c9ac7a4204b12a1306a4",
+  "harEntries": 279,
+  "score": 13,
+  "requests": 284,
+  "browserVersion": "156.0.1",
+  "completedAt": "2026-09-29T00:38:45.684Z"
+}

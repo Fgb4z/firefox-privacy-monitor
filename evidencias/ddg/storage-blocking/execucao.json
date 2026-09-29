@@ -1,0 +1,14 @@
+{
+  "url": "https://www.first-party.site/privacy-protections/storage-blocking/",
+  "startedAt": "2026-09-29T00:55:37.112Z",
+  "steps": [
+    "Clique #store",
+    "Clique #retrive"
+  ],
+  "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+  "finalUrl": "https://www.first-party.site/privacy-protections/storage-blocking/#724",
+  "completedAt": "2026-09-29T00:55:54.628Z",
+  "requests": 67,
+  "events": 66,
+  "truncated": false
+}

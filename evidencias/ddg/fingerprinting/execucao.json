@@ -1,0 +1,13 @@
+{
+  "url": "https://www.first-party.site/privacy-protections/fingerprinting/",
+  "startedAt": "2026-09-29T00:55:59.875Z",
+  "steps": [
+    "Clique #start"
+  ],
+  "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+  "finalUrl": "https://www.first-party.site/privacy-protections/fingerprinting/",
+  "completedAt": "2026-09-29T00:56:21.596Z",
+  "requests": 9,
+  "events": 9,
+  "truncated": false
+}

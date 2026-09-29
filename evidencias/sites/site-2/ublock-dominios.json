@@ -1,0 +1,118 @@
+[
+  {
+    "domain": "analytics.tiktok.com",
+    "evidence": "ublock-logger.txt linhas 10, 23, 24, 44, 56, 58",
+    "rules": [
+      "||analytics.tiktok.com^"
+    ]
+  },
+  {
+    "domain": "client-side-metrics.us5.us.criteo.net",
+    "evidence": "ublock-logger.txt linhas 75",
+    "rules": [
+      "||criteo.net^"
+    ]
+  },
+  {
+    "domain": "c.btg360.com.br",
+    "evidence": "ublock-logger.txt linhas 77",
+    "rules": [
+      "||btg360.com.br^$3p"
+    ]
+  },
+  {
+    "domain": "dev.visualwebsiteoptimizer.com",
+    "evidence": "ublock-logger.txt linhas 99",
+    "rules": [
+      "/v.gif?"
+    ]
+  },
+  {
+    "domain": "intercept-widget.questionpro.com",
+    "evidence": "ublock-logger.txt linhas 247",
+    "rules": [
+      "||questionpro.com^$3p,from=~questionpro.com.au|~questionpro.eu"
+    ]
+  },
+  {
+    "domain": "tags.creativecdn.com",
+    "evidence": "ublock-logger.txt linhas 251",
+    "rules": [
+      "||creativecdn.com^"
+    ]
+  },
+  {
+    "domain": "static.hotjar.com",
+    "evidence": "ublock-logger.txt linhas 266",
+    "rules": [
+      "||hotjar.com^"
+    ]
+  },
+  {
+    "domain": "www.google.com",
+    "evidence": "ublock-logger.txt linhas 270, 305",
+    "rules": [
+      "||google.com/ccm/"
+    ]
+  },
+  {
+    "domain": "bat.bing.com",
+    "evidence": "ublock-logger.txt linhas 271",
+    "rules": [
+      "||bat.bing.com^"
+    ]
+  },
+  {
+    "domain": "static.ads-twitter.com",
+    "evidence": "ublock-logger.txt linhas 276, 306",
+    "rules": [
+      "||ads-twitter.com^"
+    ]
+  },
+  {
+    "domain": "s.pinimg.com",
+    "evidence": "ublock-logger.txt linhas 277",
+    "rules": [
+      "||s.pinimg.com/ct/core.js"
+    ]
+  },
+  {
+    "domain": "connect.facebook.net",
+    "evidence": "ublock-logger.txt linhas 278",
+    "rules": [
+      "/fbevents.js"
+    ]
+  },
+  {
+    "domain": "www.googletagmanager.com",
+    "evidence": "ublock-logger.txt linhas 301, 308, 309, 310, 311, 312, 313",
+    "rules": [
+      "||googletagmanager.com^",
+      "googletagmanager_gtm.js:5",
+      "||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager_gtm.js:5"
+    ]
+  },
+  {
+    "domain": "ad.doubleclick.net",
+    "evidence": "ublock-logger.txt linhas 302, 303, 304",
+    "rules": [
+      "noop.txt",
+      "||doubleclick.net^$xhr,redirect-rule=noop.txt",
+      "||doubleclick.net^"
+    ]
+  },
+  {
+    "domain": "s.go-mpulse.net",
+    "evidence": "ublock-logger.txt linhas 334, 337",
+    "rules": [
+      "||go-mpulse.net^"
+    ]
+  },
+  {
+    "domain": "www.datadoghq-browser-agent.com",
+    "evidence": "ublock-logger.txt linhas 339",
+    "rules": [
+      "||datadoghq-browser-agent.com^$3p"
+    ]
+  }
+]

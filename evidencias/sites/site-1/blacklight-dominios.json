@@ -1,0 +1,242 @@
+[
+  {
+    "domain": "chartbeat.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "amazon-adsystem.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "doubleclick.net",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "3lift.com",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "pubmatic.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "googlesyndication.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "rubiconproject.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "cxense.com",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "googletagmanager.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "googleadservices.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "semasio.net",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "360yield.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "id5-sync.com",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "yahoo.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "adnxs.com",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "adsrvr.org",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "insightexpressai.com",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "openx.net",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "rlcdn.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "chartbeat.net",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "adsafeprotected.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "undertone.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "google.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "2mdn.net",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "doubleverify.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "tapad.com",
+    "categories": [
+      "ddg_join_ads"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "imrworldwide.com",
+    "categories": [
+      "ddg_join_ads",
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=ddg_join_ads].domains"
+  },
+  {
+    "domain": "tinypass.com",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  },
+  {
+    "domain": "piano.io",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  },
+  {
+    "domain": "dotmetrics.net",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  },
+  {
+    "domain": "scorecardresearch.com",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  },
+  {
+    "domain": "a4621041136.cdn.optimizely.com",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  },
+  {
+    "domain": "the-ozone-project.com",
+    "categories": [
+      "cookies"
+    ],
+    "evidence": "blacklight-resultados.json cards[type=cookies].domains"
+  }
+]

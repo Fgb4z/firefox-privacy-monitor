@@ -1,0 +1,52 @@
+{
+  "url": "https://www.first-party.site/security/js-leaks.html",
+  "startedAt": "2026-09-29T00:48:50.117Z",
+  "steps": [
+    "Clique #run"
+  ],
+  "condition": "Firefox headless, perfil novo, somente Privacy Monitor; configuração de privacidade padrão do perfil Selenium",
+  "profiles": [
+    {
+      "text": "Firefox 92",
+      "value": "firefox_92"
+    },
+    {
+      "text": "Chrome 92",
+      "value": "chrome_92"
+    },
+    {
+      "text": "Chrome 110",
+      "value": "chrome_110"
+    },
+    {
+      "text": "Chrome 139",
+      "value": "chrome_139"
+    },
+    {
+      "text": "Safari 14",
+      "value": "safari_14"
+    },
+    {
+      "text": "Safari iOS 14",
+      "value": "safari_14_ios"
+    },
+    {
+      "text": "Safari 16.1",
+      "value": "safari_16_1"
+    },
+    {
+      "text": "Android Webview 83",
+      "value": "android_webview_83"
+    },
+    {
+      "text": "Edge 110",
+      "value": "edge_110"
+    }
+  ],
+  "selectedProfile": "firefox_92",
+  "finalUrl": "https://www.first-party.site/security/js-leaks.html",
+  "completedAt": "2026-09-29T00:49:05.716Z",
+  "requests": 5,
+  "events": 3,
+  "truncated": false
+}

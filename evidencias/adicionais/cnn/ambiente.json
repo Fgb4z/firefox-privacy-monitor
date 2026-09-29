@@ -1,0 +1,30 @@
+{
+  "site": "CNN Brasil",
+  "requestedUrl": "https://www.cnnbrasil.com.br/",
+  "startedAt": "2026-09-29T00:37:23.726Z",
+  "condition": "M: somente Privacy Monitor; perfil Firefox novo por site",
+  "consent": "Sem interação com avisos de cookies; nenhum login, formulário ou compra.",
+  "observationSeconds": 30,
+  "headless": true,
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "harSource": "Firefox DevTools NetMonitorAPI.getHar → HarExporter",
+  "warnings": [],
+  "preferences": {
+    "acceptLanguage": "und",
+    "cookieBehavior": 5,
+    "etp": "custom",
+    "timezone": "America/Sao_Paulo",
+    "trackingProtection": false
+  },
+  "finalUrl": "https://www.cnnbrasil.com.br/",
+  "title": "CNN Brasil | Notícias Ao Vivo do Brasil e do Mundo",
+  "rawHarDigest": "sha256:73be80c75a142b952b5e",
+  "harEntries": 796,
+  "score": 25,
+  "requests": 792,
+  "browserVersion": "156.0.1",
+  "completedAt": "2026-09-29T00:38:02.824Z"
+}

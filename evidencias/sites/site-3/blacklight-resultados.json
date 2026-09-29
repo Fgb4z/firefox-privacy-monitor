@@ -1,0 +1,104 @@
+{
+  "source": "API pública usada pelo frontend oficial Blacklight",
+  "endpoint": "https://blacklight-us-oh.api.themarkup.org/graphic-api",
+  "retrievedAt": "2026-09-29T00:57:23.816Z",
+  "status": "success",
+  "inspectedUrl": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+  "destinationUrl": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+  "pageTitle": "Wikipédia, a enciclopédia livre",
+  "startedAt": "2026-09-29T00:46:31.289Z",
+  "endedAt": "2026-09-29T00:46:37.381Z",
+  "location": "us-oh",
+  "browser": {
+    "name": "Chromium",
+    "version": "HeadlessChrome/138.0.7204.0",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/138.0.7204.0 Safari/537.36",
+    "platform": {
+      "name": "Linux",
+      "version": "5.10.255-268-309.1092.amzn2.x86_64"
+    }
+  },
+  "device": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 790,
+      "deviceScaleFactor": 2,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": true
+    }
+  },
+  "browsingHistory": [
+    "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"
+  ],
+  "hosts": {
+    "first_party": [
+      "pt.wikipedia.org"
+    ],
+    "third_party": [
+      "thumb.wikimedia.org",
+      "meta.wikimedia.org",
+      "auth.wikimedia.org"
+    ]
+  },
+  "trackerRadarUpdated": "2024-03-20T12:00:00.000Z",
+  "cards": [
+    {
+      "type": "ddg_join_ads",
+      "found": false,
+      "count": 0,
+      "domains": []
+    },
+    {
+      "type": "cookies",
+      "found": true,
+      "count": 6,
+      "domains": [
+        "thumb.wikimedia.org",
+        "meta.wikimedia.org",
+        "auth.wikimedia.org"
+      ]
+    },
+    {
+      "type": "canvas_fingerprinters",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "session_recorders",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "key_logging",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "fb_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "tiktok_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "twitter_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "ga",
+      "found": false,
+      "domains": []
+    }
+  ],
+  "archive": "https://mrkp-static-production.themarkup.org/blacklight-us-oh/84a4ebd616a35ea5018c9f3865515067853981fa/blacklight-inspection-pt.wikipedia.org.zip",
+  "reportUrl": "https://mrkp-static-production.themarkup.org/blacklight-us-oh/84a4ebd616a35ea5018c9f3865515067853981fa/report.html",
+  "screenshots": [
+    "https://mrkp-static-production.themarkup.org/blacklight-us-oh/84a4ebd616a35ea5018c9f3865515067853981fa/1.jpeg"
+  ]
+}

@@ -1,0 +1,2033 @@
+{
+  "unit": "Domínio registrável; hosts completos preservados. União de todos os HARs, monitor, logger e cartões Blacklight.",
+  "rows": [
+    {
+      "domain": "wikimedia.org",
+      "hosts": [
+        "thumb.wikimedia.org",
+        "meta.wikimedia.org",
+        "auth.wikimedia.org",
+        "upload.wikimedia.org",
+        "intake-analytics.wikimedia.org"
+      ],
+      "plugin": "13 pedidos; catálogo: sem classificação",
+      "blacklight": "31 pedidos; categorias: cookies",
+      "ublock": "20 registros; 0 bloqueados/redirecionados",
+      "explanation": "Firefox registrou 11 entradas deste domínio, por exemplo https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg (query preservada no HAR) (HTTP 200, entrada 13). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 20 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 3, 4, 6. Blacklight associou o domínio às categorias cookies; cookies de terceiros e rastreadores publicitários são categorias distintas.",
+      "evidence": "monitor.har: log.entries[13], [15], [16], [18]; blacklight.har: log.entries[15], [16], [17], [18]; ublock.har: log.entries[15], [16], [17], [18]; ublock-logger.txt: linhas 3, 4, 6, 8, 10; blacklight-resultados.json: cards cookies",
+      "observations": {
+        "domain": "wikimedia.org",
+        "hosts": [
+          "thumb.wikimedia.org",
+          "meta.wikimedia.org",
+          "auth.wikimedia.org",
+          "upload.wikimedia.org",
+          "intake-analytics.wikimedia.org"
+        ],
+        "monitor": [
+          {
+            "blocked": false,
+            "completedAt": 1790642333061,
+            "domain": "thumb.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "63",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642332873,
+            "tracker": null,
+            "type": "imageset",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333081,
+            "domain": "thumb.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "65",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642332874,
+            "tracker": null,
+            "type": "imageset",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WhatsApp_pure_black.svg/20px-WhatsApp_pure_black.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333093,
+            "domain": "thumb.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "66",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642332875,
+            "tracker": null,
+            "type": "imageset",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/20px-Facebook_icon_%28black%29.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333102,
+            "domain": "thumb.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "68",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642332878,
+            "tracker": null,
+            "type": "imageset",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/20px-X_icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333111,
+            "domain": "thumb.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "69",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642332879,
+            "tracker": null,
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg/250px-Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333119,
+            "domain": "thumb.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "70",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642332879,
+            "tracker": null,
+            "type": "imageset",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Brigitte_Bardot_-_1962.jpg/250px-Brigitte_Bardot_-_1962.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333134,
+            "domain": "thumb.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "71",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642332879,
+            "tracker": null,
+            "type": "imageset",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bert_Patenaude.jpg/250px-Bert_Patenaude.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333391,
+            "domain": "meta.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "84",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642333319,
+            "tracker": null,
+            "type": "script",
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&action=%5Bredigido%5D&ctype=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333464,
+            "domain": "meta.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "88",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642333406,
+            "tracker": null,
+            "type": "script",
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&campaign=%5Bredigido%5D&banner=%5Bredigido%5D&uselang=%5Bredigido%5D&debug=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333531,
+            "domain": "auth.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "85",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642333468,
+            "tracker": null,
+            "type": "script",
+            "url": "https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333657,
+            "domain": "upload.wikimedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "93",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": true,
+            "time": 1790642333523,
+            "tracker": null,
+            "type": "image",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WLM_Brasil_2026_-_logo_vermelho.svg/120px-WLM_Brasil_2026_-_logo_vermelho.svg.png"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642363533,
+            "domain": "intake-analytics.wikimedia.org",
+            "error": "NS_ERROR_DOM_NETWORK_ERR",
+            "frameId": 0,
+            "id": "130",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 202,
+            "thirdParty": true,
+            "time": 1790642363344,
+            "tracker": null,
+            "type": "beacon",
+            "url": "https://intake-analytics.wikimedia.org/v1/events?hasty=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642363543,
+            "domain": "intake-analytics.wikimedia.org",
+            "error": "NS_ERROR_DOM_NETWORK_ERR",
+            "frameId": 0,
+            "id": "131",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 202,
+            "thirdParty": true,
+            "time": 1790642363345,
+            "tracker": null,
+            "type": "beacon",
+            "url": "https://intake-analytics.wikimedia.org/v1/events?hasty=%5Bredigido%5D"
+          }
+        ],
+        "har": [
+          {
+            "entry": 13,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.942-03:00"
+          },
+          {
+            "entry": 15,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WhatsApp_pure_black.svg/20px-WhatsApp_pure_black.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.949-03:00"
+          },
+          {
+            "entry": 16,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/20px-Facebook_icon_%28black%29.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.961-03:00"
+          },
+          {
+            "entry": 18,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/20px-X_icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.964-03:00"
+          },
+          {
+            "entry": 19,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg/250px-Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.965-03:00"
+          },
+          {
+            "entry": 20,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Brigitte_Bardot_-_1962.jpg/250px-Brigitte_Bardot_-_1962.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.966-03:00"
+          },
+          {
+            "entry": 21,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bert_Patenaude.jpg/250px-Bert_Patenaude.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.980-03:00"
+          },
+          {
+            "entry": 27,
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&action=%5Bredigido%5D&ctype=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.358-03:00"
+          },
+          {
+            "entry": 30,
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&campaign=%5Bredigido%5D&banner=%5Bredigido%5D&uselang=%5Bredigido%5D&debug=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.417-03:00"
+          },
+          {
+            "entry": 34,
+            "url": "https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.481-03:00"
+          },
+          {
+            "entry": 35,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WLM_Brasil_2026_-_logo_vermelho.svg/120px-WLM_Brasil_2026_-_logo_vermelho.svg.png",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.580-03:00"
+          }
+        ],
+        "ublock": [
+          {
+            "line": 3,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WLM_Brasil_2026_-_logo_vermelho.svg/120px-WLM_Brasil_2026_-_logo_vermelho.svg.png",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 4,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 6,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 8,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&campaign=%5Bredigido%5D&banner=%5Bredigido%5D&uselang=%5Bredigido%5D&debug=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 10,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&action=%5Bredigido%5D&ctype=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 12,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&action=%5Bredigido%5D&ctype=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 17,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bert_Patenaude.jpg/250px-Bert_Patenaude.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 18,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Brigitte_Bardot_-_1962.jpg/250px-Brigitte_Bardot_-_1962.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 19,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg/250px-Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 20,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/20px-X_icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 21,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/20px-Facebook_icon_%28black%29.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 22,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WhatsApp_pure_black.svg/20px-WhatsApp_pure_black.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 23,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 27,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bert_Patenaude.jpg/250px-Bert_Patenaude.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 28,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Brigitte_Bardot_-_1962.jpg/250px-Brigitte_Bardot_-_1962.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 29,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg/250px-Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 30,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/20px-X_icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 31,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/20px-Facebook_icon_%28black%29.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 32,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WhatsApp_pure_black.svg/20px-WhatsApp_pure_black.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 33,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          }
+        ],
+        "ublockHar": [
+          {
+            "entry": 15,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/250px-CPM_22_%28311693005%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.832-03:00"
+          },
+          {
+            "entry": 16,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WhatsApp_pure_black.svg/20px-WhatsApp_pure_black.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.834-03:00"
+          },
+          {
+            "entry": 17,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/20px-Facebook_icon_%28black%29.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.834-03:00"
+          },
+          {
+            "entry": 18,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/20px-X_icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.835-03:00"
+          },
+          {
+            "entry": 19,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg/250px-Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.835-03:00"
+          },
+          {
+            "entry": 20,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Brigitte_Bardot_-_1962.jpg/250px-Brigitte_Bardot_-_1962.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.836-03:00"
+          },
+          {
+            "entry": 21,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bert_Patenaude.jpg/250px-Bert_Patenaude.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.836-03:00"
+          },
+          {
+            "entry": 28,
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&action=%5Bredigido%5D&ctype=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.089-03:00"
+          },
+          {
+            "entry": 30,
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&campaign=%5Bredigido%5D&banner=%5Bredigido%5D&uselang=%5Bredigido%5D&debug=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.188-03:00"
+          },
+          {
+            "entry": 34,
+            "url": "https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.299-03:00"
+          },
+          {
+            "entry": 35,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WLM_Brasil_2026_-_logo_vermelho.svg/120px-WLM_Brasil_2026_-_logo_vermelho.svg.png",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.378-03:00"
+          }
+        ],
+        "blacklight": [
+          {
+            "domain": "thumb.wikimedia.org",
+            "category": "cookies"
+          },
+          {
+            "domain": "meta.wikimedia.org",
+            "category": "cookies"
+          },
+          {
+            "domain": "auth.wikimedia.org",
+            "category": "cookies"
+          }
+        ],
+        "blacklightHar": [
+          {
+            "entry": 15,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/CPM_22_%28311693005%29.jpg/330px-CPM_22_%28311693005%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.248Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 16,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WhatsApp_pure_black.svg/40px-WhatsApp_pure_black.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.249Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 17,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/40px-Facebook_icon_%28black%29.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.249Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 18,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/40px-X_icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.249Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 19,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg/250px-Verao_Maior_Parana-Rick_e_Renner-13-01-24_54_%28Rick_Sollo%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.249Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 20,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Brigitte_Bardot_-_1962.jpg/330px-Brigitte_Bardot_-_1962.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.250Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 21,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bert_Patenaude.jpg/330px-Bert_Patenaude.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.395Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 22,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Cisterna_Bas%C3%ADlica%2C_Estambul%2C_Turqu%C3%ADa%2C_2024-09-28%2C_DD_58-60_HDR.jpg/960px-Cisterna_Bas%C3%ADlica%2C_Estambul%2C_Turqu%C3%ADa%2C_2024-09-28%2C_DD_58-60_HDR.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.396Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 23,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/60px-Commons-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.396Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 24,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Incubator-logo.svg/60px-Incubator-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.418Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 25,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/60px-Wikimedia_Community_Logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.430Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 26,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Wiktionary-logo.svg/60px-Wiktionary-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.430Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 27,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/60px-Wikidata-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.476Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 28,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/60px-Wikibooks-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.477Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 29,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/60px-Wikiquote-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.511Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 30,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/60px-Wikisource-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.555Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 31,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/60px-Wikispecies-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.555Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 32,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/60px-Wikiversity_logo_2017.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.634Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 33,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/60px-Wikivoyage-Logo-v3-icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.637Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 34,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Wikifunctions-logo.svg/60px-Wikifunctions-logo.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.691Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 35,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/MediaWiki-2020-icon-spinning.svg/60px-MediaWiki-2020-icon-spinning.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.692Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 36,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Wikitech-2021-blue-large-icon.svg/60px-Wikitech-2021-blue-large-icon.svg.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.753Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 41,
+            "url": "https://meta.wikimedia.org/w/index.php?title=%5Bredigido%5D&action=%5Bredigido%5D&ctype=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.768Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"load\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":18,\"columnNumber\":70},{\"functionName\":\"\",\"scriptId\":\"17\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.gadget.ElementosOcultaveis%2CFeedbackHighlight%2CMetacaixa%2CNewVillagePump%2CPagesForDeletion%2CReferenceTooltips%2CTitleRewrite%2CTopicon%2CWikiMiniAtlas%2Ccharinsert%2CrequestForAdminship%2Cscript-installer%2Cswitcher%2Cwikibugs&skin=vector-2022&version=282u4\",\"lineNumber\":39,\"columnNumber\":110},{\"functionName\":\"runScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":10,\"columnNumber\":403},{\"functionName\":\"execute\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":11,\"columnNumber\":923},{\"functionName\":\"doPropagation\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":4,\"columnNumber\":818}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 43,
+            "url": "https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:34.090Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":981,\"columnNumber\":8}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 54,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Mark_of_Zorro_%281940_film_poster%29.jpg/60px-The_Mark_of_Zorro_%281940_film_poster%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.649Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 55,
+            "url": "https://thumb.wikimedia.org/wikipedia/pt/thumb/1/1f/The_Marksman.jpg/60px-The_Marksman.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.651Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 56,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/FairbanksMarkofZorro.jpg/60px-FairbanksMarkofZorro.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.652Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 57,
+            "url": "https://thumb.wikimedia.org/wikipedia/pt/thumb/f/fb/The_Mark%2C_Tom%2C_and_Travis_Show_%28The_Enema_Strikes_Back%21%29.jpg/60px-The_Mark%2C_Tom%2C_and_Travis_Show_%28The_Enema_Strikes_Back%21%29.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.653Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 58,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/The_marcus_king_band-1625178107.png/60px-The_marcus_king_band-1625178107.png?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.653Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 59,
+            "url": "https://thumb.wikimedia.org/wikipedia/pt/thumb/1/1e/The_Back-up_Plan.jpg/60px-The_Back-up_Plan.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.654Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 60,
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Josie_Scott%2C_The_Mark_of_Cain%2C_1995.jpg/60px-Josie_Scott%2C_The_Mark_of_Cain%2C_1995.jpg?utm_source=%5Bredigido%5D&utm_campaign=%5Bredigido%5D&utm_content=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.690Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          }
+        ]
+      }
+    },
+    {
+      "domain": "wikipedia.org",
+      "hosts": [
+        "pt.wikipedia.org"
+      ],
+      "plugin": "22 pedidos; catálogo: sem classificação",
+      "blacklight": "30 pedidos; categorias: nenhuma nos cartões",
+      "ublock": "24 registros; 0 bloqueados/redirecionados",
+      "explanation": "Firefox registrou 22 entradas deste domínio, por exemplo https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal (HTTP 200, entrada 0). O monitor apresenta estas conexões sem rótulo de rastreador; a detecção de rede é mais ampla que seu catálogo. O logger uBlock tem 24 registros deste domínio, sem ação --/<< na amostra. A presença no monitor não implica que deva ser bloqueado; ver linhas 5, 7, 9. Blacklight também contatou este domínio (30 entradas no seu HAR), mas não o incluiu nos domínios dos cartões de rastreadores/cookies/session replay. É diferença entre tráfego bruto e critérios dos cartões.",
+      "evidence": "monitor.har: log.entries[0], [1], [2], [3]; blacklight.har: log.entries[0], [1], [2], [3]; ublock.har: log.entries[0], [1], [2], [3]; ublock-logger.txt: linhas 5, 7, 9, 11, 13",
+      "observations": {
+        "domain": "wikipedia.org",
+        "hosts": [
+          "pt.wikipedia.org"
+        ],
+        "monitor": [
+          {
+            "blocked": false,
+            "completedAt": 1790642332447,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "40",
+            "origin": "",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332208,
+            "tracker": null,
+            "type": "main_frame",
+            "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332641,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "48",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332599,
+            "tracker": null,
+            "type": "stylesheet",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332647,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "49",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332607,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&raw=%5Bredigido%5D&skin=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332653,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "50",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332607,
+            "tracker": null,
+            "type": "stylesheet",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332656,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "51",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332609,
+            "tracker": null,
+            "type": "stylesheet",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332882,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "52",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332615,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/images/icons/wikipedia.png"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332886,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "53",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332615,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332891,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "54",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332615,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-pt.svg"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332899,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "57",
+            "origin": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332670,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332905,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "58",
+            "origin": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332714,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642332910,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "59",
+            "origin": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332716,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&variant=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333073,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "64",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332874,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333090,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "67",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332877,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333145,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "72",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642332880,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333308,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "74",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642333168,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/apple-touch/wikipedia.png"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333314,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "75",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642333169,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/favicon/wikipedia.ico"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333384,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "82",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642333316,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333387,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "83",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642333318,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "domain": "pt.wikipedia.org",
+            "frameId": 0,
+            "id": "85",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "redirectUrl": "https://auth.wikimedia.org/metawiki/wiki/Special:CentralAutoLogin/checkLoggedIn?useformat=%5Bredigido%5D&wikiid=%5Bredigido%5D&usesul3=%5Bredigido%5D&type=%5Bredigido%5D",
+            "rule": null,
+            "status": 302,
+            "thirdParty": false,
+            "time": 1790642333344,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=%5Bredigido%5D&type=%5Bredigido%5D&usesul3=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333460,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "87",
+            "origin": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642333398,
+            "tracker": null,
+            "type": "image",
+            "url": "https://pt.wikipedia.org/w/extensions/ImageMap/resources/desc-20.png?15600=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333470,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "89",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642333411,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          },
+          {
+            "blocked": false,
+            "completedAt": 1790642333526,
+            "domain": "pt.wikipedia.org",
+            "error": null,
+            "frameId": 0,
+            "id": "91",
+            "origin": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "rule": null,
+            "status": 200,
+            "thirdParty": false,
+            "time": 1790642333456,
+            "tracker": null,
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D"
+          }
+        ],
+        "har": [
+          {
+            "entry": 0,
+            "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.231-03:00"
+          },
+          {
+            "entry": 1,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.622-03:00"
+          },
+          {
+            "entry": 2,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&raw=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.625-03:00"
+          },
+          {
+            "entry": 3,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.626-03:00"
+          },
+          {
+            "entry": 4,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.629-03:00"
+          },
+          {
+            "entry": 7,
+            "url": "https://pt.wikipedia.org/static/images/icons/wikipedia.png",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.842-03:00"
+          },
+          {
+            "entry": 8,
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.844-03:00"
+          },
+          {
+            "entry": 9,
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-pt.svg",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.845-03:00"
+          },
+          {
+            "entry": 10,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.846-03:00"
+          },
+          {
+            "entry": 11,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.846-03:00"
+          },
+          {
+            "entry": 12,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&variant=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.847-03:00"
+          },
+          {
+            "entry": 14,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.948-03:00"
+          },
+          {
+            "entry": 17,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.962-03:00"
+          },
+          {
+            "entry": 22,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:52.981-03:00"
+          },
+          {
+            "entry": 23,
+            "url": "https://pt.wikipedia.org/static/apple-touch/wikipedia.png",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.257-03:00"
+          },
+          {
+            "entry": 24,
+            "url": "https://pt.wikipedia.org/static/favicon/wikipedia.ico",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.258-03:00"
+          },
+          {
+            "entry": 25,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.353-03:00"
+          },
+          {
+            "entry": 26,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.355-03:00"
+          },
+          {
+            "entry": 28,
+            "url": "https://pt.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=%5Bredigido%5D&type=%5Bredigido%5D&usesul3=%5Bredigido%5D",
+            "status": 302,
+            "startedAt": "2026-09-28T21:38:53.366-03:00"
+          },
+          {
+            "entry": 29,
+            "url": "https://pt.wikipedia.org/w/extensions/ImageMap/resources/desc-20.png?15600=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.415-03:00"
+          },
+          {
+            "entry": 31,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.443-03:00"
+          },
+          {
+            "entry": 33,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:38:53.479-03:00"
+          }
+        ],
+        "ublock": [
+          {
+            "line": 5,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 7,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 9,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/w/extensions/ImageMap/resources/desc-20.png?15600=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 11,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=%5Bredigido%5D&type=%5Bredigido%5D&usesul3=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 13,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 14,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 15,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/favicon/wikipedia.ico",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 16,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/apple-touch/wikipedia.png",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 24,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 25,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 26,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 34,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&variant=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 37,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 38,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 39,
+            "rule": "#@#+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \\$\\(echo .+? base64 -d\\b|^cmd \\/c .*?\\bcurl .+?(\\.exe|\\.bat)\\b|^cmd .*?\\bfor \\/f .*?\\bdelims .*?\\bpow |(^|\\\\)powershell(\\.exe)? .*?-w(indowStyle)? h(idden)?\\b|(^|\\\\)powershell(\\.exe)? .*?-w[a-z]* m[a-z]* |(^|\\\\)powershell(\\.exe)? .*?-NoP\\b|(^|\\\\)powershell(\\.exe)? .*?-e(xecution)?p(olicy)? b(ypass)?\\b|(^|\\\\)powershell(\\.exe)? .*?-e(xecution)?p(olicy)? u(nrestricted)?\\b|(^|\\\\)powershell(\\.exe)? .*?\\biex\\(|(^|\\\\)powershell(\\.exe)? .*?Invoke-Expression|(^|\\\\)powershell.+?Invoke-WebRequest|(^|\\\\)powershell.+?-UseBasicParsing|^cmd .*?\\/c .+? -nop .+? iex\\b|^(cmd|powershell)\\b.+?recaptcha|^(cmd|powershell)\\b.+?#(Verification|     )|^(cmd|powershell)\\b.+?     #|^osascript .+?\\bcurl http|^curl -s\\b.+?\\| (bash|sh|zsh)\\b|^\\/bin\\/(bash|sh|zsh) -c\\b.+?\\bcurl|^bash -c\\b.+?\\$\\(curl|^python3? -c\\b.+?\\b(exec|urllib|subprocess)\\b|^echo .+?base64 .+?\\b(bash|osascript|z?sh)\\b|openssl base64 -d|^curl\\b .+?chmod \\+x.+?&&|^(bash|sh|osascript)\\b.+?recaptcha|^(bash|sh|osascript)\\b.+?#(Verification|     )|^(bash|sh|osascript)\\b.+?     #|^wget .+?\\| (bash|sh)\\b|^curl\\b.+?-o\\b.+?\\/tmp\\/.+?&&|^nc .+?-e \\/bin\\/(bash|sh)\\b|^\\/tmp\\/.+?chmod \\+x.+?&&|^wget -q.+?\\.(sh|py|bin|elf)\\b|^cmd .+?\\bcertutil .+?\\b(\\.exe|\\.bat)\\b|(^|\\\\)powershell(\\.exe)? .+?\\birm .+?\\.[a-z]+\\/.+?powershell|\\bpcalua(\\.exe)? .*?\\b(curl|powershell|saps|cmd)\\b|^cmd .+?\\bcmdkey .+?\\bschtasks|^Invoke-Command .+?Base64String|^c(onhost|md) .*?--headless |^iex\\(i(rm|wr) |^irm .+? iex\\b|^%COMSPEC% .*?\\bstart .*?\\/min\\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^\\{|^http|^(git|import|require|use) /i)",
+            "action": "",
+            "method": "get",
+            "type": "scriptlet",
+            "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 40,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-pt.svg",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 41,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 42,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "image",
+            "url": "https://pt.wikipedia.org/static/images/icons/wikipedia.png",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 43,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "css",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 44,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "css",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 45,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "script",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&raw=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 46,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "css",
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 47,
+            "rule": "@@||wikipedia.org^$generichide",
+            "action": "++",
+            "method": "",
+            "type": "generichide",
+            "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "context": "pt.wikipedia.org"
+          },
+          {
+            "line": 48,
+            "rule": "",
+            "action": "",
+            "method": "get",
+            "type": "doc",
+            "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "context": "pt.wikipedia.org"
+          }
+        ],
+        "ublockHar": [
+          {
+            "entry": 0,
+            "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.394-03:00"
+          },
+          {
+            "entry": 1,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.647-03:00"
+          },
+          {
+            "entry": 2,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&raw=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.651-03:00"
+          },
+          {
+            "entry": 3,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.653-03:00"
+          },
+          {
+            "entry": 4,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.655-03:00"
+          },
+          {
+            "entry": 5,
+            "url": "https://pt.wikipedia.org/static/images/icons/wikipedia.png",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.676-03:00"
+          },
+          {
+            "entry": 6,
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.677-03:00"
+          },
+          {
+            "entry": 7,
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-pt.svg",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.678-03:00"
+          },
+          {
+            "entry": 10,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.729-03:00"
+          },
+          {
+            "entry": 11,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.730-03:00"
+          },
+          {
+            "entry": 12,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&variant=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.734-03:00"
+          },
+          {
+            "entry": 13,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.823-03:00"
+          },
+          {
+            "entry": 14,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.829-03:00"
+          },
+          {
+            "entry": 22,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.836-03:00"
+          },
+          {
+            "entry": 23,
+            "url": "https://pt.wikipedia.org/static/apple-touch/wikipedia.png",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.967-03:00"
+          },
+          {
+            "entry": 24,
+            "url": "https://pt.wikipedia.org/static/favicon/wikipedia.ico",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:35.967-03:00"
+          },
+          {
+            "entry": 25,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.047-03:00"
+          },
+          {
+            "entry": 26,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.052-03:00"
+          },
+          {
+            "entry": 27,
+            "url": "https://pt.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=%5Bredigido%5D&type=%5Bredigido%5D&usesul3=%5Bredigido%5D",
+            "status": 302,
+            "startedAt": "2026-09-28T21:43:36.075-03:00"
+          },
+          {
+            "entry": 29,
+            "url": "https://pt.wikipedia.org/w/extensions/ImageMap/resources/desc-20.png?15600=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.186-03:00"
+          },
+          {
+            "entry": 31,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.202-03:00"
+          },
+          {
+            "entry": 32,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-28T21:43:36.239-03:00"
+          }
+        ],
+        "blacklight": [],
+        "blacklightHar": [
+          {
+            "entry": 0,
+            "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:32.799Z",
+            "type": "document",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 1,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.034Z",
+            "type": "stylesheet",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":9,\"columnNumber\":467}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 2,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&raw=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.036Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":10,\"columnNumber\":111}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 3,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.036Z",
+            "type": "stylesheet",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":12,\"columnNumber\":143}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 4,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.036Z",
+            "type": "stylesheet",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":13,\"columnNumber\":111}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 5,
+            "url": "https://pt.wikipedia.org/static/images/icons/wikipedia.png",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.097Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":104,\"columnNumber\":117}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 6,
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.037Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":106,\"columnNumber\":154}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 7,
+            "url": "https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-pt.svg",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.116Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":107,\"columnNumber\":165}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 8,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&only=%5Bredigido%5D&skin=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.128Z",
+            "type": "other",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":34,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 9,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.154Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"load\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":18,\"columnNumber\":192},{\"functionName\":\"\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":22,\"columnNumber\":79},{\"functionName\":\"\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":22,\"columnNumber\":288}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 10,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.158Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"load\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":18,\"columnNumber\":192},{\"functionName\":\"\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":22,\"columnNumber\":79},{\"functionName\":\"\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":22,\"columnNumber\":288}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 11,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.158Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"load\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":18,\"columnNumber\":192},{\"functionName\":\"\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":22,\"columnNumber\":79},{\"functionName\":\"\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":22,\"columnNumber\":288}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 12,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.169Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3Add24a642f4b57a6f04a4&only=sha256%3A90a7578caf8760be75c2&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.discussionTools.init.styles%7Cext.imagemap.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.skinning.content.parsoid%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&only=styles&skin=vector-2022\"}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 13,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.171Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3Add24a642f4b57a6f04a4&only=sha256%3A90a7578caf8760be75c2&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.discussionTools.init.styles%7Cext.imagemap.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.skinning.content.parsoid%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&only=styles&skin=vector-2022\"}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 14,
+            "url": "https://pt.wikipedia.org/w/load.php?modules=%5Bredigido%5D&image=%5Bredigido%5D&variant=%5Bredigido%5D&format=%5Bredigido%5D&lang=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.178Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3Add24a642f4b57a6f04a4&only=sha256%3A90a7578caf8760be75c2&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.discussionTools.init.styles%7Cext.imagemap.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.skinning.content.parsoid%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&only=styles&skin=vector-2022\"}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 37,
+            "url": "https://pt.wikipedia.org/static/images/footer/wikimedia-button.svg",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.252Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 38,
+            "url": "https://pt.wikipedia.org/w/resources/assets/poweredby_mediawiki.svg",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.254Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\",\"lineNumber\":980,\"columnNumber\":0}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 39,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.753Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"mw.loader.using\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":825},{\"functionName\":\"resources/ext.popups/index.js\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":442,\"columnNumber\":540},{\"functionName\":\"runScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":10,\"columnNumber\":686},{\"functionName\":\"execute\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":11,\"columnNumber\":923},{\"functionName\":\"doPropagation\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":4,\"columnNumber\":818}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 40,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:33.757Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"mw.loader.using\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":825},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1438,\"columnNumber\":368},{\"functionName\":\"wikibase.client.vector-2022.js\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1439,\"columnNumber\":463},{\"functionName\":\"runScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":10,\"columnNumber\":686},{\"functionName\":\"execute\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":11,\"columnNumber\":923},{\"functionName\":\"doPropagation\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":4,\"columnNumber\":818}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 42,
+            "url": "https://pt.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=%5Bredigido%5D&type=%5Bredigido%5D&usesul3=%5Bredigido%5D",
+            "status": 302,
+            "startedAt": "2026-09-29T00:46:33.969Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"load\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":18,\"columnNumber\":70},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":64,\"columnNumber\":871},{\"functionName\":\"ext.centralauth.centralautologin.js\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":64,\"columnNumber\":883},{\"functionName\":\"runScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":10,\"columnNumber\":686},{\"functionName\":\"\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":11,\"columnNumber\":430},{\"functionName\":\"flushCssBuffer\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":3,\"columnNumber\":310}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 44,
+            "url": "https://pt.wikipedia.org/w/extensions/ImageMap/resources/desc-20.png?15600=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:34.229Z",
+            "type": "image",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3Add24a642f4b57a6f04a4&only=sha256%3A90a7578caf8760be75c2&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"parser\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.discussionTools.init.styles%7Cext.imagemap.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.skinning.content.parsoid%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&only=styles&skin=vector-2022\"}",
+            "initiatorType": "parser"
+          },
+          {
+            "entry": 45,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:34.328Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"mw.loader.using\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":825},{\"functionName\":\"init\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":81,\"columnNumber\":182},{\"functionName\":\"reallyInit\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":72,\"columnNumber\":695},{\"functionName\":\"mw.dt.init\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":72,\"columnNumber\":896},{\"functionName\":\"add\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1201,\"columnNumber\":478},{\"functionName\":\"dt.init.js\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":73,\"columnNumber\":196},{\"functionName\":\"runScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":10,\"columnNumber\":686},{\"functionName\":\"\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":11,\"columnNumber\":430},{\"functionName\":\"flushCssBuffer\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":3,\"columnNumber\":310}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 46,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:34.435Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"mw.loader.using\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":825},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1438,\"columnNumber\":861},{\"functionName\":\"fire\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":682,\"columnNumber\":75},{\"functionName\":\"fireWith\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":683,\"columnNumber\":263},{\"functionName\":\"deferred.<computed>\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":686,\"columnNumber\":809},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":860},{\"functionName\":\"doPropagation\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":5,\"columnNumber\":147}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 47,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:36.553Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"mw.loader.using\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":825},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":605,\"columnNumber\":123},{\"functionName\":\"dispatch\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":705,\"columnNumber\":19},{\"functionName\":\"elemData.handle\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":701,\"columnNumber\":753},{\"functionName\":\"trigger\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":753,\"columnNumber\":180},{\"functionName\":\"simulate\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":754,\"columnNumber\":49},{\"functionName\":\"focusMappedHandler\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":710,\"columnNumber\":207},{\"functionName\":\"\",\"scriptId\":\"181\",\"url\":\"pptr:evaluate;CdpElementHandle.focus%20(%2Fopt%2Fnodejs%2Fnode_modules%2Fpuppeteer-core%2Flib%2Fcjs%2Fpuppeteer%2Fapi%2FElementHandle.js%3A887%3A24)\",\"lineNumber\":4,\"columnNumber\":31}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 48,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:36.555Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"mw.loader.using\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":825},{\"functionName\":\"requestSearchModule\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1319,\"columnNumber\":80},{\"functionName\":\"eventListener\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1319,\"columnNumber\":248},{\"functionName\":\"\",\"scriptId\":\"181\",\"url\":\"pptr:evaluate;CdpElementHandle.focus%20(%2Fopt%2Fnodejs%2Fnode_modules%2Fpuppeteer-core%2Flib%2Fcjs%2Fpuppeteer%2Fapi%2FElementHandle.js%3A887%3A24)\",\"lineNumber\":4,\"columnNumber\":31}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 49,
+            "url": "https://pt.wikipedia.org/w/load.php?lang=%5Bredigido%5D&modules=%5Bredigido%5D&skin=%5Bredigido%5D&version=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:36.754Z",
+            "type": "script",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8e7e3ff9c84fb08d79d6&only=sha256%3A8c5967fd8486f3449371&raw=sha256%3A6b86b273ff34fce19d6b&skin=sha256%3Aba399e6bd88ea39f856b",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"addScript\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":8,\"columnNumber\":346},{\"functionName\":\"doRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":12,\"columnNumber\":845},{\"functionName\":\"batchRequest\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":14,\"columnNumber\":73},{\"functionName\":\"work\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":16,\"columnNumber\":27},{\"functionName\":\"enqueue\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":9,\"columnNumber\":783},{\"functionName\":\"mw.loader.using\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":825},{\"functionName\":\"customHelpLink\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":9,\"columnNumber\":877},{\"functionName\":\"prepareSelectorMenu\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":64,\"columnNumber\":71},{\"functionName\":\"init\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":63,\"columnNumber\":739},{\"functionName\":\"IMESelector\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":62,\"columnNumber\":1000},{\"functionName\":\"\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":73,\"columnNumber\":246},{\"functionName\":\"each\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":645,\"columnNumber\":204},{\"functionName\":\"each\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":643,\"columnNumber\":14},{\"functionName\":\"$.fn.imeselector\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":73,\"columnNumber\":140},{\"functionName\":\"IME\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":53,\"columnNumber\":1084},{\"functionName\":\"\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":61,\"columnNumber\":338},{\"functionName\":\"each\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":645,\"columnNumber\":204},{\"functionName\":\"each\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":643,\"columnNumber\":14},{\"functionName\":\"$.fn.ime\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":61,\"columnNumber\":131},{\"functionName\":\"mw.ime.addIme\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":11,\"columnNumber\":633},{\"functionName\":\"mw.ime.handleFocus\",\"scriptId\":\"182\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.uls.common%2Ci18n%2Cime%2Clanguagenames%2Cmediawiki%2Cmessages%7Cjquery.i18n%2Cime%2Culs%7Cjquery.uls.data%2Cgrid&skin=vector-2022&version=9rcyz\",\"lineNumber\":11,\"columnNumber\":578},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":605,\"columnNumber\":170},{\"functionName\":\"fire\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":682,\"columnNumber\":75},{\"functionName\":\"fireWith\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":683,\"columnNumber\":263},{\"functionName\":\"deferred.<computed>\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":686,\"columnNumber\":809},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1203,\"columnNumber\":860},{\"functionName\":\"doPropagation\",\"scriptId\":\"7\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=startup&only=scripts&raw=1&skin=vector-2022\",\"lineNumber\":5,\"columnNumber\":147}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 50,
+            "url": "https://pt.wikipedia.org/w/extensions/UniversalLanguageSelector/resources/images/remove-input.svg?82c56=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.091Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 51,
+            "url": "https://pt.wikipedia.org/w/extensions/UniversalLanguageSelector/resources/images/cog.svg?ce0b4=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.093Z",
+            "type": "image",
+            "initiatorDetail": "{\"type\":\"other\"}",
+            "initiatorType": "other"
+          },
+          {
+            "entry": 52,
+            "url": "https://pt.wikipedia.org/w/api.php?action=%5Bredigido%5D&format=%5Bredigido%5D&formatversion=%5Bredigido%5D&prop=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.259Z",
+            "type": "xhr",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3A8cc645551aba29827624&skin=sha256%3Aba399e6bd88ea39f856b&version=sha256%3A41ffe4e501902af8d5b5",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"send\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":769,\"columnNumber\":830},{\"functionName\":\"ajax\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":764,\"columnNumber\":474},{\"functionName\":\"ajax\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1168,\"columnNumber\":739},{\"functionName\":\"get\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":1166,\"columnNumber\":471},{\"functionName\":\"initialize\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":520,\"columnNumber\":661},{\"functionName\":\"SessionState\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":521,\"columnNumber\":395},{\"functionName\":\"setup\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":528,\"columnNumber\":454},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":528,\"columnNumber\":644},{\"functionName\":\"\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":528,\"columnNumber\":380},{\"functionName\":\"fn\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":700,\"columnNumber\":929},{\"functionName\":\"dispatch\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":705,\"columnNumber\":19},{\"functionName\":\"elemData.handle\",\"scriptId\":\"21\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=ext.centralNotice.bannerHistoryLogger%2CchoiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.checkUser.clientHints%7Cext.cx.eventlogging.campaigns%7Cext.discussionTools.init%2Cminervaicons%7Cext.echo.centralauth%7Cext.eventLogging%2Cimagemap%2CnavigationTiming%2Cpopups%2CtestKitchen%2CwikimediaEvents%7Cext.eventLogging.metricsPlatform%7Cext.uls.interface%2Cpreferences%2Cwebfonts%7Cext.urlShortener.toolbar%7Cext.wikimediaEvents.testKitchen%7Cjquery%2Cmoment%2Coojs%2Coojs-ui-core%2Coojs-ui-windows%2Crangefix%2Csite%7Cjquery.client%2CtextSelection%7Cmediawiki.String%2CTitle%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%7Cmmv.bootstrap%7Coojs-ui-windows.icons%7Cskins.vector.clientPreferences%2Cjs%7Cskins.vector.icons.js%7Cwikibase.client.vector-2022%7Cwikibase.databox.fromWikidata&skin=vector-2022&version=t0l45\",\"lineNumber\":701,\"columnNumber\":753}]}}",
+            "initiatorType": "script"
+          },
+          {
+            "entry": 53,
+            "url": "https://pt.wikipedia.org/w/rest.php/v1/search/title?q=%5Bredigido%5D&limit=%5Bredigido%5D",
+            "status": 200,
+            "startedAt": "2026-09-29T00:46:37.533Z",
+            "type": "fetch",
+            "initiator": "https://pt.wikipedia.org/w/load.php?lang=sha256%3Ae75b11da693d7bb52739&modules=sha256%3Ab6467e0b7996d323da43&skin=sha256%3Aba399e6bd88ea39f856b&version=sha256%3A16ac060acf1d177ecfc0",
+            "initiatorDetail": "{\"type\":\"script\",\"stack\":{\"callFrames\":[{\"functionName\":\"fetchJson\",\"scriptId\":\"183\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=mediawiki.codex.typeaheadSearch%7Cmediawiki.skinning.typeaheadSearch%7Cskins.vector.search&skin=vector-2022&version=xuq5t\",\"lineNumber\":41,\"columnNumber\":283},{\"functionName\":\"fetchByTitle\",\"scriptId\":\"183\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=mediawiki.codex.typeaheadSearch%7Cmediawiki.skinning.typeaheadSearch%7Cskins.vector.search&skin=vector-2022&version=xuq5t\",\"lineNumber\":43,\"columnNumber\":782},{\"functionName\":\"onInput\",\"scriptId\":\"183\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=mediawiki.codex.typeaheadSearch%7Cmediawiki.skinning.typeaheadSearch%7Cskins.vector.search&skin=vector-2022&version=xuq5t\",\"lineNumber\":35,\"columnNumber\":692},{\"functionName\":\"tq\",\"scriptId\":\"101\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=%40wikimedia%2Fcodex%2Ccodex-styles%2Cvue%7Cmediawiki.action.view.postEdit%7Cmediawiki.notification%2CtempUserCreated%7Coojs-ui.styles.icons-interactions&skin=vector-2022&version=jam5f\",\"lineNumber\":7,\"columnNumber\":20094},{\"functionName\":\"tW\",\"scriptId\":\"101\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=%40wikimedia%2Fcodex%2Ccodex-styles%2Cvue%7Cmediawiki.action.view.postEdit%7Cmediawiki.notification%2CtempUserCreated%7Coojs-ui.styles.icons-interactions&skin=vector-2022&version=jam5f\",\"lineNumber\":7,\"columnNumber\":20162},{\"functionName\":\"r0\",\"scriptId\":\"101\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=%40wikimedia%2Fcodex%2Ccodex-styles%2Cvue%7Cmediawiki.action.view.postEdit%7Cmediawiki.notification%2CtempUserCreated%7Coojs-ui.styles.icons-interactions&skin=vector-2022&version=jam5f\",\"lineNumber\":7,\"columnNumber\":56888},{\"functionName\":\"c\",\"scriptId\":\"183\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=mediawiki.codex.typeaheadSearch%7Cmediawiki.skinning.typeaheadSearch%7Cskins.vector.search&skin=vector-2022&version=xuq5t\",\"lineNumber\":29,\"columnNumber\":3047},{\"functionName\":\"\",\"scriptId\":\"183\",\"url\":\"https://pt.wikipedia.org/w/load.php?lang=pt&modules=mediawiki.codex.typeaheadSearch%7Cmediawiki.skinning.typeaheadSearch%7Cskins.vector.search&skin=vector-2022&version=xuq5t\",\"lineNumber\":29,\"columnNumber\":3085}]}}",
+            "initiatorType": "script"
+          }
+        ]
+      }
+    }
+  ]
+}

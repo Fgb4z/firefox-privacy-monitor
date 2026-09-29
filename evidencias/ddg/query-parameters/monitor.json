@@ -1,0 +1,156 @@
+{
+  "baselineReady": true,
+  "capturedAt": "2026-09-29T00:47:08.674Z",
+  "cookieAttempts": [],
+  "cookieBaselineNote": "Snapshot assíncrono no início da navegação; cookies muito precoces podem entrar no baseline. Presença não prova injeção nesta página.",
+  "cookieChanges": [],
+  "cookies": [],
+  "events": [
+    {
+      "api": "instrumentation",
+      "detail": "25 métodos/propriedades monitorados. Wrappers do próprio monitor excluídos da baseline.",
+      "frameId": 0,
+      "frameOrigin": "https://www.first-party.site",
+      "kind": "coverage",
+      "outcome": "ready",
+      "thirdParty": false,
+      "time": 1790642824453
+    },
+    {
+      "api": "localStorage",
+      "detail": "0 chaves presentes (não atribui escritas à página).",
+      "frameId": 0,
+      "frameOrigin": "https://www.first-party.site",
+      "kind": "storage-snapshot",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790642826459
+    },
+    {
+      "api": "sessionStorage",
+      "detail": "0 chaves presentes (não atribui escritas à página).",
+      "frameId": 0,
+      "frameOrigin": "https://www.first-party.site",
+      "kind": "storage-snapshot",
+      "outcome": "success",
+      "thirdParty": false,
+      "time": 1790642826459
+    }
+  ],
+  "id": "1-1790642824279",
+  "requests": [
+    {
+      "blocked": false,
+      "completedAt": 1790642824426,
+      "domain": "www.first-party.site",
+      "error": null,
+      "frameId": 0,
+      "id": "70",
+      "origin": "https://www.first-party.site/privacy-protections/query-parameters/",
+      "rule": null,
+      "status": 200,
+      "thirdParty": false,
+      "time": 1790642824277,
+      "tracker": null,
+      "type": "main_frame",
+      "url": "https://www.first-party.site/privacy-protections/query-parameters/query.html?utm_source=%5Bredigido%5D&q=%5Bredigido%5D"
+    },
+    {
+      "blocked": false,
+      "completedAt": 1790642824718,
+      "domain": "www.first-party.site",
+      "error": null,
+      "frameId": 0,
+      "id": "71",
+      "origin": "https://www.first-party.site/privacy-protections/query-parameters/query.html?utm_source=%5Bredigido%5D&q=%5Bredigido%5D",
+      "rule": null,
+      "status": 200,
+      "thirdParty": false,
+      "time": 1790642824573,
+      "tracker": null,
+      "type": "script",
+      "url": "https://www.first-party.site/privacy-protections/query-parameters/main.js"
+    },
+    {
+      "blocked": false,
+      "completedAt": 1790642824870,
+      "domain": "www.first-party.site",
+      "error": null,
+      "frameId": 0,
+      "id": "72",
+      "origin": "https://www.first-party.site/privacy-protections/query-parameters/query.html?utm_source=%5Bredigido%5D&q=%5Bredigido%5D",
+      "rule": null,
+      "status": 404,
+      "thirdParty": false,
+      "time": 1790642824819,
+      "tracker": null,
+      "type": "image",
+      "url": "https://www.first-party.site/favicon.ico"
+    }
+  ],
+  "rules": [],
+  "schemaVersion": 1,
+  "score": {
+    "meaning": "100 = menor exposição observada; não certifica segurança ou ausência de rastreamento.",
+    "rows": [
+      {
+        "id": "thirdParty",
+        "label": "Conexões externas respondidas",
+        "penalty": 0,
+        "rule": "3 por domínio; teto 15"
+      },
+      {
+        "id": "trackers",
+        "label": "Domínios do catálogo demonstrativo respondidos",
+        "penalty": 0,
+        "rule": "5 por domínio; teto 20"
+      },
+      {
+        "id": "cookies",
+        "label": "Cookies terceiros presentes",
+        "penalty": 0,
+        "rule": "2 sessão / 4 persistente; teto 20"
+      },
+      {
+        "id": "storage",
+        "label": "Armazenamento terceiro acessado",
+        "penalty": 0,
+        "rule": "2 por origem e API; teto 10"
+      },
+      {
+        "id": "canvas",
+        "label": "Leitura de canvas",
+        "penalty": 0,
+        "rule": "10 se observada; pode ser legítima"
+      },
+      {
+        "id": "sync",
+        "label": "Correlação de identificador / bounce",
+        "penalty": 0,
+        "rule": "10 correlação + 5 bounce; teto 15"
+      },
+      {
+        "id": "hook",
+        "label": "Indicadores de hook ou canal persistente",
+        "penalty": 0,
+        "rule": "5 comunicação + 5 alteração; teto 10"
+      }
+    ],
+    "value": 100,
+    "version": "1.0"
+  },
+  "signals": [
+    {
+      "confidence": "baixa",
+      "kind": "query",
+      "parameters": [
+        "utm_source"
+      ],
+      "url": "https://www.first-party.site/privacy-protections/query-parameters/query.html?utm_source=%5Bredigido%5D&q=%5Bredigido%5D"
+    }
+  ],
+  "startedAt": "2026-09-29T00:47:04.279Z",
+  "truncated": false,
+  "url": "https://www.first-party.site/privacy-protections/query-parameters/query.html?utm_source=%5Bredigido%5D&q=%5Bredigido%5D",
+  "warnings": []
+}

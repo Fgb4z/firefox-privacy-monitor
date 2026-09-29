@@ -1,0 +1,128 @@
+[
+  {
+    "domain": "dotcom.bbc-reporting-api.app",
+    "evidence": "ublock-logger.txt linhas 1",
+    "rules": [
+      "*$ping,3p"
+    ]
+  },
+  {
+    "domain": "vtrk.dv.tech",
+    "evidence": "ublock-logger.txt linhas 2, 3, 5",
+    "rules": [
+      "||vtrk.dv.tech^"
+    ]
+  },
+  {
+    "domain": "pub.doubleverify.com",
+    "evidence": "ublock-logger.txt linhas 6, 7",
+    "rules": [
+      "||doubleverify.com^"
+    ]
+  },
+  {
+    "domain": "edigitalsurvey.com",
+    "evidence": "ublock-logger.txt linhas 9",
+    "rules": [
+      "||edigitalsurvey.com^$3p"
+    ]
+  },
+  {
+    "domain": "a1.api.bbc.com",
+    "evidence": "ublock-logger.txt linhas 12, 32",
+    "rules": [
+      "||a1.api.bbc.com^"
+    ]
+  },
+  {
+    "domain": "sb.scorecardresearch.com",
+    "evidence": "ublock-logger.txt linhas 13",
+    "rules": [
+      "||scorecardresearch.com^"
+    ]
+  },
+  {
+    "domain": "cdn.speedcurve.com",
+    "evidence": "ublock-logger.txt linhas 16",
+    "rules": [
+      "||speedcurve.com^$3p"
+    ]
+  },
+  {
+    "domain": "cdn.cxense.com",
+    "evidence": "ublock-logger.txt linhas 20, 44",
+    "rules": [
+      "||cxense.com^$3p"
+    ]
+  },
+  {
+    "domain": "cdn.permutive.com",
+    "evidence": "ublock-logger.txt linhas 26",
+    "rules": [
+      "||permutive.com^$3p"
+    ]
+  },
+  {
+    "domain": "prebid.the-ozone-project.com",
+    "evidence": "ublock-logger.txt linhas 27",
+    "rules": [
+      "||the-ozone-project.com^"
+    ]
+  },
+  {
+    "domain": "securepubads.g.doubleclick.net",
+    "evidence": "ublock-logger.txt linhas 28, 29, 30",
+    "rules": [
+      "googletagservices_gpt.js:5",
+      "||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect-rule=googletagservices_gpt.js:5",
+      "||doubleclick.net^"
+    ]
+  },
+  {
+    "domain": "scripts.webcontentassessor.com",
+    "evidence": "ublock-logger.txt linhas 31",
+    "rules": [
+      "||webcontentassessor.com^"
+    ]
+  },
+  {
+    "domain": "pagead2.googlesyndication.com",
+    "evidence": "ublock-logger.txt linhas 33, 34, 35, 36",
+    "rules": [
+      "googlesyndication_adsbygoogle.js:5",
+      "||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,redirect-rule=googlesyndication_adsbygoogle.js:5,from=~authenticateme.xyz|~kio.ac|~zipextractor.app",
+      "||pagead2.googlesyndication.com^$xhr,redirect-rule=noop.js",
+      "||googlesyndication.com^"
+    ]
+  },
+  {
+    "domain": "cdn.privacy-mgmt.com",
+    "evidence": "ublock-logger.txt linhas 43",
+    "rules": [
+      "/v2/pv-data?"
+    ]
+  },
+  {
+    "domain": "uk-script.dotmetrics.net",
+    "evidence": "ublock-logger.txt linhas 48",
+    "rules": [
+      "||dotmetrics.net^"
+    ]
+  },
+  {
+    "domain": "static.chartbeat.com",
+    "evidence": "ublock-logger.txt linhas 52, 53, 54",
+    "rules": [
+      "chartbeat.js",
+      "||static.chartbeat.com/js/chartbeat.js$script,redirect-rule=chartbeat.js",
+      "||chartbeat.com^$3p"
+    ]
+  },
+  {
+    "domain": "cdn.optimizely.com",
+    "evidence": "ublock-logger.txt linhas 211",
+    "rules": [
+      "||optimizely.com/public/"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[Home] ↣ [Privacy Protections Tests] ↣ [Query Parameters]
+This test page has sample links that use tracking query parameters. When clicking on the sample links the displayed results should be equal to the listed "Expected" value.
+URLs with Tracking Parameters
+Link with utm_source and 1 standard parameter
+Expected: "q=other"
+Link with utm_source and utm_medium
+Expected: ""
+Link with fbclid, fb_source and 1 standard parameter
+Expected: "u=14"
+Link which should not be rewritten
+Expected: "q=something&id=1234"

@@ -1,0 +1,7 @@
+[Home] ↣ [Privacy Protections Tests] ↣ [Storage Partitioning Test Page]
+This page will determine whether various storage APIs are parititoned or blocked across origins.
+NOTE: These tests will return incorrect results if:
+you have multiple copies of the test page open
+you run the tests after force reloading the page, as this bypasses Service Workers
+Run Tests
+Download the result

@@ -1,0 +1,19 @@
+[Home] ↣ [Detect changes to JS objects in global scope]
+This page checks the global window object for differences versus standard browsers. This shows protections' footprint that are observable and potentially exploitable by the page.
+To generate a profile for a new browser load this page there and click "Download this browser's profile" below.
+You can also run the test automatically by adding the target browser to the URL, e.g. adding #chrome_92 to the end of the URL will automatically run comparisons to Chrome.
+Compare this browser to:
+Firefox 92
+Chrome 92
+Chrome 110
+Chrome 139
+Safari 14
+Safari iOS 14
+Safari 16.1
+Android Webview 83
+Edge 110
+Check Download the results
+Properties Added
+Properties Removed
+Properties Changed
+Download this browser's profile

@@ -1,0 +1,62 @@
+[Home] ↣ [Privacy Protections Tests] ↣ [Storage Blocking Test Page]
+This page will try to store, and then retrieve, a random number using various storage mechanisms in the browser.
+Store data Retrieve data
+Retrieved data from 23 storage mechanisms (2 failed). Click for details.
+first party header cookie - "724"
+safe third party header cookie - "724"
+tracking third party header cookie - "724"
+JS cookie - "724" (expires in NaN days)
+JS cookie (__Host) - "724"
+JS cookie (no SameSite attribute) - "724"
+localStorage - "724"
+sessionStorage - "724"
+IndexedDB - "724"
+WebSQL - ❌ error thrown ("openDatabase is not defined")
+Cache API - "724"
+CookieStore - "724" (expires in NaN days)
+JS cookie (3rd party tracking script) - "724" (expires in NaN days)
+JS cookie (3rd party safe script) - "724" (expires in NaN days)
+safe third party iframe -
+first party header cookie - 724
+tracking third party header cookie - 724
+JS cookie - 724 (expires in NaN days)
+JS cookie (__Host) - 724
+JS cookie (no SameSite attribute) - 724
+localStorage - 724
+sessionStorage - 724
+IndexedDB - 724
+WebSQL - null (❌ openDatabase is not defined)
+Cache API - 724
+CookieStore - null (❌ can't access property "value" of null)
+tracking third party iframe -
+first party header cookie - 724
+safe third party header cookie - 724
+JS cookie - 724 (expires in NaN days)
+JS cookie (__Host) - 724
+JS cookie (no SameSite attribute) - 724
+localStorage - 724
+sessionStorage - 724
+IndexedDB - 724
+WebSQL - null (❌ openDatabase is not defined)
+Cache API - 724
+CookieStore - null (❌ can't access property "value" of null)
+ad third party iframe -
+first party header cookie - null (❌ JSON.parse: unexpected character at line 1 column 1 of the JSON data)
+safe third party header cookie - 724
+tracking third party header cookie - 724
+JS cookie - 724 (expires in NaN days)
+JS cookie (__Host) - 724
+JS cookie (no SameSite attribute) - 724
+localStorage - 724
+sessionStorage - 724
+IndexedDB - null (❌ DB is not defined)
+WebSQL - null (❌ openDatabase is not defined)
+Cache API - 724
+CookieStore - null (❌ can't access property "value" of null)
+browser cache - "724"
+memory - "724"
+window.name - "724"
+history - "724"
+service worker - "724"
+service worker cookieStore - ❌ error thrown ("can't access property "value" of null")
+Download the result

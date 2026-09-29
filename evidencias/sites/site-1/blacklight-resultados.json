@@ -1,0 +1,228 @@
+{
+  "source": "API pública usada pelo frontend oficial Blacklight",
+  "endpoint": "https://blacklight-us-oh.api.themarkup.org/graphic-api",
+  "retrievedAt": "2026-09-29T00:57:21.719Z",
+  "status": "success",
+  "inspectedUrl": "https://www.bbc.com/news",
+  "destinationUrl": "https://www.bbc.com/news",
+  "pageTitle": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+  "startedAt": "2026-09-29T00:52:15.727Z",
+  "endedAt": "2026-09-29T00:52:38.609Z",
+  "location": "us-oh",
+  "browser": {
+    "name": "Chromium",
+    "version": "HeadlessChrome/138.0.7204.0",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/138.0.7204.0 Safari/537.36",
+    "platform": {
+      "name": "Linux",
+      "version": "5.10.255-268-309.1092.amzn2.x86_64"
+    }
+  },
+  "device": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 790,
+      "deviceScaleFactor": 2,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": true
+    }
+  },
+  "browsingHistory": [
+    "https://www.bbc.com/news"
+  ],
+  "hosts": {
+    "first_party": [
+      "www.bbc.com",
+      "gn-web-assets.api.bbc.com",
+      "a1.api.bbc.com"
+    ],
+    "third_party": [
+      "static.bbci.co.uk",
+      "cdn.optimizely.com",
+      "cdn.tinypass.com",
+      "emp.bbci.co.uk",
+      "static.files.bbci.co.uk",
+      "ichef.bbci.co.uk",
+      "a4621041136.cdn.optimizely.com",
+      "www.bbc.co.uk",
+      "logx.optimizely.com",
+      "cdn.privacy-mgmt.com",
+      "web-cdn.api.bbci.co.uk",
+      "federated-id.live.api.bbc.co.uk",
+      "cdn.cxense.com",
+      "uk-script.dotmetrics.net",
+      "jssdkcdns.mparticle.com",
+      "c2-eu.piano.io",
+      "mybbc-analytics.files.bbci.co.uk",
+      "scripts.webcontentassessor.com",
+      "securepubads.g.doubleclick.net",
+      "prebid.the-ozone-project.com",
+      "cdn.permutive.com",
+      "pub.doubleverify.com",
+      "rm-script.dotmetrics.net",
+      "static.chartbeat.com",
+      "pagead2.googlesyndication.com",
+      "www.googletagmanager.com",
+      "identity.mparticle.com",
+      "api.permutive.com",
+      "ping.chartbeat.net",
+      "id.cxense.com",
+      "comcluster.cxense.com",
+      "cm.g.doubleclick.net",
+      "googleads.g.doubleclick.net",
+      "www.google.com",
+      "ad.doubleclick.net",
+      "vtrk.dv.tech",
+      "secretivesponge.com",
+      "secure-us.imrworldwide.com",
+      "sb.scorecardresearch.com",
+      "www.googleadservices.com",
+      "jssdks.mparticle.com",
+      "e488cdb0-e7cb-4d91-9648-60d437d8e491.prmutv.co",
+      "ib.adnxs.com",
+      "elb.the-ozone-project.com",
+      "buy-eu.piano.io",
+      "edigitalsurvey.com",
+      "aax.amazon-adsystem.com",
+      "cdn.id5-sync.com",
+      "tpc.googlesyndication.com",
+      "merequartz.com",
+      "dt.adsafeprotected.com",
+      "api.id5-sync.com",
+      "ep1.adtrafficquality.google",
+      "e1a11632b464a2aaeec77565a20a6336.safeframe.googlesyndication.com",
+      "insight.adsrvr.org",
+      "ep2.adtrafficquality.google",
+      "id5-sync.com",
+      "lbs.eu-1-id5-sync.com",
+      "lb.eu-1-id5-sync.com",
+      "stats-collector.cxense.com",
+      "cdn.doubleverify.com",
+      "googleads4.g.doubleclick.net",
+      "s0.2mdn.net",
+      "secure.insightexpressai.com",
+      "dotcom.bbc-reporting-api.app",
+      "3e1e0dd4ef1106237865de79915e3a76.safeframe.googlesyndication.com",
+      "tps.doubleverify.com",
+      "eb2.3lift.com",
+      "match.adsrvr.org",
+      "cdn.speedcurve.com",
+      "uipglob.semasio.net",
+      "check.analytics.rlcdn.com",
+      "static.cloudflareinsights.com",
+      "cdn.undertone.com",
+      "pixel.tapad.com",
+      "secure-assets.rubiconproject.com",
+      "us-u.openx.net",
+      "pixel.rubiconproject.com",
+      "image8.pubmatic.com",
+      "sync.cootlogix.com",
+      "ups.analytics.yahoo.com",
+      "evt.undertone.com",
+      "usr.undertone.com",
+      "ice.360yield.com",
+      "eus.rubiconproject.com"
+    ]
+  },
+  "trackerRadarUpdated": "2024-03-20T12:00:00.000Z",
+  "cards": [
+    {
+      "type": "ddg_join_ads",
+      "found": true,
+      "count": 27,
+      "domains": [
+        "chartbeat.com",
+        "amazon-adsystem.com",
+        "doubleclick.net",
+        "3lift.com",
+        "pubmatic.com",
+        "googlesyndication.com",
+        "rubiconproject.com",
+        "cxense.com",
+        "googletagmanager.com",
+        "googleadservices.com",
+        "semasio.net",
+        "360yield.com",
+        "id5-sync.com",
+        "yahoo.com",
+        "adnxs.com",
+        "adsrvr.org",
+        "insightexpressai.com",
+        "openx.net",
+        "rlcdn.com",
+        "chartbeat.net",
+        "adsafeprotected.com",
+        "undertone.com",
+        "google.com",
+        "2mdn.net",
+        "doubleverify.com",
+        "tapad.com",
+        "imrworldwide.com"
+      ]
+    },
+    {
+      "type": "cookies",
+      "found": true,
+      "count": 23,
+      "domains": [
+        "tinypass.com",
+        "piano.io",
+        "dotmetrics.net",
+        "imrworldwide.com",
+        "scorecardresearch.com",
+        "doubleclick.net",
+        "cxense.com",
+        "insightexpressai.com",
+        "a4621041136.cdn.optimizely.com",
+        "id5-sync.com",
+        "3lift.com",
+        "adsrvr.org",
+        "semasio.net",
+        "the-ozone-project.com",
+        "adnxs.com"
+      ]
+    },
+    {
+      "type": "canvas_fingerprinters",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "session_recorders",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "key_logging",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "fb_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "tiktok_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "twitter_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "ga",
+      "found": false,
+      "domains": []
+    }
+  ],
+  "archive": "https://mrkp-static-production.themarkup.org/blacklight-us-oh/e385a6188e99563ee742f92c46fa16fa307e9482/blacklight-inspection-www.bbc.com.zip",
+  "reportUrl": "https://mrkp-static-production.themarkup.org/blacklight-us-oh/e385a6188e99563ee742f92c46fa16fa307e9482/report.html",
+  "screenshots": [
+    "https://mrkp-static-production.themarkup.org/blacklight-us-oh/e385a6188e99563ee742f92c46fa16fa307e9482/1.jpeg"
+  ]
+}

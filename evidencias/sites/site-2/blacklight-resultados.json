@@ -1,0 +1,115 @@
+{
+  "source": "API pública usada pelo frontend oficial Blacklight",
+  "endpoint": "https://blacklight-us-oh.api.themarkup.org/graphic-api",
+  "retrievedAt": "2026-09-29T00:57:23.294Z",
+  "status": "success",
+  "inspectedUrl": "https://www.magazineluiza.com.br/",
+  "destinationUrl": "https://www.magazineluiza.com.br/",
+  "pageTitle": "Magazine Luiza | Não é possível acessar a página",
+  "startedAt": "2026-09-29T00:45:46.550Z",
+  "endedAt": "2026-09-29T00:45:54.539Z",
+  "location": "us-oh",
+  "browser": {
+    "name": "Chromium",
+    "version": "HeadlessChrome/138.0.7204.0",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/138.0.7204.0 Safari/537.36",
+    "platform": {
+      "name": "Linux",
+      "version": "5.10.255-268-309.1092.amzn2.x86_64"
+    }
+  },
+  "device": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 790,
+      "deviceScaleFactor": 2,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": true
+    }
+  },
+  "browsingHistory": [
+    "https://www.magazineluiza.com.br/",
+    "https://atendimento.magazineluiza.com.br/hc/pt-br/"
+  ],
+  "hosts": {
+    "first_party": [
+      "www.magazineluiza.com.br",
+      "m.magazineluiza.com.br",
+      "atendimento.magazineluiza.com.br",
+      "minhaconta.magazineluiza.com.br"
+    ],
+    "third_party": [
+      "wx.mlcdn.com.br",
+      "tom.mlcdn.com.br",
+      "static.zdassets.com",
+      "www.googletagmanager.com",
+      "cdnjs.cloudflare.com",
+      "code.jquery.com",
+      "static.hotjar.com",
+      "ekr.zdassets.com",
+      "www.google-analytics.com"
+    ]
+  },
+  "trackerRadarUpdated": "2024-03-20T12:00:00.000Z",
+  "cards": [
+    {
+      "type": "ddg_join_ads",
+      "found": true,
+      "count": 1,
+      "domains": [
+        "googletagmanager.com"
+      ]
+    },
+    {
+      "type": "cookies",
+      "found": false,
+      "count": 0,
+      "domains": []
+    },
+    {
+      "type": "canvas_fingerprinters",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "session_recorders",
+      "found": true,
+      "domains": [
+        "hotjar.com"
+      ]
+    },
+    {
+      "type": "key_logging",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "fb_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "tiktok_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "twitter_pixel_events",
+      "found": false,
+      "domains": []
+    },
+    {
+      "type": "ga",
+      "found": false,
+      "domains": []
+    }
+  ],
+  "archive": "https://mrkp-static-production.themarkup.org/blacklight-us-oh/0cc86ef1f21ceb78af8567cd57d8f04441b5bc4f/blacklight-inspection-www.magazineluiza.com.br.zip",
+  "reportUrl": "https://mrkp-static-production.themarkup.org/blacklight-us-oh/0cc86ef1f21ceb78af8567cd57d8f04441b5bc4f/report.html",
+  "screenshots": [
+    "https://mrkp-static-production.themarkup.org/blacklight-us-oh/0cc86ef1f21ceb78af8567cd57d8f04441b5bc4f/1.jpeg",
+    "https://mrkp-static-production.themarkup.org/blacklight-us-oh/0cc86ef1f21ceb78af8567cd57d8f04441b5bc4f/2.jpeg"
+  ]
+}
