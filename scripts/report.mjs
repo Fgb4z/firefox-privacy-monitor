@@ -54,7 +54,7 @@ async function picture(path,caption,maxHeight=310){
  room(height+40);const y=doc.y;doc.image(img,46,y,{fit:[W,height],align:'center',valign:'top'});doc.y=y+height+5;paragraph(`Figura ${++figure}. ${caption}`,8);
 }
 heading(data.title);paragraph(final?'Relatório de execução e análise':'RASCUNHO');
-paragraph(`${data.author}\nEntrega: ${data.deadline}\nColetas: 28/09/2026 (America/Sao_Paulo)\nGerado em: ${new Date().toISOString()}`);
+paragraph(`${data.author}\nEntrega: ${data.deadline}\nColetas: 28/09/2026 (America/Sao_Paulo)`);
 paragraph('Repositório: https://github.com/Fgb4z/firefox-privacy-monitor');
 paragraph('Extensão Firefox que observa conexões, cookies, armazenamento HTML5, canvas e indícios de sincronização, bounce e alterações de objetos. O trabalho reúne oito testes DDG, três análises de sites e um score didático. Detectado significa o comportamento observado, não um diagnóstico de ataque ou certificação de privacidade.');
 heading('Resultados principais');
