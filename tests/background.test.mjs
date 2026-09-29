@@ -54,6 +54,12 @@ test('background: Set-Cookie combinados pelo Firefox preservam contagem e sessã
   await b.webRequest.onHeadersReceived.fire({ ...request('1','https://a.com'), statusCode:200, responseHeaders:[{name:'Set-Cookie',value:'session=a; Path=/\npersistent=b; Expires=Wed, 01 Jan 2031 00:00:00 GMT; Path=/'}] });
   const r = await message({type:'report',tabId:1}); assert.equal(r.cookieAttempts.length,2); assert.equal(r.cookieAttempts[0].session,true); assert.equal(r.cookieAttempts[1].session,false);
 });
+test('background: regra também cancela pedidos de worker sem aba atribuída', async () => {
+  const { browser:b,message }=setup();
+  await message({type:'save-rules',rules:['tracker.com']});
+  assert.equal((await b.webRequest.onBeforeRequest.fire(request('w','https://tracker.com/sw','xmlhttprequest',-1))).cancel,true);
+  assert.equal((await b.webRequest.onBeforeRequest.fire(request('w2','https://allowed.com/sw','xmlhttprequest',-1))).cancel,undefined);
+});
 test('background: página não pode editar regras e frames terceiros são atribuídos', async () => {
   const { browser: b, message } = setup();
   await b.webRequest.onBeforeRequest.fire(request('1','https://a.com'));

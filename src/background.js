@@ -31,7 +31,9 @@ function rememberCookie(p, value, domain) { if (typeof value === 'string' && val
 
 browser.webRequest.onBeforeRequest.addListener(async d => {
   await ready;
-  if (d.tabId < 0) return {};
+  // Service workers podem gerar pedidos sem tabId. A regra é global, mesmo
+  // quando não há atribuição confiável desses pedidos a um relatório de aba.
+  if (d.tabId < 0) return blockedBy(host(d.url), rules) ? { cancel: true } : {};
   let p = pages.get(d.tabId);
   const previous = journeys.get(d.tabId);
   if (d.type === 'main_frame') {

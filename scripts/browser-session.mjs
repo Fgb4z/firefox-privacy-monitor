@@ -4,7 +4,7 @@ import { resolve } from 'node:path';
 export const monitorUUID = 'eb835908-d407-4f12-b81f-6bb28b018ac1';
 export const ublockUUID = '273c0fa7-9a5b-4ea1-9fd8-44f0f1629fba';
 export const sites = [
-  { id: 'site-1', name: 'CNN Brasil', url: 'https://www.cnnbrasil.com.br/' },
+  { id: 'site-1', name: 'BBC News', url: 'https://www.bbc.com/news' },
   { id: 'site-2', name: 'Magazine Luiza', url: 'https://www.magazineluiza.com.br/' },
   { id: 'site-3', name: 'Wikipédia', url: 'https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal' }
 ];
@@ -51,7 +51,7 @@ export async function openNetwork(driver) {
   `);
 }
 export async function exportHar(driver) {
-  return chrome(driver, `return await window.__privacyNet.getHAR();`);
+  return chrome(driver, `return await window.__privacyNet.getHar();`);
 }
 export async function saveMonitor(driver, handle, directory, writeFile) {
   await driver.switchTo().newWindow('tab');

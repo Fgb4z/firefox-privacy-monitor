@@ -902,7 +902,7 @@
   }
   browser.webRequest.onBeforeRequest.addListener(async (d) => {
     await ready;
-    if (d.tabId < 0) return {};
+    if (d.tabId < 0) return blockedBy(host(d.url), rules) ? { cancel: true } : {};
     let p = pages.get(d.tabId);
     const previous = journeys.get(d.tabId);
     if (d.type === "main_frame") {

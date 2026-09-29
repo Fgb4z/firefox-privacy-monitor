@@ -1,0 +1,13 @@
+import { mkdir,writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const response=await fetch('https://addons.mozilla.org/api/v5/addons/addon/ublock-origin/');
+if(!response.ok) throw new Error(`AMO metadata HTTP ${response.status}`);
+const info=await response.json(), file=info.current_version.file;
+const download=await fetch(file.url);if(!download.ok)throw new Error(`XPI HTTP ${download.status}`);
+const buffer=Buffer.from(await download.arrayBuffer());
+const hash='sha256:'+createHash('sha256').update(buffer).digest('hex');
+if(hash!==file.hash)throw new Error('Hash XPI diverge do publicado pelo AMO.');
+await mkdir('.cache/ublock',{recursive:true});
+await writeFile('.cache/ublock/ublock.xpi',buffer);
+await writeFile('.cache/ublock/origin.json',JSON.stringify({source:'Mozilla Add-ons',url:file.url,version:info.current_version.version,hash,downloadedAt:new Date().toISOString()},null,2));
+console.log(`uBlock ${info.current_version.version}: assinatura do arquivo ${hash}`);
